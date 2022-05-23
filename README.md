@@ -1,1 +1,1 @@
-# hotel-miranda
+# hotel-miranda (styles)
