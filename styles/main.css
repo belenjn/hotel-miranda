@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
 importará todos los archivos situados dentro de cada carpeta sin contener código sass adicional. Por ejemplo:
 
@@ -6,3 +7,4 @@ importará todos los archivos situados dentro de cada carpeta sin contener códi
 @import 'utilities/mixins';
 */
 
+/*# sourceMappingURL=main.css.map */
