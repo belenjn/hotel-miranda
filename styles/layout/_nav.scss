@@ -1,14 +1,83 @@
+$primary-background: #222222;
+$secondary-background: #333333;
+
 .navbar {
-    border: 1px solid red;
-    display: inline-block;
+//   border: 1px solid red;
+  display: inline-block;
+  width: 100%;
+  height: 50px;
+  z-index: 1;
+
+  .navbar__container {
+    display: flex;
+    // border: 1px solid green;
+    justify-content: space-between;
+    margin-top: 25px;
     width: 100%;
     height: 50%;
+  }
+
+.navbar__container-icon {
+    display: flex;
+    // border: 1px solid red;
+    width: 20%;
 }
 
-.navbar__container {
-    display: inline-block;
-    border: 1px solid black;
-    padding: 5px;
-    height: 50%;
+.navbar__container-logo {
+    display: flex;
+    // border: 1px solid red;
+    width: 50%;
+    height: 100%;
+}
+
+.navbar__container-icons-right {
+    display: flex;
+    // border: 1px solid red;
+    width: 25%;
+
+}
+  .navbar__logo {
+    // border: 1px solid pink;
+    width: 120px;
+    height: 75px;
+    margin-top: -10px;
+    margin-left: -20px;
+  }
+
+  .navbar__hamburger {
+    width: 20px;
+    height: 15px;
+    margin: auto;
+    // border: 1px solid yellow;
+  }
+
+  .navbar__person,
+  .navbar__search {
+    margin-left: 20px;
+    margin: auto;
+
+  }
+}
+
+
+.main {
     width: 100%;
+    height: 100%;
+    background-color: $primary-background;
+
+
+    .main__container{
+        background-color: $secondary-background;
+        z-index: 1;
+        margin-top: 20px;
+        h5 {
+        font-family: 'Archivo', sans-serif !important;
+
+        }
+        button {
+        font-family: 'Archivo', sans-serif !important;
+
+        }
+
+    }
 }

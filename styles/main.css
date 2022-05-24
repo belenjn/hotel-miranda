@@ -4,18 +4,63 @@
 }
 
 .navbar {
-  border: 1px solid red;
   display: inline-block;
+  width: 100%;
+  height: 50px;
+  z-index: 1;
+}
+.navbar .navbar__container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
   width: 100%;
   height: 50%;
 }
+.navbar .navbar__container-icon {
+  display: flex;
+  width: 20%;
+}
+.navbar .navbar__container-logo {
+  display: flex;
+  width: 50%;
+  height: 100%;
+}
+.navbar .navbar__container-icons-right {
+  display: flex;
+  width: 25%;
+}
+.navbar .navbar__logo {
+  width: 120px;
+  height: 75px;
+  margin-top: -10px;
+  margin-left: -20px;
+}
+.navbar .navbar__hamburger {
+  width: 20px;
+  height: 15px;
+  margin: auto;
+}
+.navbar .navbar__person,
+.navbar .navbar__search {
+  margin-left: 20px;
+  margin: auto;
+}
 
-.navbar__container {
-  display: inline-block;
-  border: 1px solid black;
-  padding: 5px;
-  height: 50%;
+.main {
   width: 100%;
+  height: 100%;
+  background-color: #222222;
+}
+.main .main__container {
+  background-color: #333333;
+  z-index: 1;
+  margin-top: 20px;
+}
+.main .main__container h5 {
+  font-family: "Archivo", sans-serif !important;
+}
+.main .main__container button {
+  font-family: "Archivo", sans-serif !important;
 }
 
 html,
