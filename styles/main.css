@@ -80,6 +80,9 @@
   width: 20px;
   height: 15px;
   margin: auto;
+  background-image: url(../../assets/nav/hamburger-icon.png);
+  cursor: pointer;
+  border: none;
 }
 .navbar .navbar__person,
 .navbar .navbar__search {
