@@ -1,5 +1,7 @@
-$primary-color: #333333;
+$primary-bckg-color: #333333;
+$primary-font-color: #FFFFFF ;
 
 .main {
-    background-color: $primary-color;
+    background-color: $primary-bckg-color;
+    color: $primary-font-color;
 }
