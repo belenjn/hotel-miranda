@@ -1,7 +1,27 @@
-$primary-bckg-color: #333333;
+$primary-background: #222222;
+$secondary-background: #333333;
 $primary-font-color: #FFFFFF ;
 
+
 .main {
-    background-color: $primary-bckg-color;
+    width: 100%;
+    height: 100%;
+    background-color: $primary-background;
     color: $primary-font-color;
+
+
+    .main__container{
+        background-color: $secondary-background;
+        z-index: 1;
+        margin-top: 20px;
+        h5 {
+        font-family: 'Archivo', sans-serif !important;
+
+        }
+        button {
+        font-family: 'Archivo', sans-serif !important;
+
+        }
+
+    }
 }
