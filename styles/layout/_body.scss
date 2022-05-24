@@ -15,7 +15,11 @@ $principal-margin-left: 20px;
     background-color: $secondary-background;
     width: 100%;
     height: 68%;
-    position: fixed;
+    // position: fixed;
+    .main__container-titles {
+        // margin-top: 8%;
+        border: 1px solid transparent;
+      }
 
     h4 {
       font-family: "Archivo", sans-serif !important;
@@ -36,6 +40,7 @@ $principal-margin-left: 20px;
       font-family: "Archivo", sans-serif !important;
       border-radius: none;
       color: $primary-font-color;
+      cursor: pointer;
       letter-spacing: 2.8px;
       margin-left: $principal-margin-left;
       margin-top: 30px;
@@ -51,6 +56,10 @@ $principal-margin-left: 20px;
       background-color: $secondary-background;
       border: 1px solid $primary-button-color;
       padding: 19px;
+    }
+
+    form {
+        color: $primary-font-color;
     }
   }
 }
