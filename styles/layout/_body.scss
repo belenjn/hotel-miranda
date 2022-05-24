@@ -1,27 +1,56 @@
 $primary-background: #222222;
 $secondary-background: #333333;
-$primary-font-color: #FFFFFF ;
-
+$primary-button-color: #bead8e;
+$primary-font-color: #ffffff;
+$principal-margin-left: 20px;
 
 .main {
+  width: 100%;
+  height: 100%;
+  background-color: $primary-background;
+  color: $primary-font-color;
+  position: fixed;
+
+  .main__container {
+    background-color: $secondary-background;
     width: 100%;
-    height: 100%;
-    background-color: $primary-background;
-    color: $primary-font-color;
+    height: 68%;
+    position: fixed;
 
+    h4 {
+      font-family: "Archivo", sans-serif !important;
+      letter-spacing: 2.8px;
+      font-weight: 400;
+      margin-top: 90px;
+      margin-bottom: 30px;
+      margin-left: $principal-margin-left;
+    }
+    h2 {
+      font-size: 56px;
+      margin-left: $principal-margin-left;
+      font-weight: 100;
 
-    .main__container{
-        background-color: $secondary-background;
-        z-index: 1;
-        margin-top: 20px;
-        h5 {
-        font-family: 'Archivo', sans-serif !important;
-
-        }
-        button {
-        font-family: 'Archivo', sans-serif !important;
-
-        }
 
     }
+    button {
+      font-family: "Archivo", sans-serif !important;
+      border-radius: none;
+      color: $primary-font-color;
+      letter-spacing: 2.8px;
+      margin-left: $principal-margin-left;
+      margin-top: 30px;
+      width: 200px;
+
+    }
+    .button__primary {
+      background-color: $primary-button-color;
+      border: none;
+      padding: 20px;
+    }
+    .button__secondary {
+      background-color: $secondary-background;
+      border: 1px solid $primary-button-color;
+      padding: 19px;
+    }
+  }
 }
