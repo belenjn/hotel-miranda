@@ -120,6 +120,9 @@ button {
   text-align: justify;
   line-height: 1.5;
 }
+.main__container .main__container--background .button__primary {
+  margin-bottom: 400px;
+}
 
 @media only screen and (min-width: 1000px) {
   .header .header__container .header__container-titles h4 {
