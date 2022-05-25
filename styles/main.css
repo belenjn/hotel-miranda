@@ -25,7 +25,8 @@
   margin-left: 20px;
   font-weight: 100;
 }
-.main .main__container button {
+
+button {
   font-family: "Archivo", sans-serif !important;
   border-radius: none;
   color: #ffffff;
@@ -35,12 +36,15 @@
   margin-top: 30px;
   width: 200px;
 }
-.main .main__container .button__primary {
+
+.button__primary {
   background-color: #bead8e;
   border: none;
   padding: 20px;
+  color: #ffffff;
 }
-.main .main__container .button__secondary {
+
+.button__secondary {
   background-color: #333333;
   border: 1px solid #bead8e;
   padding: 19px;
@@ -67,14 +71,53 @@ form fieldset p .form__input {
   background-color: #222222;
   color: #ffffff;
   margin-bottom: 20px;
-  margin-top: 10px;
+  margin-top: 5px;
   padding: 7px;
   width: 80%;
 }
+form fieldset p .form__input::placeholder {
+  color: rgba(242, 231, 212, 0.568627451);
+  font-family: "Roboto", sans-serif !important;
+}
 form fieldset p img {
-  width: 14px;
+  width: 12px;
+}
+form fieldset button {
+  width: 250px;
+  height: 50px;
+  margin-bottom: 15px;
+  margin-left: 1px;
 }
 
+@media only screen and (min-width: 1000px) {
+  .main {
+    width: 100%;
+    height: 100%;
+    background-color: #222222;
+    color: #ffffff;
+  }
+  .main .main__container {
+    background-color: #333333;
+    width: 100%;
+    height: 68%;
+  }
+  .main .main__container .main__container-titles {
+    border: 1px solid transparent;
+  }
+  .main .main__container h4 {
+    font-family: "Archivo", sans-serif !important;
+    letter-spacing: 2.8px;
+    font-weight: 400;
+    margin-top: 90px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+  }
+  .main .main__container h2 {
+    font-size: 56px;
+    margin-left: 20px;
+    font-weight: 100;
+  }
+}
 .navbar {
   display: inline-block;
   width: 100%;
@@ -87,6 +130,9 @@ form fieldset p img {
   margin-top: 15px;
   width: 100%;
   height: 50%;
+}
+.navbar .navbar__categories {
+  display: none;
 }
 .navbar .navbar__container-icon {
   display: flex;
@@ -121,6 +167,79 @@ form fieldset p img {
   margin: auto;
 }
 
+@media only screen and (min-width: 1000px) {
+  .navbar__header {
+    background-color: #222222;
+    display: flex;
+    width: 100%;
+    height: 70px;
+  }
+  .navbar__header .navbar {
+    display: inline-block;
+    width: 75%;
+    height: 80px;
+    z-index: 2;
+    background-color: white !important;
+    margin: auto;
+    margin-top: 30px;
+  }
+  .navbar__header .navbar .navbar__container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    width: 100%;
+    height: 50%;
+  }
+  .navbar__header .navbar .navbar__categories {
+    display: inline-flex;
+    width: 90%;
+    height: 20px;
+    margin-top: 20px;
+    margin-right: 100px;
+  }
+  .navbar__header .navbar .navbar__categories li {
+    list-style: none;
+    font-family: "Archivo", sans-serif !important;
+    font-size: 12px;
+    margin-right: 50px;
+    font-weight: 600;
+  }
+  .navbar__header .navbar .navbar__container-icon {
+    display: flex;
+    width: 20%;
+  }
+  .navbar__header .navbar .navbar__container-logo {
+    display: flex;
+    width: 60%;
+    height: 100%;
+    margin-left: -80px;
+  }
+  .navbar__header .navbar .navbar__container-icons-right {
+    display: flex;
+    width: 20%;
+    margin-right: 90px;
+  }
+  .navbar__header .navbar .navbar__logo {
+    width: 200px;
+    height: 120px;
+    margin-left: -20px;
+  }
+  .navbar__header .navbar .navbar__hamburger {
+    display: none;
+    width: 20px;
+    height: 15px;
+    margin: auto;
+    background-image: url(../../assets/nav/hamburger-icon.png);
+    cursor: pointer;
+    border: none;
+  }
+  .navbar__header .navbar .navbar__person,
+.navbar__header .navbar .navbar__search {
+    border: 1px solid rgba(171, 167, 167, 0.459);
+    padding: 10px;
+    width: 35px;
+  }
+}
 html,
 * {
   box-sizing: border-box;

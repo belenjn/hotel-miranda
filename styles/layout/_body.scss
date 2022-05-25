@@ -34,33 +34,36 @@ $principal-margin-left: 20px;
       margin-left: $principal-margin-left;
       font-weight: 100;
     }
-    button {
-      font-family: "Archivo", sans-serif !important;
-      border-radius: none;
-      color: $primary-font-color;
-      cursor: pointer;
-      letter-spacing: 2.8px;
-      margin-left: $principal-margin-left;
-      margin-top: 30px;
-      width: 200px;
-    }
-    .button__primary {
-      background-color: $primary-button-color;
-      border: none;
-      padding: 20px;
-    }
-    .button__secondary {
-      background-color: $secondary-background;
-      border: 1px solid $primary-button-color;
-      padding: 19px;
-      margin-bottom: 70px;
-    }
   }
 }
 
+button {
+  font-family: "Archivo", sans-serif !important;
+  border-radius: none;
+  color: $primary-font-color;
+  cursor: pointer;
+  letter-spacing: 2.8px;
+  margin-left: $principal-margin-left;
+  margin-top: 30px;
+  width: 200px;
+}
+.button__primary {
+  background-color: $primary-button-color;
+  border: none;
+  padding: 20px;
+  color: $primary-font-color;
+}
+.button__secondary {
+  background-color: $secondary-background;
+  border: 1px solid $primary-button-color;
+  padding: 19px;
+  margin-bottom: 70px;
+}
+
 form {
-    margin-top: 20px;
-    margin-left: $principal-margin-left;
+  margin-top: 20px;
+  margin-left: $principal-margin-left;
+
   fieldset {
     border: none;
 
@@ -69,8 +72,6 @@ form {
         font-family: "Roboto", sans-serif !important;
         font-weight: 600;
         font-size: 13px;
-
-       
       }
       .form__input {
         border-top: none;
@@ -80,13 +81,134 @@ form {
         background-color: $primary-background;
         color: $primary-font-color;
         margin-bottom: 20px;
-        margin-top: 10px;
+        margin-top: 5px;
         padding: 7px;
         width: 80%;
+
+        &::placeholder {
+          color: #f2e7d491;
+          font-family: "Roboto", sans-serif !important;
+        }
       }
       img {
-          width: 14px;
+        width: 12px;
       }
     }
+    button {
+      width: 250px;
+      height: 50px;
+      margin-bottom: 15px;
+      margin-left: 1px;
+    }
   }
+}
+
+
+// Desk Responsive
+
+@media only screen and (min-width: 1000px) {
+
+    .main {
+        width: 100%;
+        height: 100%;
+        background-color: $primary-background;
+        color: $primary-font-color;
+        //   position: fixed;
+      
+        .main__container {
+          background-color: $secondary-background;
+          width: 100%;
+          height: 68%;
+          // position: fixed;
+          .main__container-titles {
+            // margin-top: 8%;
+            border: 1px solid transparent;
+          }
+      
+          h4 {
+            font-family: "Archivo", sans-serif !important;
+            letter-spacing: 2.8px;
+            font-weight: 400;
+            margin-top: 90px;
+            margin-bottom: 30px;
+            margin-left: $principal-margin-left;
+          }
+          h2 {
+            font-size: 56px;
+            margin-left: $principal-margin-left;
+            font-weight: 100;
+          }
+        }
+      }
+      
+    //   button {
+    //     font-family: "Archivo", sans-serif !important;
+    //     border-radius: none;
+    //     color: $primary-font-color;
+    //     cursor: pointer;
+    //     letter-spacing: 2.8px;
+    //     margin-left: $principal-margin-left;
+    //     margin-top: 30px;
+    //     width: 200px;
+    //   }
+    //   .button__primary {
+    //     background-color: $primary-button-color;
+    //     border: none;
+    //     padding: 20px;
+    //     color: $primary-font-color;
+    //   }
+    //   .button__secondary {
+    //     background-color: $secondary-background;
+    //     border: 1px solid $primary-button-color;
+    //     padding: 19px;
+    //     margin-bottom: 70px;
+    //   }
+      
+    //   form {
+    //     margin-top: 20px;
+    //     margin-left: $principal-margin-left;
+      
+    //     fieldset {
+    //       border: none;
+      
+    //       p {
+    //         label {
+    //           font-family: "Roboto", sans-serif !important;
+    //           font-weight: 600;
+    //           font-size: 13px;
+    //         }
+    //         .form__input {
+    //           border-top: none;
+    //           border-left: none;
+    //           border-right: none;
+    //           border-bottom: 2px solid $primary-button-color;
+    //           background-color: $primary-background;
+    //           color: $primary-font-color;
+    //           margin-bottom: 20px;
+    //           margin-top: 5px;
+    //           padding: 7px;
+    //           width: 80%;
+      
+    //           &::placeholder {
+    //             color: #f2e7d491;
+    //             font-family: "Roboto", sans-serif !important;
+    //           }
+    //         }
+    //         img {
+    //           width: 12px;
+    //         }
+    //       }
+    //       button {
+    //         width: 250px;
+    //         height: 50px;
+    //         margin-bottom: 15px;
+    //         margin-left: 1px;
+    //       }
+    //     }
+    //   }
+
+
+
+
+
 }
