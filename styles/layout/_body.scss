@@ -60,155 +60,134 @@ button {
   margin-bottom: 70px;
 }
 
-form {
-  margin-top: 20px;
-  margin-left: $principal-margin-left;
+.form__container {
 
-  fieldset {
-    border: none;
-
-    p {
-      label {
-        font-family: "Roboto", sans-serif !important;
-        font-weight: 600;
-        font-size: 13px;
-      }
-      .form__input {
-        border-top: none;
-        border-left: none;
-        border-right: none;
-        border-bottom: 2px solid $primary-button-color;
-        background-color: $primary-background;
-        color: $primary-font-color;
-        margin-bottom: 20px;
-        margin-top: 5px;
-        padding: 7px;
-        width: 80%;
-
-        &::placeholder {
-          color: #f2e7d491;
-          font-family: "Roboto", sans-serif !important;
+    height: 270px;
+    form {
+        margin-top: 20px;
+        margin-left: $principal-margin-left;
+      
+        fieldset {
+          border: none;
+      
+          p {
+            label {
+              font-family: "Roboto", sans-serif !important;
+              font-weight: 600;
+              font-size: 13px;
+            }
+            .form__input {
+              border-top: none;
+              border-left: none;
+              border-right: none;
+              border-bottom: 2px solid $primary-button-color;
+              background-color: $primary-background;
+              color: $primary-font-color;
+              margin-bottom: 20px;
+              margin-top: 5px;
+              padding: 7px;
+              width: 80%;
+      
+              &::placeholder {
+                color: #f2e7d491;
+                font-family: "Roboto", sans-serif !important;
+              }
+            }
+            img {
+              width: 12px;
+            }
+          }
+          button {
+            width: 250px;
+            height: 50px;
+            margin-bottom: 15px;
+            margin-left: 1px;
+          }
         }
-      }
-      img {
-        width: 12px;
-      }
-    }
-    button {
-      width: 250px;
-      height: 50px;
-      margin-bottom: 15px;
-      margin-left: 1px;
-    }
-  }
 }
 
 
+}
+
 // Desk Responsive
 
-@media only screen and (min-width: 1000px) {
 
-    .main {
+@media only screen and (min-width: 1000px) {
+  .main {
+    .main__container {
+      .main__container-titles {
+        h4 {
+          font-family: "Archivo", sans-serif !important;
+          letter-spacing: 2.8px;
+          font-weight: 400;
+          margin-top: 150px;
+          margin-bottom: 30px;
+          margin-left: 20%;
+        }
+        h2 {
+          font-size: 56px;
+          margin-left: 20%;
+          font-weight: 100;
+        }
+      }
+    }
+  }
+
+  button {
+    margin-left: 20%;
+  }
+
+  .button__secondary {
+   
+    margin-left: 5% !important;
+  }
+
+  .form__container {
+    //   border: 1px solid yellow;
+      height: 150px;
+    form {
+        margin-left: 20%;
+        // border: 1px solid red;
+        height: 130px;
         width: 100%;
-        height: 100%;
-        background-color: $primary-background;
-        color: $primary-font-color;
-        //   position: fixed;
-      
-        .main__container {
-          background-color: $secondary-background;
-          width: 100%;
-          height: 68%;
-          // position: fixed;
-          .main__container-titles {
-            // margin-top: 8%;
-            border: 1px solid transparent;
+
+    
+        fieldset {
+          border: none;
+          display: flex;
+          width: 90%;
+        //   border: 1px solid blue;
+
+    
+          p {
+              margin-left: 60px;
+            label {
+         
+              font-size: 13px;
+            }
+            .form__input {
+           
+              padding: 7px;
+              width: 230px;
+    
+              &::placeholder {
+                color: #f2e7d491;
+                font-family: "Roboto", sans-serif !important;
+              }
+            }
+            img {
+              width: 12px;
+            }
           }
-      
-          h4 {
-            font-family: "Archivo", sans-serif !important;
-            letter-spacing: 2.8px;
-            font-weight: 400;
-            margin-top: 90px;
-            margin-bottom: 30px;
-            margin-left: $principal-margin-left;
-          }
-          h2 {
-            font-size: 56px;
-            margin-left: $principal-margin-left;
-            font-weight: 100;
+          button {
+            width: 250px;
+            height: 50px;
+            margin-bottom: 15px;
+            margin-left: 20%;
           }
         }
       }
-      
-    //   button {
-    //     font-family: "Archivo", sans-serif !important;
-    //     border-radius: none;
-    //     color: $primary-font-color;
-    //     cursor: pointer;
-    //     letter-spacing: 2.8px;
-    //     margin-left: $principal-margin-left;
-    //     margin-top: 30px;
-    //     width: 200px;
-    //   }
-    //   .button__primary {
-    //     background-color: $primary-button-color;
-    //     border: none;
-    //     padding: 20px;
-    //     color: $primary-font-color;
-    //   }
-    //   .button__secondary {
-    //     background-color: $secondary-background;
-    //     border: 1px solid $primary-button-color;
-    //     padding: 19px;
-    //     margin-bottom: 70px;
-    //   }
-      
-    //   form {
-    //     margin-top: 20px;
-    //     margin-left: $principal-margin-left;
-      
-    //     fieldset {
-    //       border: none;
-      
-    //       p {
-    //         label {
-    //           font-family: "Roboto", sans-serif !important;
-    //           font-weight: 600;
-    //           font-size: 13px;
-    //         }
-    //         .form__input {
-    //           border-top: none;
-    //           border-left: none;
-    //           border-right: none;
-    //           border-bottom: 2px solid $primary-button-color;
-    //           background-color: $primary-background;
-    //           color: $primary-font-color;
-    //           margin-bottom: 20px;
-    //           margin-top: 5px;
-    //           padding: 7px;
-    //           width: 80%;
-      
-    //           &::placeholder {
-    //             color: #f2e7d491;
-    //             font-family: "Roboto", sans-serif !important;
-    //           }
-    //         }
-    //         img {
-    //           width: 12px;
-    //         }
-    //       }
-    //       button {
-    //         width: 250px;
-    //         height: 50px;
-    //         margin-bottom: 15px;
-    //         margin-left: 1px;
-    //       }
-    //     }
-    //   }
+  }
 
-
-
-
-
+  
 }

@@ -51,19 +51,22 @@ button {
   margin-bottom: 70px;
 }
 
-form {
+.form__container {
+  height: 270px;
+}
+.form__container form {
   margin-top: 20px;
   margin-left: 20px;
 }
-form fieldset {
+.form__container form fieldset {
   border: none;
 }
-form fieldset p label {
+.form__container form fieldset p label {
   font-family: "Roboto", sans-serif !important;
   font-weight: 600;
   font-size: 13px;
 }
-form fieldset p .form__input {
+.form__container form fieldset p .form__input {
   border-top: none;
   border-left: none;
   border-right: none;
@@ -75,14 +78,14 @@ form fieldset p .form__input {
   padding: 7px;
   width: 80%;
 }
-form fieldset p .form__input::placeholder {
+.form__container form fieldset p .form__input::placeholder {
   color: rgba(242, 231, 212, 0.568627451);
   font-family: "Roboto", sans-serif !important;
 }
-form fieldset p img {
+.form__container form fieldset p img {
   width: 12px;
 }
-form fieldset button {
+.form__container form fieldset button {
   width: 250px;
   height: 50px;
   margin-bottom: 15px;
@@ -90,34 +93,69 @@ form fieldset button {
 }
 
 @media only screen and (min-width: 1000px) {
-  .main {
-    width: 100%;
-    height: 100%;
-    background-color: #222222;
-    color: #ffffff;
-  }
-  .main .main__container {
-    background-color: #333333;
-    width: 100%;
-    height: 68%;
-  }
-  .main .main__container .main__container-titles {
-    border: 1px solid transparent;
-  }
-  .main .main__container h4 {
+  .main .main__container .main__container-titles h4 {
     font-family: "Archivo", sans-serif !important;
     letter-spacing: 2.8px;
     font-weight: 400;
-    margin-top: 90px;
+    margin-top: 150px;
     margin-bottom: 30px;
-    margin-left: 20px;
+    margin-left: 20%;
   }
-  .main .main__container h2 {
+  .main .main__container .main__container-titles h2 {
     font-size: 56px;
-    margin-left: 20px;
+    margin-left: 20%;
     font-weight: 100;
   }
+
+  button {
+    margin-left: 20%;
+  }
+
+  .button__secondary {
+    margin-left: 5% !important;
+  }
+
+  .form__container {
+    height: 150px;
+  }
+  .form__container form {
+    margin-left: 20%;
+    height: 130px;
+    width: 100%;
+  }
+  .form__container form fieldset {
+    border: none;
+    display: flex;
+    width: 90%;
+  }
+  .form__container form fieldset p {
+    margin-left: 60px;
+  }
+  .form__container form fieldset p label {
+    font-size: 13px;
+  }
+  .form__container form fieldset p .form__input {
+    padding: 7px;
+    width: 230px;
+  }
+  .form__container form fieldset p .form__input::placeholder {
+    color: rgba(242, 231, 212, 0.568627451);
+    font-family: "Roboto", sans-serif !important;
+  }
+  .form__container form fieldset p img {
+    width: 12px;
+  }
+  .form__container form fieldset button {
+    width: 250px;
+    height: 50px;
+    margin-bottom: 15px;
+    margin-left: 20%;
+  }
 }
+.navbar__header h6 {
+  display: none;
+}
+
 .navbar {
   display: inline-block;
   width: 100%;
@@ -168,6 +206,13 @@ form fieldset button {
 }
 
 @media only screen and (min-width: 1000px) {
+  .navbar__header h6 {
+    display: flex;
+    height: 15px;
+    color: white;
+    font-family: "Roboto", sans-serif !important;
+  }
+
   .navbar__header {
     background-color: #222222;
     display: flex;
@@ -181,14 +226,7 @@ form fieldset button {
     z-index: 2;
     background-color: white !important;
     margin: auto;
-    margin-top: 30px;
-  }
-  .navbar__header .navbar .navbar__container {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 15px;
-    width: 100%;
-    height: 50%;
+    margin-top: 40px;
   }
   .navbar__header .navbar .navbar__categories {
     display: inline-flex;
@@ -224,20 +262,14 @@ form fieldset button {
     height: 120px;
     margin-left: -20px;
   }
-  .navbar__header .navbar .navbar__hamburger {
-    display: none;
-    width: 20px;
-    height: 15px;
-    margin: auto;
-    background-image: url(../../assets/nav/hamburger-icon.png);
-    cursor: pointer;
-    border: none;
-  }
   .navbar__header .navbar .navbar__person,
 .navbar__header .navbar .navbar__search {
     border: 1px solid rgba(171, 167, 167, 0.459);
     padding: 10px;
     width: 35px;
+  }
+  .navbar__header .navbar .navbar__hamburger {
+    display: none;
   }
 }
 html,
