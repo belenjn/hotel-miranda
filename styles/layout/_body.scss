@@ -1,22 +1,25 @@
 $primary-background: #222222;
 $secondary-background: #333333;
+$terciary-background: #F9F9F9;
 $primary-button-color: #bead8e;
 $primary-font-color: #ffffff;
+$secondary-font-color: #777777;
 $principal-margin-left: 20px;
 
-.main {
+
+.header {
   width: 100%;
   height: 100%;
   background-color: $primary-background;
   color: $primary-font-color;
   //   position: fixed;
 
-  .main__container {
+  .header__container {
     background-color: $secondary-background;
     width: 100%;
     height: 68%;
     // position: fixed;
-    .main__container-titles {
+    .header__container-titles {
       // margin-top: 8%;
       border: 1px solid transparent;
     }
@@ -109,13 +112,44 @@ button {
 
 }
 
+.main__container {
+    .main__container--background {
+        background-color: $terciary-background;
+        h4 {
+            font-family: "Archivo", sans-serif !important;
+            letter-spacing: 2.8px;
+            font-weight: 400;
+            margin-top: 90px;
+            margin-bottom: 30px;
+            margin-left: $principal-margin-left;
+          }
+          h2 {
+            font-size: 56px;
+            margin-left: $principal-margin-left;
+            font-weight: 100;
+            margin-bottom: 10px;
+            color: #111111;
+          }
+
+          p {
+            color: $secondary-font-color;
+            font-family: "Archivo", sans-serif !important;
+            margin-left: $principal-margin-left;
+            margin-right: $principal-margin-left;
+            text-align: justify;
+            line-height: 1.5;
+
+          }
+    }
+}
+
 // Desk Responsive
 
 
 @media only screen and (min-width: 1000px) {
-  .main {
-    .main__container {
-      .main__container-titles {
+  .header {
+    .header__container {
+      .header__container-titles {
         h4 {
           font-family: "Archivo", sans-serif !important;
           letter-spacing: 2.8px;
