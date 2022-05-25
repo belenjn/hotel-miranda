@@ -9,7 +9,7 @@ $principal-margin-left: 20px;
   height: 100%;
   background-color: $primary-background;
   color: $primary-font-color;
-  position: fixed;
+  //   position: fixed;
 
   .main__container {
     background-color: $secondary-background;
@@ -17,9 +17,9 @@ $principal-margin-left: 20px;
     height: 68%;
     // position: fixed;
     .main__container-titles {
-        // margin-top: 8%;
-        border: 1px solid transparent;
-      }
+      // margin-top: 8%;
+      border: 1px solid transparent;
+    }
 
     h4 {
       font-family: "Archivo", sans-serif !important;
@@ -33,8 +33,6 @@ $principal-margin-left: 20px;
       font-size: 56px;
       margin-left: $principal-margin-left;
       font-weight: 100;
-
-
     }
     button {
       font-family: "Archivo", sans-serif !important;
@@ -45,7 +43,6 @@ $principal-margin-left: 20px;
       margin-left: $principal-margin-left;
       margin-top: 30px;
       width: 200px;
-
     }
     .button__primary {
       background-color: $primary-button-color;
@@ -56,10 +53,40 @@ $principal-margin-left: 20px;
       background-color: $secondary-background;
       border: 1px solid $primary-button-color;
       padding: 19px;
+      margin-bottom: 70px;
     }
+  }
+}
 
-    form {
+form {
+    margin-top: 20px;
+    margin-left: $principal-margin-left;
+  fieldset {
+    border: none;
+
+    p {
+      label {
+        font-family: "Roboto", sans-serif !important;
+        font-weight: 600;
+        font-size: 13px;
+
+       
+      }
+      .form__input {
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 2px solid $primary-button-color;
+        background-color: $primary-background;
         color: $primary-font-color;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        padding: 7px;
+        width: 80%;
+      }
+      img {
+          width: 14px;
+      }
     }
   }
 }

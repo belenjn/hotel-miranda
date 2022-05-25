@@ -3,7 +3,6 @@
   height: 100%;
   background-color: #222222;
   color: #ffffff;
-  position: fixed;
 }
 .main .main__container {
   background-color: #333333;
@@ -45,9 +44,35 @@
   background-color: #333333;
   border: 1px solid #bead8e;
   padding: 19px;
+  margin-bottom: 70px;
 }
-.main .main__container form {
+
+form {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+form fieldset {
+  border: none;
+}
+form fieldset p label {
+  font-family: "Roboto", sans-serif !important;
+  font-weight: 600;
+  font-size: 13px;
+}
+form fieldset p .form__input {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid #bead8e;
+  background-color: #222222;
   color: #ffffff;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  padding: 7px;
+  width: 80%;
+}
+form fieldset p img {
+  width: 14px;
 }
 
 .navbar {

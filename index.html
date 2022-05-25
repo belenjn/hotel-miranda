@@ -22,6 +22,9 @@
       href="https://fonts.googleapis.com/css2?family=Archivo:wght@100&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="./styles/main.css" />
     <title>Hotel Miranda</title>
   </head>
@@ -33,7 +36,6 @@
           alt="boton hamburguesa"
           class="navbar__hamburger"
         />
-        
       </div>
       <div class="navbar__container-logo">
         <img
@@ -56,29 +58,45 @@
     <header class="main">
       <div class="main__container">
         <div class="main__container-titles">
-           <h4>THE ULTIMATE LUXURY EXPERIENCE</h4>
-        <h2>The Perfect Base For You</h2>
+          <h4>THE ULTIMATE LUXURY EXPERIENCE</h4>
+          <h2>The Perfect Base For You</h2>
         </div>
-       
+
         <button class="button__primary">TAKE A TOUR</button>
         <button class="button__secondary">LEARN MORE</button>
-
       </div>
-    
- <form>
-      <fieldset>
-        <img/>
-        <p>
-          <input type="text" name="size" id="size_1" value="24th march 2020">
-        </p>
-        <p>
-          <input type="text" name="size" id="size_2" value="30th march 2020">
-        </p>
-       
-      </fieldset>
-     </form>
-    
-    </header>
 
+      <form>
+        <fieldset>
+          <p>
+            <label for="size_1">Arrival Date</label>
+            <br />
+            <img
+            src="./assets/form/Group.png"
+            alt="calendar icon"
+            />
+            <input
+              class="form__input"
+              type="text"
+              placeholder="24th march 2020"
+            />
+          </p>
+          <p>
+            <label for="size_2">LeDeparture Date</label>
+            <br />
+            <img
+            src="./assets/form/Group.png"
+            alt="calendar icon"
+            />
+            <input
+              class="form__input"
+              type="text"
+              placeholder="30th march 2020"
+            >
+            </input>
+          </p>
+        </fieldset>
+      </form>
+    </header>
   </body>
 </html>
