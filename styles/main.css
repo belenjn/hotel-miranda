@@ -94,11 +94,13 @@ button {
 
 .main__container .main__container--background {
   background-color: #F9F9F9;
+  margin-top: 70px;
 }
 .main__container .main__container--background h4 {
+  color: #777777;
   font-family: "Archivo", sans-serif !important;
   letter-spacing: 2.8px;
-  font-weight: 400;
+  font-weight: 500;
   margin-top: 90px;
   margin-bottom: 30px;
   margin-left: 20px;

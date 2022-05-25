@@ -115,10 +115,13 @@ button {
 .main__container {
     .main__container--background {
         background-color: $terciary-background;
+        margin-top: 70px;
+
         h4 {
+            color: $secondary-font-color;
             font-family: "Archivo", sans-serif !important;
             letter-spacing: 2.8px;
-            font-weight: 400;
+            font-weight: 500;
             margin-top: 90px;
             margin-bottom: 30px;
             margin-left: $principal-margin-left;
