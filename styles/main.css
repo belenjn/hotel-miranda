@@ -93,7 +93,7 @@ button {
 }
 
 .main__container .main__container--background {
-  background-color: #F9F9F9;
+  background-color: #f9f9f9;
   margin-top: 70px;
 }
 .main__container .main__container--background h4 {
@@ -121,7 +121,42 @@ button {
   line-height: 1.5;
 }
 .main__container .main__container--background .button__primary {
-  margin-bottom: 400px;
+  margin-bottom: 70px;
+}
+.main__container .main__container--team {
+  display: grid;
+}
+.main__container .main__container--team img {
+  z-index: 3;
+  margin: auto;
+}
+.main__container .main__container--team .main__container--strong-team {
+  background-image: url(../../assets/team/team-light.png);
+  background-repeat: no-repeat;
+  background-position: 100% 10%;
+  background-size: 55% 35%;
+  width: 270px;
+  height: 300px;
+  margin: auto;
+  margin-bottom: 50px !important;
+}
+.main__container .main__container--team .main__container--strong-team h2 {
+  text-align: center;
+  font-family: "Old Standard TT", serif !important;
+  font-weight: 100;
+  font-size: 30px;
+  margin-top: 20px;
+}
+.main__container .main__container--team .main__container--strong-team p {
+  text-align: center;
+  font-family: "Roboto", sans-serif !important;
+  font-size: 16px;
+  margin-top: 5px;
+}
+.main__container .main__container--team .main__container--strong-team .logo-team {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
 }
 
 @media only screen and (min-width: 1000px) {
