@@ -109,49 +109,57 @@ button {
 }
 
 .main__container {
-    .main__container--text {
-        background-color: $terciary-background;
-        margin-bottom: 50px;
-        margin-top: 50px;
+  display: flex;
+  flex-direction: column;
 
-        & h4 {
-            color: $secondary-font-color;
-            font-family: "Archivo", sans-serif !important;
-            letter-spacing: 2.8px;
-            font-weight: 500;
-            margin-left: $principal-margin-left;
-            margin-top: 50px;
-        
-          }
+  .main__container--text {
+    display: flex;
+    flex-direction: column;
+    background-color: $terciary-background;
+    margin-top: 50px;
+    padding: 5px;
+    // border: 1px solid green;
 
-          & h1 {
-            font-size: 50px;
-            margin-left: $principal-margin-left;
-            font-weight: 100;
-            margin-bottom: 10px;
-            margin-top: 50px;
-            color: #111111;
-          }
-      
-          & p {
-            color: $secondary-font-color;
-            font-family: "Archivo", sans-serif !important;
-            margin-left: $principal-margin-left;
-            margin-right: $principal-margin-left;
-            text-align: left;
-            line-height: 1.5;
-            font-size: 13px;
-          }
+    h4 {
+      color: $secondary-font-color;
+      font-family: "Archivo", sans-serif !important;
+      letter-spacing: 2.8px;
+      font-weight: 500;
+      margin-left: $principal-margin-left;
+    }
 
-          & .button__primary {
-            margin-bottom: 50px;
-          }
-      }
+    h1 {
+      font-size: 50px;
+      margin-left: $principal-margin-left;
+      font-weight: 100;
+      margin-bottom: 10px;
+      margin-top: 50px;
+      color: #111111;
+    }
+
+    p {
+      color: $secondary-font-color;
+      font-family: "Archivo", sans-serif !important;
+      margin-left: $principal-margin-left;
+      margin-right: $principal-margin-left;
+      text-align: left;
+      line-height: 1.5;
+      font-size: 13px;
+    }
+
+    .button__primary {
+      margin-bottom: 50px;
+    }
+  }
   .main__container--photos {
-     
+    display: flex;  
+    flex-direction: column; 
+    //  border: 1px solid pink;
+    margin-top: 30px;
 
     .fake-photo {
-      border: 1px solid red;
+      width: 100%;
+      margin: auto;
 
       & img {
         display: flex;
@@ -159,7 +167,7 @@ button {
       }
     }
     .strong__team {
-      border: 1px solid green;
+      //   border: 1px solid green;
       background-image: url(../../assets/team/team-light.png);
       background-repeat: no-repeat;
       background-position: 100% 10%;
@@ -193,7 +201,7 @@ button {
   }
 
   .luxury__room {
-    border: 1px solid yellow;
+    // border: 1px solid yellow;
     display: flex;
     flex-direction: column;
     margin: auto;
@@ -201,6 +209,8 @@ button {
     height: 300px;
     background-color: #222222;
     color: $primary-font-color;
+    margin-top: 20px;
+
     & img {
       display: flex;
       margin: auto;
@@ -297,120 +307,41 @@ button {
       }
     }
   }
-}
 
 
 .main__container {
-    .main__container--text {
-        background-color: $terciary-background;
-        margin-bottom: 50px;
-        margin-top: 50px;
-
-         h4 {
-            color: $secondary-font-color;
-            font-family: "Archivo", sans-serif !important;
-            letter-spacing: 2.8px;
-            font-weight: 500;
-            margin-left: $principal-margin-left;
-        
-          }
-
-           h1 {
-            font-size: 50px;
-            margin-left: $principal-margin-left;
-            font-weight: 100;
-            margin-bottom: 10px;
-            margin-top: 50px;
-            color: #111111;
-          }
-      
-           p {
-            color: $secondary-font-color;
-            font-family: "Archivo", sans-serif !important;
-            margin-left: $principal-margin-left;
-            margin-right: $principal-margin-left;
-            text-align: left;
-            line-height: 1.5;
-            font-size: 13px;
-          }
-
-          .button__primary {
-            margin-bottom: 50px;
-          }
-      }
-  .main__container--photos {
-     
-
-    .fake-photo {
-      border: 1px solid red;
-
-      & img {
-        display: flex;
-        margin: auto;
-      }
-    }
-    .strong__team {
-      border: 1px solid green;
-      background-image: url(../../assets/team/team-light.png);
-      background-repeat: no-repeat;
-      background-position: 100% 10%;
-      background-size: 55% 35%;
-      display: flex;
-      flex-direction: column;
-      margin: auto;
-      margin-bottom: 50px;
-      width: 270px;
-      height: 300px;
-
-      .logo {
-        display: flex;
-        margin: auto;
-      }
-      h2 {
-        text-align: center;
-        font-family: "Old Standard TT", serif !important;
-        font-weight: 100;
-        font-size: 30px;
-        margin-bottom: 20px;
-      }
-
-      p {
-        text-align: center;
-        font-family: "Roboto", sans-serif !important;
-        font-size: 16px;
-        margin-bottom: 80px;
-      }
-    }
-  }
-
-  .luxury__room {
-    border: 1px solid yellow;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 50px;
+    width: 90%;
     margin: auto;
-    width: 270px;
-    height: 300px;
-    background-color: #222222;
-    color: $primary-font-color;
-    & img {
-      display: flex;
-      margin: auto;
-      margin-top: 50px;
+    margin-top: 100px;
+    // border: 1px solid blue;
+
+    .main__container--text {
+        display: grid;
+        background-color: $terciary-background;
+        grid-column: 2;
+        // border: 1px solid green;
+        margin: auto;
+
+        button {
+            margin-left: $principal-margin-left;
+        }
     }
 
-    h2 {
-      text-align: center;
-      font-family: "Old Standard TT", serif !important;
-      font-weight: 100;
-      font-size: 30px;
-      margin-bottom: 20px;
+    .main__container--photos {
+        display: grid;
+        grid-row: 1;
+        grid-template-columns: 50% 50%;
+        // border: 1px solid red;
+        margin: auto;
+        gap: 10px;
+        width: 100%;
+
+    
+
     }
 
-    p {
-      text-align: center;
-      font-family: "Roboto", sans-serif !important;
-      font-size: 16px;
-      margin-bottom: 60px;
-    }
-  }
+}
 }
