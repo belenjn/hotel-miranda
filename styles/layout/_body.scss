@@ -176,11 +176,40 @@ button {
         margin-top: 5px;
       }
 
-      .logo-team {
+      .logo {
         display: flex;
         justify-content: center;
         margin-top: 50px;
       }
+    }
+    .main__container--luxury-room {
+        // border: 1px solid red;
+        background-color: #222222;
+        color: $primary-font-color;
+        width: 270px;
+        height: 300px;
+        margin: auto;
+        margin-bottom: 50px !important;
+        h2 {
+            text-align: center;
+            font-family: "Old Standard TT", serif !important;
+            font-weight: 100;
+            font-size: 30px;
+            margin-top: 20px;
+          }
+    
+          p {
+            text-align: center;
+            font-family: "Roboto", sans-serif !important;
+            font-size: 16px;
+            margin-top: 5px;
+          }
+
+          .logo {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+          }
     }
   }
 }

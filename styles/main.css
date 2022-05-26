@@ -153,7 +153,33 @@ button {
   font-size: 16px;
   margin-top: 5px;
 }
-.main__container .main__container--team .main__container--strong-team .logo-team {
+.main__container .main__container--team .main__container--strong-team .logo {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.main__container .main__container--team .main__container--luxury-room {
+  background-color: #222222;
+  color: #ffffff;
+  width: 270px;
+  height: 300px;
+  margin: auto;
+  margin-bottom: 50px !important;
+}
+.main__container .main__container--team .main__container--luxury-room h2 {
+  text-align: center;
+  font-family: "Old Standard TT", serif !important;
+  font-weight: 100;
+  font-size: 30px;
+  margin-top: 20px;
+}
+.main__container .main__container--team .main__container--luxury-room p {
+  text-align: center;
+  font-family: "Roboto", sans-serif !important;
+  font-size: 16px;
+  margin-top: 5px;
+}
+.main__container .main__container--team .main__container--luxury-room .logo {
   display: flex;
   justify-content: center;
   margin-top: 50px;
