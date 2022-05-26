@@ -109,140 +109,117 @@ button {
 }
 
 .main__container {
-  display: flex;
-  flex-direction: column;
-  // border: 1px solid red;
-  width: 100%;
-//   border: 1px solid green;
+    .main__container--text {
+        background-color: $terciary-background;
+        margin-bottom: 50px;
+        margin-top: 50px;
 
-  .main__container--background {
-    background-color: $terciary-background;
-    // border: 1px solid red;
-    width: 370px;
-    margin: auto;
-    margin-top: 80px;
+        & h4 {
+            color: $secondary-font-color;
+            font-family: "Archivo", sans-serif !important;
+            letter-spacing: 2.8px;
+            font-weight: 500;
+            margin-left: $principal-margin-left;
+            margin-top: 50px;
+        
+          }
 
-    h4 {
-      color: $secondary-font-color;
-      font-family: "Archivo", sans-serif !important;
-      letter-spacing: 2.8px;
-      font-weight: 500;
-      margin-bottom: 30px;
-      margin-left: $principal-margin-left;
-      margin-top: 50px;
-    }
-    h2 {
-      font-size: 45px;
-      font-weight: 100;
-      margin-bottom: 10px;
-      color: #111111;
-      margin-left: $principal-margin-left;
-    }
-    p {
-      color: $secondary-font-color;
-      font-family: "Archivo", sans-serif !important;
-      margin-right: $principal-margin-left;
-      text-align: left;
-      line-height: 1.5;
-      font-size: 12px;
-      font-weight: 100;
-      margin-left: $principal-margin-left;
-    }
+          & h1 {
+            font-size: 50px;
+            margin-left: $principal-margin-left;
+            font-weight: 100;
+            margin-bottom: 10px;
+            margin-top: 50px;
+            color: #111111;
+          }
+      
+          & p {
+            color: $secondary-font-color;
+            font-family: "Archivo", sans-serif !important;
+            margin-left: $principal-margin-left;
+            margin-right: $principal-margin-left;
+            text-align: left;
+            line-height: 1.5;
+            font-size: 13px;
+          }
 
-    .button__primary {
-      margin-bottom: 70px;
-      margin-left: $principal-margin-left;
-    }
-  }
-
-  .main__container--strong-team {
-    // border: 1px solid red;
-    display: flex;
-    flex-direction: column;
-    background-image: url(../../assets/team/team-light.png);
-    background-repeat: no-repeat;
-    background-position: 100% 10%;
-    background-size: 55% 35%;
-    // border: 1px solid red;
-    width: 270px;
-    height: 300px;
-    margin: auto;
-    margin-bottom: 50px;
-    margin-top: -20px !important;
-
-
-    h2 {
-      text-align: center;
-      font-family: "Old Standard TT", serif !important;
-      font-weight: 100;
-      font-size: 32px;
-      margin-bottom: 10px;
-    }
-
-    p {
-      text-align: center;
-      font-family: "Roboto", sans-serif !important;
-      font-size: 16px;
-      margin-bottom: 80px;
-    }
-
-    .logo {
-      display: flex;
-      justify-content: center;
-      margin-top: 50px !important;
-    }
-
-    img {
-      margin: auto;
-    }
-  }
-  .fake-photo {
-    // border: 1px solid yellow;
-    width: 270px;
-    height: 300px;
-    margin: auto;
-    margin-bottom: 20px;
-  }
-
-  .main__container--luxury-room {
-    background-color: #222222;
-    color: $primary-font-color;
-    width: 270px;
-    height: 300px;
-    margin: auto;
-    margin-top: -20px !important;
-
-    h2 {
-      text-align: center;
-      font-family: "Old Standard TT", serif !important;
-      font-weight: 100;
-      font-size: 32px;
-      margin-top: 20px;
-      margin-bottom: 10px;
-
-    }
-
-    p {
-      text-align: center;
-      font-family: "Roboto", sans-serif !important;
-      font-size: 16px;
-      margin-top: 5px;
-    }
+          & .button__primary {
+            margin-bottom: 50px;
+          }
+      }
+  .main__container--photos {
+     
 
     .fake-photo {
-        border: 1px solid yellow;
-        width: 270px;
-        height: 300px;
+      border: 1px solid red;
+
+      & img {
+        display: flex;
         margin: auto;
       }
-  
-    img {
-        margin: auto;
-      }
-    .logo {
+    }
+    .strong__team {
+      border: 1px solid green;
+      background-image: url(../../assets/team/team-light.png);
+      background-repeat: no-repeat;
+      background-position: 100% 10%;
+      background-size: 55% 35%;
       display: flex;
-      justify-content: center;
-      margin-top: 50px !important;
+      flex-direction: column;
+      margin: auto;
+      margin-bottom: 50px;
+      width: 270px;
+      height: 300px;
+
+      .logo {
+        display: flex;
+        margin: auto;
+      }
+      h2 {
+        text-align: center;
+        font-family: "Old Standard TT", serif !important;
+        font-weight: 100;
+        font-size: 30px;
+        margin-bottom: 20px;
+      }
+
+      p {
+        text-align: center;
+        font-family: "Roboto", sans-serif !important;
+        font-size: 16px;
+        margin-bottom: 80px;
+      }
+    }
+  }
+
+  .luxury__room {
+    border: 1px solid yellow;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 270px;
+    height: 300px;
+    background-color: #222222;
+    color: $primary-font-color;
+    & img {
+      display: flex;
+      margin: auto;
+      margin-top: 50px;
+    }
+
+    h2 {
+      text-align: center;
+      font-family: "Old Standard TT", serif !important;
+      font-weight: 100;
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      text-align: center;
+      font-family: "Roboto", sans-serif !important;
+      font-size: 16px;
+      margin-bottom: 60px;
     }
   }
 }
@@ -324,141 +301,116 @@ button {
 
 
 .main__container {
-    display: flex;
-    flex-direction: column;
-    // border: 1px solid red;
-    width: 100%;
-  //   border: 1px solid green;
-  
-    .main__container--background {
-      background-color: $terciary-background;
-      // border: 1px solid red;
-      width: 370px;
-      margin: auto;
-      margin-top: 80px;
-  
-      h4 {
-        color: $secondary-font-color;
-        font-family: "Archivo", sans-serif !important;
-        letter-spacing: 2.8px;
-        font-weight: 500;
-        margin-bottom: 30px;
-        margin-left: $principal-margin-left;
+    .main__container--text {
+        background-color: $terciary-background;
+        margin-bottom: 50px;
         margin-top: 50px;
+
+         h4 {
+            color: $secondary-font-color;
+            font-family: "Archivo", sans-serif !important;
+            letter-spacing: 2.8px;
+            font-weight: 500;
+            margin-left: $principal-margin-left;
+        
+          }
+
+           h1 {
+            font-size: 50px;
+            margin-left: $principal-margin-left;
+            font-weight: 100;
+            margin-bottom: 10px;
+            margin-top: 50px;
+            color: #111111;
+          }
+      
+           p {
+            color: $secondary-font-color;
+            font-family: "Archivo", sans-serif !important;
+            margin-left: $principal-margin-left;
+            margin-right: $principal-margin-left;
+            text-align: left;
+            line-height: 1.5;
+            font-size: 13px;
+          }
+
+          .button__primary {
+            margin-bottom: 50px;
+          }
       }
-      h2 {
-        font-size: 45px;
-        font-weight: 100;
-        margin-bottom: 10px;
-        color: #111111;
-        margin-left: $principal-margin-left;
-      }
-      p {
-        color: $secondary-font-color;
-        font-family: "Archivo", sans-serif !important;
-        margin-right: $principal-margin-left;
-        text-align: left;
-        line-height: 1.5;
-        font-size: 12px;
-        font-weight: 100;
-        margin-left: $principal-margin-left;
-      }
-  
-      .button__primary {
-        margin-bottom: 70px;
-        margin-left: $principal-margin-left;
+  .main__container--photos {
+     
+
+    .fake-photo {
+      border: 1px solid red;
+
+      & img {
+        display: flex;
+        margin: auto;
       }
     }
-  
-    // .main__container--strong-team {
-    //   // border: 1px solid red;
-    //   display: flex;
-    //   flex-direction: column;
-    //   background-image: url(../../assets/team/team-light.png);
-    //   background-repeat: no-repeat;
-    //   background-position: 100% 10%;
-    //   background-size: 55% 35%;
-    //   // border: 1px solid red;
-    //   width: 270px;
-    //   height: 300px;
-    //   margin: auto;
-    //   margin-bottom: 50px;
-    //   margin-top: -20px !important;
-  
-  
-    //   h2 {
-    //     text-align: center;
-    //     font-family: "Old Standard TT", serif !important;
-    //     font-weight: 100;
-    //     font-size: 32px;
-    //     margin-bottom: 10px;
-    //   }
-  
-    //   p {
-    //     text-align: center;
-    //     font-family: "Roboto", sans-serif !important;
-    //     font-size: 16px;
-    //     margin-bottom: 80px;
-    //   }
-  
-    //   .logo {
-    //     display: flex;
-    //     justify-content: center;
-    //     margin-top: 50px !important;
-    //   }
-  
-    //   img {
-    //     margin: auto;
-    //   }
-    // }
-    // .fake-photo {
-    //   // border: 1px solid yellow;
-    //   width: 270px;
-    //   height: 300px;
-    //   margin: auto;
-    //   margin-bottom: 20px;
-    // }
-  
-    // .main__container--luxury-room {
-    //   background-color: #222222;
-    //   color: $primary-font-color;
-    //   width: 270px;
-    //   height: 300px;
-    //   margin: auto;
-    //   margin-top: -20px !important;
-  
-    //   h2 {
-    //     text-align: center;
-    //     font-family: "Old Standard TT", serif !important;
-    //     font-weight: 100;
-    //     font-size: 32px;
-    //     margin-top: 20px;
-    //     margin-bottom: 10px;
-  
-    //   }
-  
-    //   p {
-    //     text-align: center;
-    //     font-family: "Roboto", sans-serif !important;
-    //     font-size: 16px;
-    //     margin-top: 5px;
-    //   }
-  
-    //   .fake-photo {
-    //       border: 1px solid yellow;
-    //       width: 270px;
-    //       height: 300px;
-    //       margin: auto;
-    //     }
-    
-    //   img {
-    //       margin: auto;
-    //     }
-    //   .logo {
-    //     display: flex;
-    //     justify-content: center;
-    //     margin-top: 50px !important;
-    //   }
-    // }
+    .strong__team {
+      border: 1px solid green;
+      background-image: url(../../assets/team/team-light.png);
+      background-repeat: no-repeat;
+      background-position: 100% 10%;
+      background-size: 55% 35%;
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+      margin-bottom: 50px;
+      width: 270px;
+      height: 300px;
+
+      .logo {
+        display: flex;
+        margin: auto;
+      }
+      h2 {
+        text-align: center;
+        font-family: "Old Standard TT", serif !important;
+        font-weight: 100;
+        font-size: 30px;
+        margin-bottom: 20px;
+      }
+
+      p {
+        text-align: center;
+        font-family: "Roboto", sans-serif !important;
+        font-size: 16px;
+        margin-bottom: 80px;
+      }
+    }
   }
 
+  .luxury__room {
+    border: 1px solid yellow;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 270px;
+    height: 300px;
+    background-color: #222222;
+    color: $primary-font-color;
+    & img {
+      display: flex;
+      margin: auto;
+      margin-top: 50px;
+    }
+
+    h2 {
+      text-align: center;
+      font-family: "Old Standard TT", serif !important;
+      font-weight: 100;
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      text-align: center;
+      font-family: "Roboto", sans-serif !important;
+      font-size: 16px;
+      margin-bottom: 60px;
+    }
+  }
+}
