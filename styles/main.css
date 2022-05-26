@@ -245,6 +245,43 @@ button {
     margin-left: 20%;
   }
 }
+.main__container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 100px;
+  width: 80%;
+  margin: auto;
+}
+.main__container .main__container--team {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 40px;
+  margin-top: 120px;
+}
+.main__container .main__container--team img {
+  margin: auto;
+  margin-top: -5px !important;
+}
+.main__container .main__container--team .main__container--strong-team {
+  margin: auto;
+  margin-bottom: 10px !important;
+}
+.main__container .main__container--team .main__container--strong-team .logo {
+  margin-top: 50px !important;
+}
+.main__container .main__container--team .main__container--luxury-room {
+  margin-top: 10px !important;
+}
+.main__container .main__container--team .main__container--luxury-room .logo {
+  margin-top: 50px !important;
+}
+.main__container .main__container--background {
+  margin-top: 110px;
+}
+.main__container .main__container--background .button__primary {
+  margin-left: 20px !important;
+}
+
 .navbar__header h6 {
   display: none;
 }
