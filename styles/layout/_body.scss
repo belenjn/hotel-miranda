@@ -109,46 +109,59 @@ button {
 }
 
 .main__container {
-  .main__container--background {
-    background-color: $terciary-background;
-    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    // border: 1px solid red;
+    width: 100%;
+    border: 1px solid green;
 
-    h4 {
-      color: $secondary-font-color;
-      font-family: "Archivo", sans-serif !important;
-      letter-spacing: 2.8px;
-      font-weight: 500;
-      margin-top: 90px;
-      margin-bottom: 30px;
-      margin-left: $principal-margin-left;
-    }
-    h2 {
-      font-size: 56px;
-      margin-left: $principal-margin-left;
-      font-weight: 100;
-      margin-bottom: 10px;
-      color: #111111;
-    }
+    .main__container--background {
+        background-color: $terciary-background;
+        // border: 1px solid red;
+        width: 370px;
+        margin: auto;
+        margin-top: 80px;
+     
+        h4 {
+            color: $secondary-font-color;
+            font-family: "Archivo", sans-serif !important;
+            letter-spacing: 2.8px;
+            font-weight: 500;
+            margin-bottom: 30px;
+            margin-left: $principal-margin-left;
+            margin-top: 50px;
+          }
+          h2 {
+            font-size: 45px;
+            font-weight: 100;
+            margin-bottom: 10px;
+            color: #111111;
+            margin-left: $principal-margin-left;
 
-    p {
-      color: $secondary-font-color;
-      font-family: "Archivo", sans-serif !important;
-      margin-left: $principal-margin-left;
-      margin-right: $principal-margin-left;
-      text-align: justify;
-      line-height: 1.5;
-    }
+          }
+          p {
+            color: $secondary-font-color;
+            font-family: "Archivo", sans-serif !important;
+            margin-right: $principal-margin-left;
+            text-align: left;
+            line-height: 1.5;
+            font-size: 12px;
+            font-weight: 100;
+            margin-left: $principal-margin-left;
 
-    .button__primary {
-      margin-bottom: 70px;
-    }
-  }
-  .main__container--team {
-    display: grid;
+          }
+    
+        .button__primary {
+          margin-bottom: 70px;
+          margin-left: $principal-margin-left;
 
+          
+        }
+      }
+  
     img {
-      z-index: 3;
       margin: auto;
+      margin-top: -5px !important;
     }
     .main__container--strong-team {
       // border: 1px solid red;
@@ -159,38 +172,38 @@ button {
       width: 270px;
       height: 300px;
       margin: auto;
-      margin-bottom: 50px !important;
+      margin-bottom: 10px !important;
 
       h2 {
         text-align: center;
         font-family: "Old Standard TT", serif !important;
         font-weight: 100;
         font-size: 30px;
-        margin-top: 20px;
+        // margin-top: 20px;
       }
 
       p {
         text-align: center;
         font-family: "Roboto", sans-serif !important;
         font-size: 16px;
-        margin-top: 5px;
+        // margin-top: 5px;
       }
 
       .logo {
         display: flex;
         justify-content: center;
-        margin-top: 50px;
+        margin-top: 50px !important;
       }
     }
     .main__container--luxury-room {
-      // border: 1px solid red;
-      background-color: #222222;
-      color: $primary-font-color;
-      width: 270px;
-      height: 300px;
-      margin: auto;
-      margin-bottom: 50px !important;
-      h2 {
+        background-color: #222222;
+        color: $primary-font-color;
+        width: 270px;
+        height: 300px;
+        margin: auto;
+      margin-top: 10px !important;
+
+          h2 {
         text-align: center;
         font-family: "Old Standard TT", serif !important;
         font-weight: 100;
@@ -208,11 +221,14 @@ button {
       .logo {
         display: flex;
         justify-content: center;
-        margin-top: 50px;
+        margin-top: 50px !important;
       }
     }
+
   }
-}
+  
+
+
 
 // Desk Responsive
 
@@ -289,53 +305,53 @@ button {
   }
 }
 
-.main__container {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    // border: 1px solid red;
-    gap: 100px;
-    width: 80%;
-    margin: auto;
+// .main__container {
+//     display: grid;
+//     grid-template-columns: 50% 50%;
+//     // border: 1px solid red;
+//     // gap: 100px;
+//     width: 100%;
+//     margin: auto;
   
-  .main__container--team {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    gap: 40px;
-    margin-top: 120px;
+//   .main__container--team {
+//     display: grid;
+//     grid-template-columns: 50% 50%;
+//     gap: 40px;
+//     margin-top: 120px;
 
-    img {
-      margin: auto;
-      margin-top: -5px !important;
-    }
-    .main__container--strong-team {
-      // border: 1px solid red;
+//     img {
+//       margin: auto;
+//       margin-top: -5px !important;
+//     }
+//     .main__container--strong-team {
+//       // border: 1px solid red;
 
-      margin: auto;
-      margin-bottom: 10px !important;
+//       margin: auto;
+//       margin-bottom: 10px !important;
 
-      .logo {
+//       .logo {
       
-        margin-top: 50px !important;
-      }
-    }
-    .main__container--luxury-room {
+//         margin-top: 50px !important;
+//       }
+//     }
+//     .main__container--luxury-room {
   
-      margin-top: 10px !important;
+//       margin-top: 10px !important;
 
 
-      .logo {
-        margin-top: 50px !important;
-      }
-    }
+//       .logo {
+//         margin-top: 50px !important;
+//       }
+//     }
 
-  }
-  .main__container--background {
-    margin-top: 110px;
+//   }
+//   .main__container--background {
+//     margin-top: 110px;
  
   
 
-    .button__primary {
-      margin-left: 20px !important;
-    }
-  }
-}
+//     .button__primary {
+//       margin-bottom: 70px;
+//     }
+//   }
+// }
