@@ -275,6 +275,9 @@ button {
     grid-column: 2;
     margin: auto;
   }
+  .main__container .main__container--text h4 {
+    margin-top: 20px;
+  }
   .main__container .main__container--text button {
     margin-left: 20px;
   }
