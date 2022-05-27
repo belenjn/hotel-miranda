@@ -5,6 +5,7 @@ $primary-button-color: #bead8e;
 $primary-font-color: #ffffff;
 $secondary-font-color: #777777;
 $principal-margin-left: 20px;
+$principal-title-size: 56px;
 
 .header {
   width: 100%;
@@ -129,7 +130,7 @@ button {
     }
 
     h1 {
-      font-size: 50px;
+    font-size: $principal-title-size;
       margin-left: $principal-margin-left;
       font-weight: 100;
       margin-bottom: 10px;
@@ -274,7 +275,7 @@ button {
   }
 
   h1 {
-    font-size: 50px;
+    font-size: $principal-title-size;
     text-align: center;
     font-weight: 100;
     margin-bottom: 10px;
@@ -313,6 +314,7 @@ button {
     display: inline-block;
     height: 30px;
     margin-top: 20px;
+    margin-bottom: 50px;
 
     h3 {
       font-family: "Archivo", sans-serif !important;
@@ -325,6 +327,50 @@ button {
       }
     }
   }
+}
+
+.video__container {
+    background-color: $primary-background;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    padding: 5px;
+    // border: 1px solid green;
+
+    h4 {
+      color: $primary-button-color;
+      font-family: "Archivo", sans-serif !important;
+      letter-spacing: 2.8px;
+      font-weight: 500;
+      margin-left: $principal-margin-left;
+      margin-top: 50px;
+    }
+
+    h1 {
+      font-size: $principal-title-size;
+      margin-left: $principal-margin-left;
+      font-weight: 100;
+      margin-bottom: 10px;
+      margin-top: 50px;
+      color: white;
+    }
+
+    p {
+      color: #C2C2C2;
+      font-family: "Archivo", sans-serif !important;
+      margin-left: $principal-margin-left;
+      margin-right: $principal-margin-left;
+      margin-bottom: 50px;
+      text-align: left;
+      line-height: 1.5;
+      font-size: 14px;
+    }
+
+    .fake-photo {
+        width: 80%;
+        margin-left: $principal-margin-left;
+    }
+
 }
 
 // Desk Responsive
