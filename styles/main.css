@@ -64,7 +64,7 @@ button {
 .form__container form fieldset p label {
   font-family: "Roboto", sans-serif !important;
   font-weight: 600;
-  font-size: 13px;
+  font-size: 14px;
 }
 .form__container form fieldset p .form__input {
   border-top: none;
@@ -125,7 +125,7 @@ button {
   margin-right: 20px;
   text-align: left;
   line-height: 1.5;
-  font-size: 13px;
+  font-size: 14px;
 }
 .main__container .main__container--text .button__primary {
   margin-bottom: 50px;
@@ -169,7 +169,7 @@ button {
 .main__container .main__container--photos .strong__team p {
   text-align: center;
   font-family: "Roboto", sans-serif !important;
-  font-size: 16px;
+  font-size: 14px;
   margin-bottom: 80px;
 }
 .main__container .luxury__room {
@@ -196,11 +196,10 @@ button {
 .main__container .luxury__room p {
   text-align: center;
   font-family: "Roboto", sans-serif !important;
-  font-size: 16px;
+  font-size: 14px;
   margin-bottom: 60px;
 }
 .main__container .main__rooms {
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   margin: auto;
@@ -240,6 +239,43 @@ button {
   margin-bottom: 10px;
   margin-top: 50px;
   color: #111111;
+}
+.main__container .slider__container--bottom {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 20px;
+  width: 80%;
+}
+.main__container .slider__container--bottom h3 {
+  font-family: "Old Standard TT", serif !important;
+  font-weight: 300;
+  font-size: 28px;
+  text-align: center;
+}
+.main__container .slider__container--bottom p {
+  font-family: "Roboto", sans-serif !important;
+  text-align: center;
+  font-weight: 300;
+  font-size: 14px;
+  margin-top: 15px;
+  color: #777777;
+  line-height: 1.5;
+}
+.main__container .slider__container--bottom .pricing {
+  color: #BEAD8E;
+  display: inline-block;
+  height: 30px;
+  margin-top: 20px;
+}
+.main__container .slider__container--bottom .pricing h3 {
+  font-family: "Archivo", sans-serif !important;
+  font-weight: 700;
+}
+.main__container .slider__container--bottom .pricing h3 small {
+  font-family: "Archivo", sans-serif !important;
+  font-weight: 500;
+  font-size: 12px !important;
 }
 
 @media only screen and (min-width: 1000px) {
