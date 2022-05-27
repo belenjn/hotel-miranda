@@ -286,7 +286,6 @@ button {
   display: flex;
   flex-direction: column;
   margin-top: 50px;
-  padding: 5px;
 }
 .video__container h4 {
   color: #bead8e;
@@ -305,7 +304,7 @@ button {
   color: white;
 }
 .video__container p {
-  color: #C2C2C2;
+  color: #c2c2c2;
   font-family: "Archivo", sans-serif !important;
   margin-left: 20px;
   margin-right: 20px;
@@ -317,6 +316,7 @@ button {
 .video__container .fake-photo {
   width: 80%;
   margin-left: 20px;
+  margin-top: 56px;
 }
 
 @media only screen and (min-width: 1000px) {
@@ -473,19 +473,28 @@ button {
 
   .video__container {
     display: grid;
-    grid-template-columns: 60% 40%;
+    grid-template-columns: 65% 35%;
     margin-top: 50px;
+    margin-bottom: 56px;
   }
-  .video__container div {
-    width: 60%;
-    margin-left: 25%;
+  .video__container .text__container {
+    display: grid;
+    grid-column: 1;
+    width: 70%;
+    margin: auto;
   }
-  .video__container .fake-photo {
+  .video__container .text__container button {
+    margin-bottom: 56px;
+    margin-left: 20px;
+  }
+  .video__container .image__container {
     display: grid;
     grid-column: 2;
-    width: 60%;
+    background-color: #bead8e;
+  }
+  .video__container .image__container img {
     margin: auto;
-    margin-left: 20px;
+    width: 65%;
   }
 }
 .navbar__header h6 {

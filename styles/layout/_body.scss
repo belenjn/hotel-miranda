@@ -130,7 +130,7 @@ button {
     }
 
     h1 {
-    font-size: $principal-title-size;
+      font-size: $principal-title-size;
       margin-left: $principal-margin-left;
       font-weight: 100;
       margin-bottom: 10px;
@@ -330,47 +330,46 @@ button {
 }
 
 .video__container {
-    background-color: $primary-background;
-    display: flex;
-    flex-direction: column;
+  background-color: $primary-background;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  // border: 1px solid green;
+
+  h4 {
+    color: $primary-button-color;
+    font-family: "Archivo", sans-serif !important;
+    letter-spacing: 2.8px;
+    font-weight: 500;
+    margin-left: $principal-margin-left;
     margin-top: 50px;
-    padding: 5px;
-    // border: 1px solid green;
+  }
 
-    h4 {
-      color: $primary-button-color;
-      font-family: "Archivo", sans-serif !important;
-      letter-spacing: 2.8px;
-      font-weight: 500;
-      margin-left: $principal-margin-left;
-      margin-top: 50px;
-    }
+  h1 {
+    font-size: $principal-title-size;
+    margin-left: $principal-margin-left;
+    font-weight: 100;
+    margin-bottom: 10px;
+    margin-top: 50px;
+    color: white;
+  }
 
-    h1 {
-      font-size: $principal-title-size;
-      margin-left: $principal-margin-left;
-      font-weight: 100;
-      margin-bottom: 10px;
-      margin-top: 50px;
-      color: white;
-    }
+  p {
+    color: #c2c2c2;
+    font-family: "Archivo", sans-serif !important;
+    margin-left: $principal-margin-left;
+    margin-right: $principal-margin-left;
+    margin-bottom: 50px;
+    text-align: left;
+    line-height: 1.5;
+    font-size: 14px;
+  }
 
-    p {
-      color: #C2C2C2;
-      font-family: "Archivo", sans-serif !important;
-      margin-left: $principal-margin-left;
-      margin-right: $principal-margin-left;
-      margin-bottom: 50px;
-      text-align: left;
-      line-height: 1.5;
-      font-size: 14px;
-    }
-
-    .fake-photo {
-        width: 80%;
-        margin-left: $principal-margin-left;
-    }
-
+  .fake-photo {
+    width: 80%;
+    margin-left: $principal-margin-left;
+    margin-top: $principal-title-size;
+  }
 }
 
 // Desk Responsive
@@ -483,7 +482,7 @@ button {
   }
 
   .main__rooms {
-    // border: 1px solid red; 
+    // border: 1px solid red;
     display: flex;
     flex-direction: column;
     margin: auto;
@@ -507,13 +506,8 @@ button {
         margin: auto;
         margin-left: 25%;
         box-shadow: 1px 1px 8px rgb(146, 145, 145);
-
-      
       }
     }
-
-  
-
   }
 
   .slider__container--bottom {
@@ -562,24 +556,31 @@ button {
 
   .video__container {
     display: grid;
-    grid-template-columns: 60% 40%;
+    grid-template-columns: 65% 35%;
     margin-top: 50px;
-   
-    div {
-        width: 60%;
-        margin-left: 25%;
+    margin-bottom: $principal-title-size;
+
+    .text__container {
+        display: grid;
+        grid-column: 1;
+        width: 70%;
+        margin: auto;
+
+        button {
+            margin-bottom: $principal-title-size;
+            margin-left: $principal-margin-left;
+        }
     }
 
-
-   
-    .fake-photo {
+    .image__container {
         display: grid;
         grid-column: 2;
-        width: 60%;
-        margin: auto;
-        margin-left: $principal-margin-left;
+        background-color: $primary-button-color;
+
+        img {
+            margin: auto;
+            width: 65%;
+        }
     }
-
-}
-
+  }
 }
