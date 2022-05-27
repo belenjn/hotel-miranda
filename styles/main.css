@@ -320,6 +320,67 @@ button {
   margin-bottom: 56px;
 }
 
+.facilities__container h4 {
+  color: #777777;
+  font-family: "Archivo", sans-serif !important;
+  letter-spacing: 2.8px;
+  font-weight: 600;
+  margin-top: 56px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.facilities__container h1 {
+  font-size: 56px;
+  font-weight: 100;
+  color: black;
+  text-align: center;
+}
+.facilities__container div {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.facilities__container div .finger {
+  margin-top: 100px;
+}
+.facilities__container div .number {
+  width: 150px;
+  height: 100px;
+}
+.facilities__container .donut__container {
+  display: flex;
+  flex-direction: column;
+}
+.facilities__container .donut__container h3 {
+  font-size: 30px;
+  font-weight: 100;
+  color: black;
+  text-align: left;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+.facilities__container .donut__container p {
+  font-family: "Roboto", sans-serif !important;
+  text-align: left;
+  font-weight: 300;
+  font-size: 14px;
+  margin-top: 15px;
+  color: #777777;
+  line-height: 1.5;
+  margin-left: 20px;
+  margin-bottom: 30px;
+}
+.facilities__container .donut__container .slider-buttons {
+  width: 90px;
+  margin: auto;
+  margin-bottom: 50px;
+}
+.facilities__container .donut__container .donut {
+  width: 115px;
+  align-self: flex-end;
+}
+
 @media only screen and (min-width: 1000px) {
   .header .header__container .header__container-titles h4 {
     font-family: "Archivo", sans-serif !important;

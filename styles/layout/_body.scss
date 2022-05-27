@@ -373,7 +373,78 @@ button {
   }
 }
 
+.facilities__container {
+  h4 {
+    color: $secondary-font-color;
+    font-family: "Archivo", sans-serif !important;
+    letter-spacing: 2.8px;
+    font-weight: 600;
+    margin-top: $principal-title-size;
+    margin-bottom: 30px;
+    text-align: center;
+  }
 
+  h1 {
+    font-size: $principal-title-size;
+    font-weight: 100;
+    color: black;
+    text-align: center;
+  }
+
+  div {
+    //   border: 1px solid red;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    .finger {
+      margin-top: 100px;
+    }
+
+    .number {
+      width: 150px;
+      height: 100px;
+    }
+  }
+
+  .donut__container {
+    display: flex;
+    flex-direction: column;
+
+    h3 {
+      font-size: 30px;
+      font-weight: 100;
+      color: black;
+      text-align: left;
+      margin-left: $principal-margin-left;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-family: "Roboto", sans-serif !important;
+      text-align: left;
+      font-weight: 300;
+      font-size: 14px;
+      margin-top: 15px;
+      color: #777777;
+      line-height: 1.5;
+      margin-left: $principal-margin-left;
+      margin-bottom: 30px;
+    }
+
+    .slider-buttons {
+      width: 90px;
+      margin: auto;
+      margin-bottom: 50px;
+    }
+
+    .donut {
+      width: 115px;
+      align-self: flex-end;
+    }
+  }
+}
 
 // Desk Responsive
 
@@ -564,26 +635,26 @@ button {
     margin-bottom: $principal-title-size;
 
     .text__container {
-        display: grid;
-        grid-column: 1;
-        width: 70%;
-        margin: auto;
+      display: grid;
+      grid-column: 1;
+      width: 70%;
+      margin: auto;
 
-        button {
-            margin-bottom: $principal-title-size;
-            margin-left: $principal-margin-left;
-        }
+      button {
+        margin-bottom: $principal-title-size;
+        margin-left: $principal-margin-left;
+      }
     }
 
     .image__container {
-        display: grid;
-        grid-column: 2;
-        background-color: $primary-button-color;
+      display: grid;
+      grid-column: 2;
+      background-color: $primary-button-color;
 
-        img {
-            margin: auto;
-            width: 65%;
-        }
+      img {
+        margin: auto;
+        width: 65%;
+      }
     }
   }
 }
