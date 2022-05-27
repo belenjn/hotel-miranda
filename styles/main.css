@@ -470,6 +470,23 @@ button {
     font-weight: 500;
     font-size: 12px !important;
   }
+
+  .video__container {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    margin-top: 50px;
+  }
+  .video__container div {
+    width: 60%;
+    margin-left: 25%;
+  }
+  .video__container .fake-photo {
+    display: grid;
+    grid-column: 2;
+    width: 60%;
+    margin: auto;
+    margin-left: 20px;
+  }
 }
 .navbar__header h6 {
   display: none;
