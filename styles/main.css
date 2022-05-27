@@ -199,21 +199,22 @@ button {
   font-size: 14px;
   margin-bottom: 60px;
 }
-.main__container .main__rooms {
+
+.main__rooms {
   display: flex;
   flex-direction: column;
   margin: auto;
   margin-top: 50px;
 }
-.main__container .main__rooms .slider {
+.main__rooms .slider {
   display: flex;
   width: 100%;
 }
-.main__container .main__rooms .slider img {
+.main__rooms .slider img {
   width: 100%;
   height: 70%;
 }
-.main__container .main__rooms .slider .rooms__navbar {
+.main__rooms .slider .rooms__navbar {
   display: flex;
   padding: 15px;
   width: 70%;
@@ -221,18 +222,18 @@ button {
   background-color: white;
   margin-left: 15%;
 }
-.main__container .main__rooms .slider .rooms__navbar img {
+.main__rooms .slider .rooms__navbar img {
   width: 13px;
   margin: auto;
 }
-.main__container .main__rooms h4 {
+.main__rooms h4 {
   color: #777777;
   font-family: "Archivo", sans-serif !important;
   letter-spacing: 2.8px;
   font-weight: 600;
   text-align: center;
 }
-.main__container .main__rooms h1 {
+.main__rooms h1 {
   font-size: 50px;
   text-align: center;
   font-weight: 100;
@@ -240,20 +241,21 @@ button {
   margin-top: 50px;
   color: #111111;
 }
-.main__container .slider__container--bottom {
+
+.slider__container--bottom {
   display: flex;
   flex-direction: column;
   margin: auto;
   margin-top: 20px;
   width: 80%;
 }
-.main__container .slider__container--bottom h3 {
+.slider__container--bottom h3 {
   font-family: "Old Standard TT", serif !important;
   font-weight: 300;
   font-size: 28px;
   text-align: center;
 }
-.main__container .slider__container--bottom p {
+.slider__container--bottom p {
   font-family: "Roboto", sans-serif !important;
   text-align: center;
   font-weight: 300;
@@ -262,17 +264,17 @@ button {
   color: #777777;
   line-height: 1.5;
 }
-.main__container .slider__container--bottom .pricing {
-  color: #BEAD8E;
+.slider__container--bottom .pricing {
+  color: #bead8e;
   display: inline-block;
   height: 30px;
   margin-top: 20px;
 }
-.main__container .slider__container--bottom .pricing h3 {
+.slider__container--bottom .pricing h3 {
   font-family: "Archivo", sans-serif !important;
   font-weight: 700;
 }
-.main__container .slider__container--bottom .pricing h3 small {
+.slider__container--bottom .pricing h3 small {
   font-family: "Archivo", sans-serif !important;
   font-weight: 500;
   font-size: 12px !important;
@@ -365,6 +367,69 @@ button {
     margin: auto;
     gap: 10px;
     width: 100%;
+  }
+
+  .main__rooms {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 200px;
+  }
+  .main__rooms .slider {
+    display: flex;
+    margin: auto;
+    margin-top: 50px;
+    width: 70%;
+  }
+  .main__rooms .slider img {
+    margin: auto;
+    width: 70%;
+    height: 50%;
+  }
+  .main__rooms .slider .rooms__navbar {
+    display: flex;
+    width: 20%;
+    margin: auto;
+    margin-left: 25%;
+    box-shadow: 1px 1px 8px rgb(146, 145, 145);
+  }
+
+  .slider__container--bottom {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 20px;
+    width: 80%;
+  }
+  .slider__container--bottom h3 {
+    font-family: "Old Standard TT", serif !important;
+    font-weight: 300;
+    font-size: 28px;
+    text-align: center;
+  }
+  .slider__container--bottom p {
+    font-family: "Roboto", sans-serif !important;
+    text-align: center;
+    font-weight: 300;
+    font-size: 14px;
+    margin-top: 15px;
+    color: #777777;
+    line-height: 1.5;
+  }
+  .slider__container--bottom .pricing {
+    color: #bead8e;
+    display: inline-block;
+    height: 30px;
+    margin-top: 20px;
+  }
+  .slider__container--bottom .pricing h3 {
+    font-family: "Archivo", sans-serif !important;
+    font-weight: 700;
+  }
+  .slider__container--bottom .pricing h3 small {
+    font-family: "Archivo", sans-serif !important;
+    font-weight: 500;
+    font-size: 12px !important;
   }
 }
 .navbar__header h6 {
