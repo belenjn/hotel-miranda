@@ -502,6 +502,45 @@ button {
   }
 }
 
+.menu__container--buttons {
+  // border: 1px solid green;
+  display: flex;
+  flex-direction: row-reverse;
+  font-family: "Archivo", sans-serif !important;
+  margin-right: $principal-margin-left;
+  margin-top: $principal-margin-left;
+
+
+  .left {
+    // border: 1px solid red;
+    width: 36px;
+    height: 36px;
+    background-color: #F8F8F8;
+   
+    h6 {
+      margin-top: 10px;
+      text-align: center;
+      font-size: 8px;
+    }
+  }
+  .right {
+  // border: 1px solid red;
+  background-color: #BEAD8E;
+  color: white;
+  width: 36px;
+  height: 36px;
+
+  h6 {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 8px;
+
+  }
+}
+}
+
+
+
 .little-slider__container {
   // border: 1px solid red;
   display: flex;

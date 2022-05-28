@@ -426,6 +426,35 @@ button {
   font-size: 12px;
 }
 
+.menu__container--buttons {
+  display: flex;
+  flex-direction: row-reverse;
+  font-family: "Archivo", sans-serif !important;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+.menu__container--buttons .left {
+  width: 36px;
+  height: 36px;
+  background-color: #F8F8F8;
+}
+.menu__container--buttons .left h6 {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 8px;
+}
+.menu__container--buttons .right {
+  background-color: #BEAD8E;
+  color: white;
+  width: 36px;
+  height: 36px;
+}
+.menu__container--buttons .right h6 {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 8px;
+}
+
 .little-slider__container {
   display: flex;
   padding: 15px;
