@@ -381,13 +381,27 @@ button {
   align-self: flex-end;
 }
 
-.menu__container {
-  border: 1px solid red;
+.menu__container h4 {
+  margin-left: 20px;
+  font-family: "Archivo", sans-serif !important;
+  letter-spacing: 2.8px;
+  font-weight: 300;
+  color: #777777;
+  margin-bottom: 20px;
+}
+.menu__container h1 {
+  font-family: "Old Standard TT", serif !important;
+  font-size: 56px;
+  font-weight: 100;
+  margin-left: 20px;
 }
 .menu__container .menu__list {
-  border: 1px solid yellow;
   display: grid;
   grid-template-columns: 50% 50%;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  margin-right: 20px;
+  margin-top: 20px;
 }
 .menu__container .menu__list .menu__list--photo {
   display: grid;
@@ -396,10 +410,36 @@ button {
 .menu__container .menu__list .menu__list--photo img {
   width: 120px;
   height: 120px;
+  margin: auto;
 }
 .menu__container .menu__list .menu__list--text {
   display: grid;
   grid-column: 2;
+}
+.menu__container .menu__list .menu__list--text h4 {
+  font-family: "Old Standard TT", serif !important;
+  color: #111111;
+  font-size: 18px;
+  font-weight: 300;
+}
+.menu__container .menu__list .menu__list--text p {
+  font-size: 12px;
+}
+
+.little-slider__container {
+  display: flex;
+  padding: 15px;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.little-slider__container .fake-photo {
+  margin: auto;
+  width: 335px;
+  height: 335px;
+}
+.little-slider__container .little-slider {
+  margin: auto;
+  margin-top: 20px;
 }
 
 @media only screen and (min-width: 1000px) {
