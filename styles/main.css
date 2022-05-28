@@ -436,7 +436,7 @@ button {
 .menu__container--buttons .left {
   width: 36px;
   height: 36px;
-  background-color: #F8F8F8;
+  background-color: #f8f8f8;
 }
 .menu__container--buttons .left h6 {
   margin-top: 10px;
@@ -444,7 +444,7 @@ button {
   font-size: 8px;
 }
 .menu__container--buttons .right {
-  background-color: #BEAD8E;
+  background-color: #bead8e;
   color: white;
   width: 36px;
   height: 36px;
@@ -469,6 +469,37 @@ button {
 .little-slider__container .little-slider {
   margin: auto;
   margin-top: 20px;
+}
+
+.pre-footer__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #222222;
+}
+.pre-footer__container .pre-footer__container--images {
+  margin-top: 60px;
+  color: white;
+  font-weight: 500;
+}
+.pre-footer__container .pre-footer__container--images img {
+  display: flex;
+  margin: auto;
+}
+.pre-footer__container .pre-footer__container--images h2 {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  margin-top: 20px;
+  font-size: 45px;
+}
+.pre-footer__container .pre-footer__container--images h2 small {
+  font-size: 10px;
+}
+.pre-footer__container .pre-footer__container--images p {
+  text-align: center;
+  font-size: 12px;
+  font-family: "Roboto", sans-serif;
+  color: #c2c2c2;
 }
 
 @media only screen and (min-width: 1000px) {
