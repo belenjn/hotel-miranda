@@ -576,6 +576,15 @@ footer .footer__contact .contact__icon p small {
   font-family: "Roboto", sans-serif;
   color: #777777;
 }
+footer .footer__policy {
+  background-color: #F8F8F8;
+}
+footer .footer__policy h4 {
+  margin-top: 20px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+}
 
 @media only screen and (min-width: 1000px) {
   .header .header__container .header__container-titles h4 {
