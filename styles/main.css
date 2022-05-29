@@ -978,4 +978,69 @@ body {
   font-family: "Old Standard TT", serif;
 }
 
+header .header__cover {
+  background-color: #222222;
+  color: #ffffff;
+  width: 100%;
+  position: absolute;
+}
+header .header__cover h4 {
+  font-family: "Archivo", sans-serif;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 2.8px;
+  font-size: 13px;
+  margin: auto;
+  margin-left: 20px;
+  margin-top: 60px;
+}
+header .header__cover h1 {
+  font-family: "Old Standard TT", serif;
+  font-weight: 400;
+  font-size: 56px;
+  margin: auto;
+  margin-left: 20px;
+  margin-bottom: 40px;
+  margin-top: 15px;
+}
+header .header__cover .header__cover--choices {
+  background-color: #ffffff;
+  border: none;
+  color: black;
+  display: flex;
+  justify-content: center;
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  margin-left: 190px;
+  padding: 5px;
+  width: 156px;
+  height: 49px;
+}
+header .header__cover .header__cover--choices a {
+  display: inline-block;
+  font-family: "Archivo", sans-serif;
+  margin-top: 10px;
+  font-size: 16px;
+  padding: 5px;
+}
+header .header__cover .header__cover--choices .about {
+  color: #bead8e;
+}
+
+@media only screen and (min-width: 1000px) {
+  header .header__cover {
+    background-color: #333333;
+  }
+  header .header__cover h4 {
+    margin-top: 100px;
+    margin-left: 20%;
+  }
+  header .header__cover h1 {
+    margin-left: 20%;
+  }
+  header .header__cover .header__cover--choices {
+    margin-left: 70%;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
