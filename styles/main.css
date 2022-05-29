@@ -679,6 +679,53 @@ button {
     margin: auto;
     width: 65%;
   }
+
+  .little-slider__container {
+    display: flex;
+    padding: 15px;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .little-slider__container .fake-photo {
+    margin: auto;
+    mask-repeat: repeat;
+  }
+  .little-slider__container .little-slider {
+    display: none;
+  }
+
+  .pre-footer__container {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    margin-top: 70px;
+  }
+  .pre-footer__container .pre-footer__container--images {
+    color: white;
+    font-weight: 500;
+    margin: auto;
+  }
+  .pre-footer__container .pre-footer__container--images img {
+    display: flex;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .pre-footer__container .pre-footer__container--images h2 {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    margin-top: 20px;
+    font-size: 45px;
+  }
+  .pre-footer__container .pre-footer__container--images h2 small {
+    font-size: 10px;
+  }
+  .pre-footer__container .pre-footer__container--images p {
+    text-align: center;
+    font-size: 12px;
+    font-family: "Roboto", sans-serif;
+    color: #c2c2c2;
+  }
 }
 .navbar__header h6 {
   display: none;
