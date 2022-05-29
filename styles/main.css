@@ -481,6 +481,7 @@ button {
   margin-top: 60px;
   color: white;
   font-weight: 500;
+  margin-bottom: 50px;
 }
 .pre-footer__container .pre-footer__container--images img {
   display: flex;
@@ -500,6 +501,80 @@ button {
   font-size: 12px;
   font-family: "Roboto", sans-serif;
   color: #c2c2c2;
+}
+
+footer {
+  background-image: url(../../assets/footer/background.png);
+  display: grid;
+  grid-template-columns: 100%;
+  margin-top: 70px;
+  width: 100%;
+  height: 100%;
+}
+footer .footer__socials {
+  margin-bottom: 20px;
+}
+footer .footer__socials img {
+  margin-top: 50px;
+}
+footer .footer__socials p {
+  font-family: "Archivo", sans-serif;
+  text-align: left;
+  font-size: 14px;
+  line-height: 1.75;
+  color: #777777;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+footer .footer__socials .socials {
+  margin-top: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+footer h4 {
+  font-family: "Old Standard TT", serif;
+  font-weight: 400;
+  font-size: 24px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+footer .footer__services {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-bottom: 30px;
+}
+footer .footer__services ul {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #777777;
+  list-style: none;
+  line-height: 48px;
+  margin-left: 20px;
+}
+footer .footer__contact {
+  display: grid;
+  grid-template-columns: 100%;
+}
+footer .footer__contact .contact__icon {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  margin-bottom: 60px;
+}
+footer .footer__contact .contact__icon img {
+  margin: auto;
+  display: grid;
+  grid-column: 1;
+}
+footer .footer__contact .contact__icon p {
+  grid-column: 2;
+  margin: auto;
+  margin-right: 120px;
+  font-family: "Old Standard TT", serif;
+}
+footer .footer__contact .contact__icon p small {
+  font-family: "Roboto", sans-serif;
+  color: #777777;
 }
 
 @media only screen and (min-width: 1000px) {
