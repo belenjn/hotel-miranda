@@ -576,10 +576,12 @@ footer .footer__contact .contact__icon p small {
   font-family: "Roboto", sans-serif;
   color: #777777;
 }
-footer .footer__policy {
-  background-color: #F8F8F8;
+
+.footer__policy {
+  background-color: #f8f8f8;
+  padding: 10px;
 }
-footer .footer__policy h4 {
+.footer__policy h4 {
   margin-top: 20px;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -795,20 +797,50 @@ footer .footer__policy h4 {
     margin-top: 30px;
     margin-bottom: 30px;
   }
-  .pre-footer__container .pre-footer__container--images h2 {
-    text-align: center;
-    font-family: "Roboto", sans-serif;
-    margin-top: 20px;
-    font-size: 45px;
-  }
-  .pre-footer__container .pre-footer__container--images h2 small {
-    font-size: 10px;
-  }
   .pre-footer__container .pre-footer__container--images p {
-    text-align: center;
-    font-size: 12px;
+    margin-bottom: 50px;
+  }
+
+  footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 100px;
+  }
+  footer .footer__services {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  footer .footer__services ul {
+    font-size: 14px;
+  }
+  footer .footer__contact {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+  footer .footer__contact .contact__icon {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    margin-bottom: 60px;
+  }
+  footer .footer__contact .contact__icon h4 {
+    font-family: "Old Standard TT", serif;
+    font-weight: 400;
+    font-size: 24px;
+    margin-left: 20px;
+  }
+
+  .footer__policy {
+    background-color: #f8f8f8;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+  }
+  .footer__policy h4 {
+    margin-top: 20px;
     font-family: "Roboto", sans-serif;
-    color: #c2c2c2;
+    font-size: 16px;
+    font-weight: 700;
+    margin: auto;
   }
 }
 .navbar__header h6 {

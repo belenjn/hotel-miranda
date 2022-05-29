@@ -617,7 +617,6 @@ footer {
   width: 100%;
   height: 100%;
 
-
   .footer__socials {
     margin-bottom: $principal-margin-left;
 
@@ -690,23 +689,19 @@ footer {
         small {
           font-family: "Roboto", sans-serif;
           color: $secondary-font-color;
-
         }
-
       }
-
     }
   }
-
-  .footer__policy {
-    background-color: #F8F8F8;
-    h4 {
-      margin-top: 20px;
-      font-family: "Roboto", sans-serif;
-      font-size: 16px;
-      font-weight: 700;
-
-    }
+}
+.footer__policy {
+  background-color: #f8f8f8;
+  padding: 10px;
+  h4 {
+    margin-top: 20px;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
   }
 }
 
@@ -968,23 +963,56 @@ footer {
         margin-bottom: 30px;
       }
 
-      h2 {
-        text-align: center;
-        font-family: "Roboto", sans-serif;
-        margin-top: $principal-margin-left;
-        font-size: 45px;
+      p {
+        margin-bottom: 50px;
+      }
+    }
+  }
 
-        small {
-          font-size: 10px;
+  footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 100px;
+
+    .footer__services {
+      display: grid;
+      grid-template-columns: 50% 50%;
+
+      ul {
+        font-size: 14px;
+      }
+    }
+
+    .footer__contact {
+      display: grid;
+      grid-template-columns: 100%;
+
+      .contact__icon {
+        display: grid;
+        grid-template-columns: 30% 70%;
+        margin-bottom: 60px;
+
+        h4 {
+          font-family: "Old Standard TT", serif;
+          font-weight: 400;
+          font-size: 24px;
+          margin-left: $principal-margin-left;
         }
       }
+    }
+  }
 
-      p {
-        text-align: center;
-        font-size: 12px;
-        font-family: "Roboto", sans-serif;
-        color: #c2c2c2;
-      }
+  .footer__policy {
+    background-color: #f8f8f8;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+    h4 {
+      margin-top: 20px;
+      font-family: "Roboto", sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      margin: auto;
     }
   }
 }
