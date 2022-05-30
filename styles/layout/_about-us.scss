@@ -7,152 +7,200 @@ $secondary-font-color: #777777;
 $principal-margin-left: 20px;
 $principal-title-size: 56px;
 
-$primary-font: "Old Standard TT",
-serif;
-$secondary-font: "Archivo",
-sans-serif;
-$terciary-font: "Roboto",
-sans-serif;
+$primary-font: "Old Standard TT", serif;
+$secondary-font: "Archivo", sans-serif;
+$terciary-font: "Roboto", sans-serif;
 
 header {
-    .header__cover {
-        background-color: $primary-background;
-        color: $primary-font-color;
-        width: 100%;
-        position: absolute;
+  .header__cover {
+    background-color: $primary-background;
+    color: $primary-font-color;
+    width: 100%;
+    position: absolute;
 
-        h4 {
-            font-family: $secondary-font;
-            font-weight: 500;
-            line-height: 18px;
-            letter-spacing: 2.8px;
-            font-size: 13px;
-            margin: auto;
-            margin-left: $principal-margin-left;
-            margin-top: 60px;
-        }
-
-        h1 {
-            font-family: $primary-font;
-            font-weight: 400;
-            font-size: 56px;
-            margin: auto;
-            margin-left: $principal-margin-left;
-            margin-bottom: 40px;
-            margin-top: 15px;
-        }
-
-        .header__cover--choices {
-            background-color: $primary-font-color;
-            border: none;
-            color: black;
-            display: flex;
-            justify-content: center;
-            font-family: $secondary-font;
-            font-weight: 700;
-            margin-left: 190px;
-            padding: 5px;
-            width: 156px;
-            height: 49px;
-
-            a {
-                display: inline-block;
-                font-family: $secondary-font;
-                margin-top: 10px;
-                font-size: 16px;
-                padding: 5px;
-            }
-
-            .about {
-                color: $primary-button-color;
-            }
-        }
+    h4 {
+      font-family: $secondary-font;
+      font-weight: 500;
+      line-height: 18px;
+      letter-spacing: 2.8px;
+      font-size: 13px;
+      margin: auto;
+      margin-left: $principal-margin-left;
+      margin-top: 60px;
     }
+
+    h1 {
+      font-family: $primary-font;
+      font-weight: 400;
+      font-size: 56px;
+      margin: auto;
+      margin-left: $principal-margin-left;
+      margin-bottom: 40px;
+      margin-top: 15px;
+    }
+
+    .header__cover--choices {
+      background-color: $primary-font-color;
+      border: none;
+      color: black;
+      display: flex;
+      justify-content: center;
+      font-family: $secondary-font;
+      font-weight: 700;
+      margin-left: 190px;
+      padding: 5px;
+      width: 156px;
+      height: 49px;
+
+      a {
+        display: inline-block;
+        font-family: $secondary-font;
+        margin-top: 10px;
+        font-size: 16px;
+        padding: 5px;
+      }
+
+      .about {
+        color: $primary-button-color;
+      }
+    }
+  }
 }
 
 body {
-    .body__container--video {
-        margin-top: 300px;
+  .body__container--video {
+    margin-top: 300px;
 
-        img {
-            margin-left: $principal-margin-left;
-        }
-
-        h1 {
-            font-family: $primary-font;
-            font-size: 32px;
-            font-weight: 400;
-            text-align: center;
-            margin-top: 20px;
-        }
+    img {
+      margin-left: $principal-margin-left;
     }
 
-    .four__sections {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        width: 100%;
-        margin: auto;
-        margin-top: 50px;
-
+    h1 {
+      font-family: $primary-font;
+      font-size: 32px;
+      font-weight: 400;
+      text-align: center;
+      margin-top: 20px;
     }
+  }
+
+  .four__sections {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: auto;
+    margin-top: 50px;
+  }
+
+  .restaurant__container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    // border: 1px solid green;
+
+    h4 {
+      color: $secondary-font-color;
+
+      font-family: "Archivo", sans-serif !important;
+      letter-spacing: 2.8px;
+      font-weight: 500;
+      margin-left: $principal-margin-left;
+      margin-top: 50px;
+    }
+
+    h1 {
+      font-size: 40px;
+      margin-left: $principal-margin-left;
+      font-weight: 100;
+      margin-bottom: 10px;
+      margin-top: 50px;
+      color: $primary-background;
+    }
+
+    p {
+      font-family: "Archivo", sans-serif !important;
+      margin-left: $principal-margin-left;
+      margin-right: $principal-margin-left;
+      text-align: left;
+      line-height: 24px;
+      font-size: 14px;
+      color: $secondary-font-color;
+    }
+
+    .fake-photo {
+      width: 80%;
+      margin: auto;
+    }
+  }
 }
-
-
 
 // Desk Responsive
 @media only screen and (min-width: 1000px) {
+  header {
+    .header__cover {
+      background-color: $secondary-background;
 
-    header {
-        .header__cover {
-            background-color: $secondary-background;
+      h4 {
+        margin-top: 100px;
+        margin-left: 20%;
+      }
 
-            h4 {
-                margin-top: 100px;
-                margin-left: 20%;
+      h1 {
+        margin-left: 20%;
+      }
 
-            }
+      .header__cover--choices {
+        margin-left: 70%;
+      }
+    }
+  }
 
-            h1 {
-                margin-left: 20%;
+  body {
+    .body__container--video {
+      margin-top: 350px;
 
-            }
+      img {
+        margin-left: 3%;
+        width: 1170px;
+        height: 650px;
+      }
 
-            .header__cover--choices {
-                margin-left: 70%;
-              
-            }
-        }
+      h1 {
+        font-family: $primary-font;
+        font-size: 72px;
+        font-weight: 400;
+        text-align: center;
+        margin-top: 20px;
+      }
     }
 
-    body {
-        .body__container--video {
-            margin-top: 350px;
-    
-            img {
-                margin-left: 3%;
-                width: 1170px;
-                height: 650px;
-            }
-    
-            h1 {
-                font-family: $primary-font;
-                font-size: 72px;
-                font-weight: 400;
-                text-align: center;
-                margin-top: 20px;
-            }
+    .four__sections {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      width: 80%;
+      margin: auto;
+      margin-top: 50px;
+    }
+
+    .restaurant__container {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        margin-top: 50px;
+        margin-bottom: $principal-title-size;
+
+        img {
+          height: 80%;
         }
 
-        .four__sections {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            width: 80%;
-            margin: auto;
-            margin-top: 50px;
-    
+        button {
+            margin-left: $principal-margin-left;
         }
-      
+    
+     
+    
+       
     }
+  }
 }

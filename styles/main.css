@@ -1048,6 +1048,40 @@ body .four__sections {
   margin: auto;
   margin-top: 50px;
 }
+body .restaurant__container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+body .restaurant__container h4 {
+  color: #777777;
+  font-family: "Archivo", sans-serif !important;
+  letter-spacing: 2.8px;
+  font-weight: 500;
+  margin-left: 20px;
+  margin-top: 50px;
+}
+body .restaurant__container h1 {
+  font-size: 40px;
+  margin-left: 20px;
+  font-weight: 100;
+  margin-bottom: 10px;
+  margin-top: 50px;
+  color: #222222;
+}
+body .restaurant__container p {
+  font-family: "Archivo", sans-serif !important;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: left;
+  line-height: 24px;
+  font-size: 14px;
+  color: #777777;
+}
+body .restaurant__container .fake-photo {
+  width: 80%;
+  margin: auto;
+}
 
 @media only screen and (min-width: 1000px) {
   header .header__cover {
@@ -1086,6 +1120,18 @@ body .four__sections {
     width: 80%;
     margin: auto;
     margin-top: 50px;
+  }
+  body .restaurant__container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 50px;
+    margin-bottom: 56px;
+  }
+  body .restaurant__container img {
+    height: 80%;
+  }
+  body .restaurant__container button {
+    margin-left: 20px;
   }
 }
 
