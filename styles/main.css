@@ -1027,6 +1027,20 @@ header .header__cover .header__cover--choices .about {
   color: #bead8e;
 }
 
+body .body__container--video {
+  margin-top: 300px;
+}
+body .body__container--video img {
+  margin-left: 20px;
+}
+body .body__container--video h1 {
+  font-family: "Old Standard TT", serif;
+  font-size: 32px;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 20px;
+}
+
 @media only screen and (min-width: 1000px) {
   header .header__cover {
     background-color: #333333;
@@ -1040,6 +1054,22 @@ header .header__cover .header__cover--choices .about {
   }
   header .header__cover .header__cover--choices {
     margin-left: 70%;
+  }
+
+  body .body__container--video {
+    margin-top: 350px;
+  }
+  body .body__container--video img {
+    margin-left: 3%;
+    width: 1170px;
+    height: 650px;
+  }
+  body .body__container--video h1 {
+    font-family: "Old Standard TT", serif;
+    font-size: 72px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 20px;
   }
 }
 

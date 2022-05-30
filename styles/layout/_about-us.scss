@@ -70,6 +70,24 @@ header {
     }
 }
 
+body {
+    .body__container--video {
+        margin-top: 300px;
+
+        img {
+            margin-left: $principal-margin-left;
+        }
+
+        h1 {
+            font-family: $primary-font;
+            font-size: 32px;
+            font-weight: 400;
+            text-align: center;
+            margin-top: 20px;
+        }
+    }
+}
+
 
 
 // Desk Responsive
@@ -97,4 +115,23 @@ header {
         }
     }
 
+    body {
+        .body__container--video {
+            margin-top: 350px;
+    
+            img {
+                margin-left: 3%;
+                width: 1170px;
+                height: 650px;
+            }
+    
+            h1 {
+                font-family: $primary-font;
+                font-size: 72px;
+                font-weight: 400;
+                text-align: center;
+                margin-top: 20px;
+            }
+        }
+    }
 }
