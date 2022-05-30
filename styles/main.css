@@ -1194,5 +1194,8 @@ body .counter__container .facts__container--images {
     justify-content: space-between;
   }
 }
+body .main__rooms {
+  margin-top: 350px;
+}
 
 /*# sourceMappingURL=main.css.map */
