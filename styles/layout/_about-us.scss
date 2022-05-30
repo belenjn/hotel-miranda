@@ -133,6 +133,32 @@ body {
       margin: auto;
     }
   }
+
+  .facilities__container {
+    background-color: $primary-background;
+    padding: 30px;
+    margin-top: 100px;
+
+  
+    h4 {
+    color: $primary-font-color;
+
+    }
+
+    h1 {
+    color: $primary-font-color;
+    }
+
+    .facilities__container--images {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+
+      
+    }
+
+}
 }
 
 // Desk Responsive
@@ -202,5 +228,32 @@ body {
     
        
     }
+
+    .facilities__container {
+        background-color: $primary-background;
+        padding: 30px;
+
+      
+        h4 {
+        color: $primary-font-color;
+
+        }
+
+        h1 {
+        color: $primary-font-color;
+        }
+
+        .facilities__container--images {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+
+          
+        }
+
+    }
+
   }
+
 }
