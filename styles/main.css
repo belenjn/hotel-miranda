@@ -1203,5 +1203,12 @@ body .counter__container .facts__container--images {
 body #first__room {
   margin-top: 400px;
 }
+body .slider__pagination {
+  display: flex;
+  justify-content: center;
+}
+body .slider__pagination img {
+  margin: auto;
+}
 
 /*# sourceMappingURL=main.css.map */

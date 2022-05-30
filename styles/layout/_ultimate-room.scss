@@ -18,6 +18,16 @@ body {
     #first__room {
         margin-top: 400px;
     }
+
+    .slider__pagination {
+        display: flex;
+        justify-content: center;
+
+        img {
+        margin: auto;
+
+        }
+    }
 }
 
 @media only screen and (min-width: 1000px) {}
