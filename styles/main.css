@@ -1040,6 +1040,14 @@ body .body__container--video h1 {
   text-align: center;
   margin-top: 20px;
 }
+body .four__sections {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: auto;
+  margin-top: 50px;
+}
 
 @media only screen and (min-width: 1000px) {
   header .header__cover {
@@ -1070,6 +1078,14 @@ body .body__container--video h1 {
     font-weight: 400;
     text-align: center;
     margin-top: 20px;
+  }
+  body .four__sections {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
   }
 }
 
