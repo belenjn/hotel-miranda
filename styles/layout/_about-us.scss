@@ -139,26 +139,47 @@ body {
     padding: 30px;
     margin-top: 100px;
 
-  
     h4 {
-    color: $primary-font-color;
-
+      color: $primary-font-color;
     }
 
     h1 {
-    color: $primary-font-color;
+      color: $primary-font-color;
     }
 
     .facilities__container--images {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 20px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+  }
 
-      
+  .counter__container {
+    h4 {
+      color: $secondary-font-color;
+
+      font-family: "Archivo", sans-serif !important;
+      letter-spacing: 2.8px;
+      font-weight: 500;
+      margin-left: $principal-margin-left;
+      margin-top: 50px;
     }
 
-}
+    h1 {
+      color: $primary-background;
+      font-size: $principal-title-size;
+      margin-left: $principal-margin-left;
+      font-weight: 100;
+      margin-bottom: 10px;
+      margin-top: 20px;
+    }
+
+    .facts__container--images {
+      width: 95%;
+      margin: auto;
+    }
+  }
 }
 
 // Desk Responsive
@@ -211,49 +232,47 @@ body {
     }
 
     .restaurant__container {
-        display: grid;
-        grid-template-columns: 50% 50%;
-        margin-top: 50px;
-        margin-bottom: $principal-title-size;
+      display: grid;
+      grid-template-columns: 50% 50%;
+      margin-top: 50px;
+      margin-bottom: $principal-title-size;
 
-        img {
-          height: 80%;
-        }
+      img {
+        height: 80%;
+      }
 
-        button {
-            margin-left: $principal-margin-left;
-        }
-    
-     
-    
-       
+      button {
+        margin-left: $principal-margin-left;
+      }
     }
 
     .facilities__container {
-        background-color: $primary-background;
-        padding: 30px;
+      background-color: $primary-background;
+      padding: 30px;
 
-      
-        h4 {
+      h4 {
         color: $primary-font-color;
+      }
 
-        }
-
-        h1 {
+      h1 {
         color: $primary-font-color;
-        }
+      }
 
-        .facilities__container--images {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 20px;
-
-          
-        }
-
+      .facilities__container--images {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
     }
 
-  }
+    .counter__container {
+       padding: 20px;
 
+       .facts__container--images {
+           display: flex;
+           justify-content: space-between;
+       }
+    }
+  }
 }

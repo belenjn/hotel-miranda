@@ -1099,6 +1099,26 @@ body .facilities__container .facilities__container--images {
   flex-wrap: wrap;
   gap: 20px;
 }
+body .counter__container h4 {
+  color: #777777;
+  font-family: "Archivo", sans-serif !important;
+  letter-spacing: 2.8px;
+  font-weight: 500;
+  margin-left: 20px;
+  margin-top: 50px;
+}
+body .counter__container h1 {
+  color: #222222;
+  font-size: 56px;
+  margin-left: 20px;
+  font-weight: 100;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+body .counter__container .facts__container--images {
+  width: 95%;
+  margin: auto;
+}
 
 @media only screen and (min-width: 1000px) {
   header .header__cover {
@@ -1165,6 +1185,13 @@ body .facilities__container .facilities__container--images {
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
+  }
+  body .counter__container {
+    padding: 20px;
+  }
+  body .counter__container .facts__container--images {
+    display: flex;
+    justify-content: space-between;
   }
 }
 
