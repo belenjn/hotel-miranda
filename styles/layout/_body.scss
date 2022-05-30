@@ -19,7 +19,6 @@ $principal-title-size: 56px;
     width: 100%;
     height: 68%;
 
-    // position: fixed;
     .header__container-titles {
       // margin-top: 8%;
       border: 1px solid transparent;
@@ -708,6 +707,7 @@ footer {
 // Desk Responsive
 
 @media only screen and (min-width: 1000px) {
+
   .header {
     .header__container {
       .header__container-titles {
@@ -739,13 +739,15 @@ footer {
 
   .form__container {
     //   border: 1px solid yellow;
-    height: 150px;
+    height: 100px;
 
     form {
       margin-left: 20%;
       // border: 1px solid red;
       height: 130px;
       width: 100%;
+      margin-top: 40px;
+
 
       fieldset {
         border: none;
@@ -761,7 +763,6 @@ footer {
           }
 
           .form__input {
-            padding: 7px;
             width: 230px;
 
             &::placeholder {
