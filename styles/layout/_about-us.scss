@@ -134,17 +134,23 @@ body {
     }
   }
 
-  .facilities__container {
+  .about__container--facilities {
     background-color: $primary-background;
     padding: 30px;
     margin-top: 100px;
 
     h4 {
       color: $primary-font-color;
+      font-family: $secondary-font;
+      letter-spacing: 2.8px;
+      text-align: center;
+      margin-bottom: 20px;
     }
 
     h1 {
       color: $primary-font-color;
+      text-align: center;
+      font-size: 45px;
     }
 
     .facilities__container--images {
@@ -246,7 +252,7 @@ body {
       }
     }
 
-    .facilities__container {
+    .about__container--facilities {
       background-color: $primary-background;
       padding: 30px;
 

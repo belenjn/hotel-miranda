@@ -1082,18 +1082,24 @@ body .restaurant__container .fake-photo {
   width: 80%;
   margin: auto;
 }
-body .facilities__container {
+body .about__container--facilities {
   background-color: #222222;
   padding: 30px;
   margin-top: 100px;
 }
-body .facilities__container h4 {
+body .about__container--facilities h4 {
   color: #ffffff;
+  font-family: "Archivo", sans-serif;
+  letter-spacing: 2.8px;
+  text-align: center;
+  margin-bottom: 20px;
 }
-body .facilities__container h1 {
+body .about__container--facilities h1 {
   color: #ffffff;
+  text-align: center;
+  font-size: 45px;
 }
-body .facilities__container .facilities__container--images {
+body .about__container--facilities .facilities__container--images {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -1170,17 +1176,17 @@ body .counter__container .facts__container--images {
   body .restaurant__container button {
     margin-left: 20px;
   }
-  body .facilities__container {
+  body .about__container--facilities {
     background-color: #222222;
     padding: 30px;
   }
-  body .facilities__container h4 {
+  body .about__container--facilities h4 {
     color: #ffffff;
   }
-  body .facilities__container h1 {
+  body .about__container--facilities h1 {
     color: #ffffff;
   }
-  body .facilities__container .facilities__container--images {
+  body .about__container--facilities .facilities__container--images {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
