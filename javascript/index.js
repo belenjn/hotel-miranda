@@ -7,7 +7,7 @@ const hotels = [
   {
     lat: 41.120953,
     lng: 1.246179,
-    dir: "C. de Sant Antonio Maria Claret, 43002 Tarragona",
+    dir: "Ptge. Andorra, 20, 43002 Tarragona",
   },
   {
     lat: 41.482088,
@@ -52,9 +52,11 @@ const hotels = [
 ];
 
 let map, infoWindow;
+let currentPosition = [];
+let address;
 
 function initMap() {
-   map = new google.maps.Map(document.getElementById("map"), {
+  map = new google.maps.Map(document.getElementById("map"), {
     center: { lat: 40.4165, lng: -3.70256 },
     zoom: 4.55,
   });
@@ -66,7 +68,7 @@ function initMap() {
       map: map,
     });
   }
-  
+
   infoWindow = new google.maps.InfoWindow();
 
   const locationButton = document.createElement("button");
@@ -75,7 +77,6 @@ function initMap() {
   locationButton.classList.add("custom-map-control-button");
   map.controls[google.maps.ControlPosition.TOP_RIGHT].push(locationButton);
   locationButton.addEventListener("click", () => {
-    // Try HTML5 geolocation.
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(
         (position) => {
@@ -83,6 +84,7 @@ function initMap() {
             lat: position.coords.latitude,
             lng: position.coords.longitude,
           };
+          currentPosition.push(pos);
           infoWindow.setPosition(pos);
           infoWindow.setContent("Location founded");
           infoWindow.open(map);
@@ -93,10 +95,66 @@ function initMap() {
         }
       );
     } else {
-      // Browser doesn't support Geolocation
       handleLocationError(false, infoWindow, map.getCenter());
     }
   });
+
+  const buttonLocation = document.getElementById("button__location");
+
+  buttonLocation.addEventListener("click", () => {
+    const destinations = hotels.map((hotel) => ({
+      lat: hotel.lat,
+      lng: hotel.lng,
+    }));
+
+    if (currentPosition.length > 0) {
+      const origin = new google.maps.LatLng(
+        currentPosition[0].lat,
+        currentPosition[0].lng
+      );
+      calculateDistance(origin, destinations);
+    } else if (address) {
+      calculateDistance(address, destinations);
+    }
+
+    calculateDistance(origin, destinations);
+  });
+
+  var geocoder = new google.maps.Geocoder();
+  const input = document.getElementById("input__text").value;
+  const buttonInput = document.getElementById("button__input");
+
+  buttonInput.addEventListener("click", () => {
+    address = input;
+    geocoder.geocode({ address: address }, function (results, status) {
+      const pos = results[0].geometry.location;
+      infoWindow.setPosition(pos);
+      infoWindow.setContent("Location founded");
+      infoWindow.open(map);
+      map.setCenter(pos);
+    });
+  });
+
+  function calculateDistance(origin, destinations) {
+    var service = new google.maps.DistanceMatrixService();
+    service
+      .getDistanceMatrix({
+        origins: [origin],
+        destinations: destinations,
+        travelMode: "DRIVING",
+      })
+      .then((response) => {
+        const sorted = response.rows[0].elements.sort(
+          (a, b) => a.distance.value - b.distance.value
+        );
+
+        for (let dist of sorted) {
+          const distance = document.createElement("li");
+          distance.innerText = dist.distance.text + " - " + dist.duration.text;
+          document.getElementById("locations").appendChild(distance);
+        }
+      });
+  }
 }
 
 function handleLocationError(browserHasGeolocation, infoWindow, pos) {

@@ -1250,6 +1250,76 @@ body .slider__pagination img {
     border-top-right-radius: 2px;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px;
   }
+
+  #locations {
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    border-width: 0px;
+    margin: 0px;
+    left: 0px;
+    top: 0px;
+  }
+  #locations li {
+    border-bottom: 1px solid rgba(190, 173, 142, 0.3803921569);
+    text-align: left;
+    list-style: none;
+    margin: auto;
+    font-family: "Archivo", sans-serif;
+    padding: 5px;
+    width: 50%;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .buttons #button__location {
+    background-color: #bead8e;
+    border: none;
+    color: white;
+    padding: 10px;
+    margin: auto;
+    margin-top: 20px;
+  }
+  .buttons #button__location:hover {
+    scale: 1.05;
+    transition: 0.2s ease;
+  }
+  .buttons .input__container {
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 35%;
+  }
+  .buttons .input__container #input__text {
+    border: 1px solid rgba(128, 128, 128, 0.382);
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 16px;
+    font-family: "Archivo", sans-serif;
+    height: 35px;
+    width: 270px;
+  }
+  .buttons .input__container #button__input {
+    background-color: #bead8e;
+    border: none;
+    color: white;
+    padding: 10px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 120px;
+  }
+  .buttons .input__container #button__input:hover {
+    scale: 1.05;
+    transition: 0.2s ease;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
