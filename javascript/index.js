@@ -150,7 +150,7 @@ function initMap() {
 
         for (let dist of sorted) {
           const distance = document.createElement("li");
-          distance.innerText = dist.distance.text + " - " + dist.duration.text;
+          distance.innerText = dist.distance.text;
           document.getElementById("locations").appendChild(distance);
         }
       });
