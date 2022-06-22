@@ -73,6 +73,7 @@ function initMap() {
 
   const locationButton = document.createElement("button");
 
+  /* Function to pan the current location */
   locationButton.textContent = "Pan to Current Location";
   locationButton.classList.add("custom-map-control-button");
   map.controls[google.maps.ControlPosition.TOP_RIGHT].push(locationButton);
@@ -100,6 +101,8 @@ function initMap() {
   });
 
   const buttonLocation = document.getElementById("button__location");
+
+  /* Function to get the distance current location - hotels */
 
   buttonLocation.addEventListener("click", () => {
     const destinations = hotels.map((hotel) => ({
@@ -133,6 +136,8 @@ function initMap() {
     });
   });
 
+  /* Function print the sorted hotels by distance */
+  
   function calculateDistance(origin, destinations) {
     let service = new google.maps.DistanceMatrixService();
 
