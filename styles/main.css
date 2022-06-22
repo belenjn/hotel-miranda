@@ -1264,10 +1264,21 @@ body .slider__pagination img {
     border-bottom: 1px solid rgba(190, 173, 142, 0.3803921569);
     text-align: left;
     list-style: none;
+    letter-spacing: 0.5px;
     margin: auto;
     font-family: "Archivo", sans-serif;
-    padding: 5px;
+    font-weight: 500;
+    padding: 10px;
     width: 50%;
+  }
+  #locations h6 {
+    color: #777777 !important;
+    text-align: right;
+    list-style: none;
+    margin: auto;
+    font-size: 16px;
+    font-family: "Archivo", sans-serif;
+    font-weight: 500;
   }
 
   .buttons {

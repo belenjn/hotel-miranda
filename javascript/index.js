@@ -107,7 +107,7 @@ function initMap() {
       lng: hotel.lng,
     }));
 
-    if (currentPosition.length > 0) {
+    if (currentPosition.length) {
       const origin = new google.maps.LatLng(
         currentPosition[0].lat,
         currentPosition[0].lng
@@ -116,8 +116,6 @@ function initMap() {
     } else if (address) {
       calculateDistance(address, destinations);
     }
-
-    calculateDistance(origin, destinations);
   });
 
   var geocoder = new google.maps.Geocoder();
@@ -136,7 +134,8 @@ function initMap() {
   });
 
   function calculateDistance(origin, destinations) {
-    var service = new google.maps.DistanceMatrixService();
+    let service = new google.maps.DistanceMatrixService();
+
     service
       .getDistanceMatrix({
         origins: [origin],
@@ -144,16 +143,34 @@ function initMap() {
         travelMode: "DRIVING",
       })
       .then((response) => {
-        const sorted = response.rows[0].elements.sort(
-          (a, b) => a.distance.value - b.distance.value
-        );
+        const hotels = response.destinationAddresses.map((hotel) => ({
+          name: hotel,
+        }));
+        const distances = response.rows[0].elements.map((dist) => ({
+          distance: dist.distance,
+        }));
 
-        for (let dist of sorted) {
-          const distance = document.createElement("li");
-          distance.innerText = dist.distance.text;
-          document.getElementById("locations").appendChild(distance);
+        const sortedHotels = [];
+        for (let i = 0; i < hotels.length; i++) {
+          sortedHotels.push({ ...hotels[i], ...distances[i] });
         }
-      });
+        sortedHotels.sort((a, b) => {
+          return a.distance.value - b.distance.value;
+          //TODO: a.distance is undefined
+        });
+
+        for (let hotel of sortedHotels) {
+          const direction = document.createElement("li");
+          const distance = document.createElement("h6");
+          direction.innerText = `${hotel.name} `;
+          distance.innerText = `${hotel.distance.text}`;
+          document
+            .getElementById("locations")
+            .appendChild(direction)
+            .appendChild(distance);
+        }
+      })
+      .catch((error) => {});
   }
 }
 
