@@ -1286,18 +1286,6 @@ body .slider__pagination img {
     flex-direction: column;
     margin-top: 20px;
   }
-  .buttons #button__location {
-    background-color: #bead8e;
-    border: none;
-    color: white;
-    padding: 10px;
-    margin: auto;
-    margin-top: 20px;
-  }
-  .buttons #button__location:hover {
-    scale: 1.05;
-    transition: 0.2s ease;
-  }
   .buttons .input__container {
     display: flex;
     justify-content: space-around;
@@ -1330,6 +1318,51 @@ body .slider__pagination img {
   .buttons .input__container #button__input:hover {
     scale: 1.05;
     transition: 0.2s ease;
+  }
+
+  .select__container {
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    margin: auto;
+  }
+  .select__container #button__location {
+    background-color: #bead8e;
+    border: none;
+    color: white;
+    padding: 10px;
+    margin: auto;
+  }
+  .select__container #button__location:hover {
+    scale: 1.05;
+    transition: 0.2s ease;
+  }
+  .select__container .selector {
+    width: 30%;
+    color: white;
+    background-color: #bead8e;
+    border: none;
+    border-radius: 8px;
+    font-family: "Archivo", sans-serif;
+    font-size: 14px;
+    padding: 10px;
+    margin: auto;
+    letter-spacing: 2px;
+  }
+  .select__container .selector:hover {
+    cursor: pointer;
+  }
+  .select__container .selector option {
+    color: white;
+    border: none;
+    display: flex;
+    font-family: "Archivo", sans-serif;
+    font-size: 12px;
+    align-items: center;
+    justify-content: center;
+  }
+  .select__container .selector option:hover {
+    cursor: pointer;
   }
 }
 

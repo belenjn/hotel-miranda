@@ -62,22 +62,30 @@
 </header>
 
 <body>
-    <script type="text/javascript" src="./javascript/index.js"></script>
-    <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9Y7Af9prP4lE5-AncFsKvuNxvO8-b8ak&callback=initMap"></script>
+   
     <div id="map" class="map"></div>
     <div class="buttons">
-        <button id="button__location">Find my nearest location</button>
+
         <div class="input__container">
             <input type=”text” id="input__text" />
             <button id="button__input">Send</button>
+
         </div>
+
+        <div class="select__container">
+             <button id="button__location">Find my nearest location</button>
+
+        <select class="selector" id="selector__comunidades" name="select">
+            
+        </select>
+        </div>
+       
+
     </div>
     <div id="locations"></div>
 
 
 
-</body>
 <footer>
     <div class="footer__socials">
 
@@ -147,5 +155,9 @@
     <h4>Copyright By@Example - 2020</h4>
     <h4>Terms of use | Privacy Environmental Policy</h4>
 </div>
+<script type="text/javascript" src="./javascript/index.js"></script>
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9Y7Af9prP4lE5-AncFsKvuNxvO8-b8ak&callback=initMap"></script>
+</body>
 
 </html>

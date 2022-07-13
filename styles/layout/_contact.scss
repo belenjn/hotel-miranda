@@ -71,20 +71,6 @@ $principal-title-size: 56px;
     flex-direction: column;
     margin-top: 20px;
 
-    #button__location {
-      background-color: #bead8e;
-      border: none;
-      color: white;
-      padding: 10px;
-      margin: auto;
-      margin-top: 20px;
-
-      &:hover {
-        scale: (1.05);
-        transition: 0.2s ease;
-      }
-    }
-
     .input__container {
       display: flex;
       justify-content: space-around;
@@ -118,6 +104,55 @@ $principal-title-size: 56px;
         &:hover {
           scale: (1.05);
           transition: 0.2s ease;
+        }
+      }
+    }
+  }
+
+  .select__container {
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    margin: auto;
+
+    #button__location {
+      background-color: #bead8e;
+      border: none;
+      color: white;
+      padding: 10px;
+      margin: auto;
+
+      &:hover {
+        scale: (1.05);
+        transition: 0.2s ease;
+      }
+    }
+    .selector {
+      width: 30%;
+      color: white;
+      background-color: #bead8e;
+      border: none;
+      border-radius: 8px;
+      font-family: "Archivo", sans-serif;
+      font-size: 14px;
+      padding: 10px;
+      margin: auto;
+      letter-spacing: 2px;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      option {
+        color: white;
+        border: none;
+        display: flex;
+        font-family: "Archivo", sans-serif;
+        font-size: 12px;
+        align-items: center;
+        justify-content: center;
+        &:hover {
+          cursor: pointer;
         }
       }
     }
