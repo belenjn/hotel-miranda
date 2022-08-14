@@ -29,6 +29,10 @@ $primary-background: #222222;
     display: none;
   }
 
+  .navbar__categories a:hover {
+    cursor: pointer;
+  }
+
   .navbar__container-icon {
     display: flex;
     // border: 1px solid red;

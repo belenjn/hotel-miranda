@@ -854,6 +854,9 @@ footer .footer__contact .contact__icon p small {
 .navbar .navbar__categories {
   display: none;
 }
+.navbar .navbar__categories a:hover {
+  cursor: pointer;
+}
 .navbar .navbar__container-icon {
   display: flex;
   width: 20%;
