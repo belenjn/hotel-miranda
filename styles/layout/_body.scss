@@ -325,25 +325,10 @@ button {
     line-height: 1.5;
   }
 
-  .pricing {
-    color: #bead8e;
-    display: inline-block;
-    height: 30px;
-    margin-top: 20px;
-    margin-bottom: 50px;
 
-    h3 {
-      font-family: "Archivo", sans-serif !important;
-      font-weight: 700;
-
-      small {
-        font-family: "Archivo", sans-serif !important;
-        font-weight: 500;
-        font-size: 12px !important;
-      }
-    }
-  }
 }
+
+
 
 .video__container {
   background-color: $primary-background;
@@ -615,13 +600,42 @@ button {
 .rooms {
   width: 100%;
   margin: auto;
-  margin-top: 10px;
+  margin-top: 50px;
+
+  h3 {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 20px;
+  }
 
   img {
     width: 250px;
     height: 150px;
     display: flex;
     margin: auto;
+    margin-top: 20px;
+
+  }
+
+  .pricing {
+    display: grid;
+    grid-column: 2;
+    text-align: center;
+
+    h3 {
+    text-align: center;
+    font-weight: 700;
+    font-family: "Archivo", sans-serif !important;
+    font-size: 35px;
+    color: #BEAD8E;
+
+    small {
+    font-family: "Archivo", sans-serif !important;
+    font-size: 15px;
+  }
+  
+  }
+
   }
 
 }
@@ -965,11 +979,34 @@ footer {
     .rooms {
       width: 100%;
       margin: auto;
-      margin-top: 10px;
+      margin-top: 50px;
+
 
       img {
+        width: 50%;
+        height: 50%;
         display: flex;
         margin: auto;
+      }
+
+      .pricing {
+        display: grid;
+        grid-column: 2;
+
+        h3 {
+        margin: auto;
+        font-weight: 700;
+        font-family: "Archivo", sans-serif !important;
+        font-size: 35px;
+        color: #BEAD8E;
+
+        small {
+        font-family: "Archivo", sans-serif !important;
+        font-size: 15px;
+      }
+
+      }
+
       }
   
   }

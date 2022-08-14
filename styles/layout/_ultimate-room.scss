@@ -30,4 +30,87 @@ body {
     }
 }
 
-@media only screen and (min-width: 1000px) {}
+@media only screen and (min-width: 1000px) {
+    .room__image {
+        display: flex;
+        margin: auto;
+        margin-top: 20px;
+        width: 770px;
+        height: 490px;
+    }
+    
+    .room__name {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: auto;
+        margin-top: 50px;
+        width: 770px;
+        height: 146px;
+        box-shadow: 5px 5px 20px #acacae44;
+    }
+    
+    .room__name h2 {
+        margin: auto;
+        font-family: "Old Standard TT", serif;
+        font-weight: 400px;
+        font-size: 48px;
+    
+    }
+    
+    .pricing {
+        display: grid;
+        grid-column: 2;
+    }
+    
+    .pricing h3 {
+        margin: auto;
+        font-weight: 700;
+        font-family: "Archivo", sans-serif;
+        font-size: 35px;
+        color: #BEAD8E;
+    }
+    
+    .pricing h3 small {
+        font-size: 15px;
+    }
+    
+    .room__description{
+        margin: auto;
+        margin-top: 50px;
+        width: 770px;
+        text-align: left;
+        color: #777777;
+        font-weight: 400;
+        line-height: 24px;
+    }
+    
+    .room__amenities {
+        margin: auto;
+        margin-top: 50px;
+        width: 770px;
+        text-align: left;
+    }
+    
+    .room__amenities hr {
+        width: 670px;
+        height: 1px;
+        color: #f1f1f1b6;
+    }
+    
+    .room__amenities h2 {
+        font-size: 30px;
+        font-weight: 100;
+        font-family: "Old Standard TT", serif;
+        color: #222222;
+        margin-bottom: 20px;
+    }
+    
+    .room__amenities p {
+        margin-top: 20px;
+    }
+    
+    .cancellation {
+        color: #777777;
+    
+    }
+}
