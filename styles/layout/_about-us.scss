@@ -71,7 +71,7 @@ body {
     margin-top: 50px;
 
     img {
-      margin-left: $principal-margin-left;
+      margin-left: 3%;
     }
 
     h1 {
@@ -215,7 +215,8 @@ body {
       margin-top: 350px;
 
       img {
-        margin-left: 3%;
+        display: flex;
+        justify-content: center;
         width: 1170px;
         height: 650px;
       }

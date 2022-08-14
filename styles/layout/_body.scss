@@ -268,7 +268,6 @@ button {
     }
 
     .rooms__navbar {
-      // border: 1px solid black;
       display: flex;
       padding: 15px;
       width: 70%;
@@ -613,6 +612,20 @@ button {
   }
 }
 
+.rooms {
+  width: 100%;
+  margin: auto;
+  margin-top: 10px;
+
+  img {
+    width: 250px;
+    height: 150px;
+    display: flex;
+    margin: auto;
+  }
+
+}
+
 footer {
   background-image: url(../../assets/footer/background.png);
   display: grid;
@@ -848,12 +861,12 @@ footer {
       }
 
       .rooms__navbar {
-        // border: 1px solid black;
         display: flex;
         width: 20%;
         margin: auto;
         margin-left: 25%;
         box-shadow: 1px 1px 8px rgb(146, 145, 145);
+        z-index: 0;
       }
     }
   }
@@ -948,6 +961,19 @@ footer {
       display: none;
     }
   }
+
+    .rooms {
+      width: 100%;
+      margin: auto;
+      margin-top: 10px;
+
+      img {
+        display: flex;
+        margin: auto;
+      }
+  
+  }
+
 
   .pre-footer__container {
     // border: 1px solid red;
