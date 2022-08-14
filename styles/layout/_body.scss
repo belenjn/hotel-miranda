@@ -7,6 +7,11 @@ $secondary-font-color: #777777;
 $principal-margin-left: 20px;
 $principal-title-size: 56px;
 
+
+html, body {
+  overflow-x: hidden
+}
+
 .header {
   width: 100%;
   height: 100%;
