@@ -602,15 +602,12 @@ footer .footer__contact .contact__icon p small {
     margin-left: 20%;
     font-weight: 100;
   }
-
   button {
     margin-left: 20%;
   }
-
   .button__secondary {
     margin-left: 5% !important;
   }
-
   .form__container {
     height: 100px;
   }
@@ -647,7 +644,6 @@ footer .footer__contact .contact__icon p small {
     margin-bottom: 15px;
     margin-left: 20%;
   }
-
   .main__container {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -676,7 +672,6 @@ footer .footer__contact .contact__icon p small {
     gap: 10px;
     width: 100%;
   }
-
   .main__rooms {
     display: flex;
     flex-direction: column;
@@ -701,7 +696,6 @@ footer .footer__contact .contact__icon p small {
     margin-left: 25%;
     box-shadow: 1px 1px 8px rgb(146, 145, 145);
   }
-
   .slider__container--bottom {
     display: flex;
     flex-direction: column;
@@ -739,7 +733,6 @@ footer .footer__contact .contact__icon p small {
     font-weight: 500;
     font-size: 12px !important;
   }
-
   .video__container {
     display: grid;
     grid-template-columns: 65% 35%;
@@ -765,7 +758,6 @@ footer .footer__contact .contact__icon p small {
     margin: auto;
     width: 65%;
   }
-
   .little-slider__container {
     display: flex;
     padding: 15px;
@@ -779,7 +771,6 @@ footer .footer__contact .contact__icon p small {
   .little-slider__container .little-slider {
     display: none;
   }
-
   .pre-footer__container {
     display: flex;
     flex-direction: row;
@@ -800,7 +791,6 @@ footer .footer__contact .contact__icon p small {
   .pre-footer__container .pre-footer__container--images p {
     margin-bottom: 50px;
   }
-
   footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -828,7 +818,6 @@ footer .footer__contact .contact__icon p small {
     font-size: 24px;
     margin-left: 20px;
   }
-
   .footer__policy {
     background-color: #f8f8f8;
     display: grid;
@@ -879,11 +868,8 @@ footer .footer__contact .contact__icon p small {
   width: 25%;
 }
 .navbar .navbar__logo {
-  margin-top: 15px;
-  width: 100px;
-  height: 60px;
-  display: flex;
-  justify-content: center;
+  width: 130px;
+  height: 50px;
 }
 .navbar .navbar__hamburger {
   width: 20px;
@@ -913,7 +899,6 @@ footer .footer__contact .contact__icon p small {
     color: white;
     font-family: "Roboto", sans-serif !important;
   }
-
   .navbar__header {
     background-color: #222222;
     display: flex;
@@ -961,9 +946,12 @@ footer .footer__contact .contact__icon p small {
     margin-right: 90px;
   }
   .navbar__header .navbar .navbar__logo {
-    width: 200px;
-    height: 120px;
-    margin-left: -20px;
+    width: 180px;
+    height: 80px;
+    margin-top: 20px;
+    width: 170px;
+    height: 70px;
+    margin-left: 20px;
   }
   .navbar__header .navbar .navbar__person,
 .navbar__header .navbar .navbar__search {
@@ -1153,7 +1141,6 @@ body .counter__container .facts__container--images {
   header .header__cover .header__cover--choices {
     margin-left: 70%;
   }
-
   body .body__container--video {
     margin-top: 350px;
   }
@@ -1232,7 +1219,6 @@ body .slider__pagination img {
     width: 800px;
     margin-top: 50px;
   }
-
   .custom-map-control-button {
     background: rgb(255, 255, 255) none repeat scroll 0% 0% padding-box;
     display: table-cell;
@@ -1250,7 +1236,6 @@ body .slider__pagination img {
     border-top-right-radius: 2px;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px;
   }
-
   #locations {
     height: 100%;
     width: 100%;
@@ -1280,7 +1265,6 @@ body .slider__pagination img {
     font-family: "Archivo", sans-serif;
     font-weight: 500;
   }
-
   .buttons {
     display: flex;
     flex-direction: column;
@@ -1319,7 +1303,6 @@ body .slider__pagination img {
     scale: 1.05;
     transition: 0.2s ease;
   }
-
   .select__container {
     display: flex;
     justify-content: space-around;
