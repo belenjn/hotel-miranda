@@ -348,6 +348,48 @@ button {
   }
 }
 
+.facilities__container {
+  display: flex;
+  flex-direction: column;
+
+  .facilities {
+    display: none;
+  }
+
+  .swiper__facilities {
+    width: 350px;
+    height: 400px;
+    --swiper-navigation-size: 15px;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    box-shadow: 18px 17px 52px 0px rgba(194, 192, 194, 0.452);
+
+    .swiper-pagination-bullet {
+      background-color: #bead8e;
+    }
+
+    .swiper-slide {
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      margin: auto;
+      height: 90%;
+    }
+  }
+
+  .donut__container {
+    justify-content: left;
+
+    .donut {
+      height: 100px;
+      width: 100px;
+      margin-left: 50px;
+      margin-bottom: 50px;
+    }
+  }
+}
+
 .video__container {
   background-color: $primary-background;
   display: flex;
@@ -389,26 +431,6 @@ button {
     margin: auto;
     width: 300px;
     height: 300px;
-  }
-}
-
-.facilities__container {
-  display: flex;
-  flex-direction: column;
-  
-  .facilities {
-    margin: auto;
-  }
-
-
-  .donut__container {
-    justify-content: left;
-
-    .donut {
-      height: 200px;
-      width: 200px;
-      margin-left: 50px;
-    }
   }
 }
 
@@ -468,34 +490,13 @@ button {
   }
 }
 
-
-.little-slider__container {
-  display: flex;
-  padding: 15px;
-  flex-direction: column;
-  margin-top: $principal-margin-left;
-
-  .fake-photo {
-    margin: auto;
-    width: 335px;
-    height: 335px;
-  }
-
-  .little-slider {
-    margin: auto;
-    margin-top: 20px;
-  }
-}
-
 .pre-footer__container {
-  // border: 1px solid red;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: $primary-background;
 
   .pre-footer__container--images {
-    // border: 1px solid green;
     margin-top: 60px;
     color: white;
     font-weight: 500;
@@ -738,6 +739,30 @@ footer {
           margin-left: 20%;
         }
       }
+    }
+  }
+
+  .facilities__container {
+    display: flex;
+    flex-direction: column;
+
+    .facilities {
+      display: flex;
+      margin: auto;
+    }
+
+    .donut__container {
+      justify-content: left;
+
+      .donut {
+        height: 200px;
+        width: 200px;
+        margin-left: 50px;
+      }
+    }
+
+    .swiper__facilities {
+      display: none;
     }
   }
 

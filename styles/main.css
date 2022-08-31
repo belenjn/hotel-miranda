@@ -295,6 +295,42 @@ button {
   background-position: center;
 }
 
+.facilities__container {
+  display: flex;
+  flex-direction: column;
+}
+.facilities__container .facilities {
+  display: none;
+}
+.facilities__container .swiper__facilities {
+  width: 350px;
+  height: 400px;
+  --swiper-navigation-size: 15px;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  box-shadow: 18px 17px 52px 0px rgba(194, 192, 194, 0.452);
+}
+.facilities__container .swiper__facilities .swiper-pagination-bullet {
+  background-color: #bead8e;
+}
+.facilities__container .swiper__facilities .swiper-slide {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: auto;
+  height: 90%;
+}
+.facilities__container .donut__container {
+  justify-content: left;
+}
+.facilities__container .donut__container .donut {
+  height: 100px;
+  width: 100px;
+  margin-left: 50px;
+  margin-bottom: 50px;
+}
+
 .video__container {
   background-color: #222222;
   display: flex;
@@ -332,22 +368,6 @@ button {
   margin: auto;
   width: 300px;
   height: 300px;
-}
-
-.facilities__container {
-  display: flex;
-  flex-direction: column;
-}
-.facilities__container .facilities {
-  margin: auto;
-}
-.facilities__container .donut__container {
-  justify-content: left;
-}
-.facilities__container .donut__container .donut {
-  height: 200px;
-  width: 200px;
-  margin-left: 50px;
 }
 
 .menu__container h4 {
@@ -393,22 +413,6 @@ button {
 }
 .menu__container .menu__list .menu__list--text p {
   font-size: 12px;
-}
-
-.little-slider__container {
-  display: flex;
-  padding: 15px;
-  flex-direction: column;
-  margin-top: 20px;
-}
-.little-slider__container .fake-photo {
-  margin: auto;
-  width: 335px;
-  height: 335px;
-}
-.little-slider__container .little-slider {
-  margin: auto;
-  margin-top: 20px;
 }
 
 .pre-footer__container {
@@ -617,6 +621,25 @@ footer .footer__contact .contact__icon p small {
     height: 50px;
     margin-bottom: 15px;
     margin-left: 20%;
+  }
+  .facilities__container {
+    display: flex;
+    flex-direction: column;
+  }
+  .facilities__container .facilities {
+    display: flex;
+    margin: auto;
+  }
+  .facilities__container .donut__container {
+    justify-content: left;
+  }
+  .facilities__container .donut__container .donut {
+    height: 200px;
+    width: 200px;
+    margin-left: 50px;
+  }
+  .facilities__container .swiper__facilities {
+    display: none;
   }
   .main__container {
     display: grid;
