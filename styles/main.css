@@ -334,65 +334,20 @@ button {
   height: 300px;
 }
 
-.facilities__container h4 {
-  color: #777777;
-  font-family: "Archivo", sans-serif !important;
-  letter-spacing: 2.8px;
-  font-weight: 600;
-  margin-top: 56px;
-  margin-bottom: 30px;
-  text-align: center;
-}
-.facilities__container h1 {
-  font-size: 56px;
-  font-weight: 100;
-  color: black;
-  text-align: center;
-}
-.facilities__container div {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
-.facilities__container div .finger {
-  margin-top: 100px;
-}
-.facilities__container div .number {
-  width: 150px;
-  height: 100px;
-}
-.facilities__container .donut__container {
+.facilities__container {
   display: flex;
   flex-direction: column;
 }
-.facilities__container .donut__container h3 {
-  font-size: 30px;
-  font-weight: 100;
-  color: black;
-  text-align: left;
-  margin-left: 20px;
-  margin-bottom: 10px;
-}
-.facilities__container .donut__container p {
-  font-family: "Roboto", sans-serif !important;
-  text-align: left;
-  font-weight: 300;
-  font-size: 14px;
-  margin-top: 15px;
-  color: #777777;
-  line-height: 1.5;
-  margin-left: 20px;
-  margin-bottom: 30px;
-}
-.facilities__container .donut__container .slider-buttons {
-  width: 90px;
+.facilities__container .facilities {
   margin: auto;
-  margin-bottom: 50px;
+}
+.facilities__container .donut__container {
+  justify-content: left;
 }
 .facilities__container .donut__container .donut {
-  width: 115px;
-  align-self: flex-end;
+  height: 200px;
+  width: 200px;
+  margin-left: 50px;
 }
 
 .menu__container h4 {
@@ -438,35 +393,6 @@ button {
 }
 .menu__container .menu__list .menu__list--text p {
   font-size: 12px;
-}
-
-.menu__container--buttons {
-  display: flex;
-  flex-direction: row-reverse;
-  font-family: "Archivo", sans-serif !important;
-  margin-right: 20px;
-  margin-top: 20px;
-}
-.menu__container--buttons .left {
-  width: 36px;
-  height: 36px;
-  background-color: #f8f8f8;
-}
-.menu__container--buttons .left h6 {
-  margin-top: 10px;
-  text-align: center;
-  font-size: 8px;
-}
-.menu__container--buttons .right {
-  background-color: #bead8e;
-  color: white;
-  width: 36px;
-  height: 36px;
-}
-.menu__container--buttons .right h6 {
-  margin-top: 10px;
-  text-align: center;
-  font-size: 8px;
 }
 
 .little-slider__container {
