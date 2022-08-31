@@ -1,6 +1,7 @@
 $primary-background: #222222;
 
 .navbar__header {
+  z-index: 10;
 
   & h6 {
     display: none;
@@ -14,6 +15,7 @@ $primary-background: #222222;
   top: 0;
   width: 100%;
   background-color: white;
+  z-index: 10;
 
 
   .navbar__container {
