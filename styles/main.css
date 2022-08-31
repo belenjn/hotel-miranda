@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   overflow-x: hidden;
 }
 
@@ -137,15 +138,12 @@ button {
 .main__container .main__container--photos {
   display: flex;
   flex-direction: column;
+  margin: auto;
   margin-top: 30px;
 }
-.main__container .main__container--photos .fake-photo {
-  width: 100%;
-  margin: auto;
-}
-.main__container .main__container--photos .fake-photo img {
-  display: flex;
-  margin: auto;
+.main__container .main__container--photos .room-image {
+  width: 300px;
+  height: 250px;
 }
 .main__container .main__container--photos .strong__team {
   background-image: url(../../assets/team/team-light.png);
@@ -156,8 +154,8 @@ button {
   flex-direction: column;
   margin: auto;
   margin-bottom: 50px;
-  width: 270px;
-  height: 300px;
+  width: 300px;
+  height: 250px;
 }
 .main__container .main__container--photos .strong__team .logo {
   display: flex;
@@ -180,8 +178,8 @@ button {
   display: flex;
   flex-direction: column;
   margin: auto;
-  width: 270px;
-  height: 300px;
+  width: 300px;
+  height: 250px;
   background-color: #222222;
   color: #ffffff;
 }
@@ -277,7 +275,7 @@ button {
   z-index: 1;
 }
 .swiper .swiper-pagination-bullet-active {
-  background: #BDAC8D;
+  background: #bdac8d;
 }
 .swiper .swiper-button-prev,
 .swiper .swiper-button-next {
@@ -288,7 +286,7 @@ button {
 }
 .swiper .swiper-button-prev:hover,
 .swiper .swiper-button-next:hover {
-  background-color: #BDAC8D;
+  background-color: #bdac8d;
   color: white;
 }
 .swiper .swiper-slide {
@@ -546,7 +544,7 @@ button {
   font-weight: 700;
   font-family: "Archivo", sans-serif !important;
   font-size: 35px;
-  color: #BEAD8E;
+  color: #bead8e;
 }
 .rooms .pricing h3 small {
   font-family: "Archivo", sans-serif !important;
@@ -722,6 +720,10 @@ footer .footer__contact .contact__icon p small {
     gap: 10px;
     width: 100%;
   }
+  .main__container .main__container--photos .room-image {
+    width: 300px;
+    height: 250px;
+  }
   .main__rooms {
     display: flex;
     flex-direction: column;
@@ -736,7 +738,7 @@ footer .footer__contact .contact__icon p small {
     z-index: 1;
   }
   .swiper .swiper-pagination-bullet-active {
-    background: #BDAC8D;
+    background: #bdac8d;
   }
   .swiper .swiper-button-prev,
 .swiper .swiper-button-next {
@@ -747,7 +749,7 @@ footer .footer__contact .contact__icon p small {
   }
   .swiper .swiper-button-prev:hover,
 .swiper .swiper-button-next:hover {
-    background-color: #BDAC8D;
+    background-color: #bdac8d;
     color: white;
   }
   .swiper .swiper-slide {
@@ -813,7 +815,7 @@ footer .footer__contact .contact__icon p small {
     font-weight: 700;
     font-family: "Archivo", sans-serif !important;
     font-size: 35px;
-    color: #BEAD8E;
+    color: #bead8e;
   }
   .rooms .pricing h3 small {
     font-family: "Archivo", sans-serif !important;

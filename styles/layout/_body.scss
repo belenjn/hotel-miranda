@@ -7,9 +7,9 @@ $secondary-font-color: #777777;
 $principal-margin-left: 20px;
 $principal-title-size: 56px;
 
-
-html, body {
-  overflow-x: hidden
+html,
+body {
+  overflow-x: hidden;
 }
 
 .header {
@@ -168,21 +168,15 @@ button {
   .main__container--photos {
     display: flex;
     flex-direction: column;
-    //  border: 1px solid pink;
+    margin: auto;
     margin-top: 30px;
 
-    .fake-photo {
-      width: 100%;
-      margin: auto;
-
-      & img {
-        display: flex;
-        margin: auto;
-      }
+    .room-image {
+      width: 300px;
+      height: 250px;
     }
 
     .strong__team {
-      //   border: 1px solid green;
       background-image: url(../../assets/team/team-light.png);
       background-repeat: no-repeat;
       background-position: 100% 10%;
@@ -191,8 +185,8 @@ button {
       flex-direction: column;
       margin: auto;
       margin-bottom: 50px;
-      width: 270px;
-      height: 300px;
+      width: 300px;
+      height: 250px;
 
       .logo {
         display: flex;
@@ -217,15 +211,13 @@ button {
   }
 
   .luxury__room {
-    // border: 1px solid yellow;
     display: flex;
     flex-direction: column;
     margin: auto;
-    width: 270px;
-    height: 300px;
+    width: 300px;
+    height: 250px;
     background-color: #222222;
     color: $primary-font-color;
-    // margin-top: 20px;
 
     & img {
       display: flex;
@@ -251,7 +243,6 @@ button {
 }
 
 .main__rooms {
-  // border: 1px solid red;
   display: flex;
   flex-direction: column;
   margin: auto;
@@ -324,7 +315,6 @@ button {
     color: #777777;
     line-height: 1.5;
   }
-
 }
 
 .swiper {
@@ -334,30 +324,29 @@ button {
   margin-bottom: 100px;
   z-index: 1;
 
- .swiper-pagination-bullet-active {
-  background: #BDAC8D;
- }
+  .swiper-pagination-bullet-active {
+    background: #bdac8d;
+  }
 
- .swiper-button-prev,
- .swiper-button-next {
-  color: #111111;
-  background-color: white;
-  padding: 25px;
-  font-size: 12px;
- }
+  .swiper-button-prev,
+  .swiper-button-next {
+    color: #111111;
+    background-color: white;
+    padding: 25px;
+    font-size: 12px;
+  }
 
- .swiper-button-prev:hover,
- .swiper-button-next:hover {
-  background-color: #BDAC8D;
-  color: white;
- }
- .swiper-slide {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
- }
+  .swiper-button-prev:hover,
+  .swiper-button-next:hover {
+    background-color: #bdac8d;
+    color: white;
+  }
+  .swiper-slide {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
 }
-
 
 .video__container {
   background-color: $primary-background;
@@ -422,7 +411,6 @@ button {
   }
 
   div {
-    //   border: 1px solid red;
     display: flex;
     justify-content: space-around;
     margin-top: 40px;
@@ -643,7 +631,6 @@ button {
     display: flex;
     margin: auto;
     margin-top: 20px;
-
   }
 
   .pricing {
@@ -652,21 +639,18 @@ button {
     text-align: center;
 
     h3 {
-    text-align: center;
-    font-weight: 700;
-    font-family: "Archivo", sans-serif !important;
-    font-size: 35px;
-    color: #BEAD8E;
+      text-align: center;
+      font-weight: 700;
+      font-family: "Archivo", sans-serif !important;
+      font-size: 35px;
+      color: #bead8e;
 
-    small {
-    font-family: "Archivo", sans-serif !important;
-    font-size: 15px;
+      small {
+        font-family: "Archivo", sans-serif !important;
+        font-size: 15px;
+      }
+    }
   }
-  
-  }
-
-  }
-
 }
 
 footer {
@@ -768,7 +752,6 @@ footer {
 // Desk Responsive
 
 @media only screen and (min-width: 1000px) {
-
   .header {
     .header__container {
       .header__container-titles {
@@ -808,7 +791,6 @@ footer {
       height: 130px;
       width: 100%;
       margin-top: 40px;
-
 
       fieldset {
         border: none;
@@ -876,15 +858,18 @@ footer {
       display: grid;
       grid-row: 1;
       grid-template-columns: 50% 50%;
-      // border: 1px solid red;
       margin: auto;
       gap: 10px;
       width: 100%;
+
+      .room-image {
+        width: 300px;
+        height: 250px;
+      }
     }
   }
 
   .main__rooms {
-    // border: 1px solid red;
     display: flex;
     flex-direction: column;
     margin: auto;
@@ -897,29 +882,29 @@ footer {
     --swiper-navigation-size: 15px;
     margin-bottom: 100px;
     z-index: 1;
-  
-   .swiper-pagination-bullet-active {
-    background: #BDAC8D;
-   }
-  
-   .swiper-button-prev,
-   .swiper-button-next {
-    color: #111111;
-    background-color: white;
-    padding: 25px;
-    font-size: 12px;
-   }
-  
-   .swiper-button-prev:hover,
-   .swiper-button-next:hover {
-    background-color: #BDAC8D;
-    color: white;
-   }
-   .swiper-slide {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-   }
+
+    .swiper-pagination-bullet-active {
+      background: #bdac8d;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+      color: #111111;
+      background-color: white;
+      padding: 25px;
+      font-size: 12px;
+    }
+
+    .swiper-button-prev:hover,
+    .swiper-button-next:hover {
+      background-color: #bdac8d;
+      color: white;
+    }
+    .swiper-slide {
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
   }
 
   .video__container {
@@ -938,7 +923,7 @@ footer {
         margin-bottom: $principal-title-size;
         margin-left: $principal-margin-left;
       }
-  }
+    }
 
     .image__container {
       display: grid;
@@ -969,41 +954,36 @@ footer {
     }
   }
 
-    .rooms {
-      width: 100%;
+  .rooms {
+    width: 100%;
+    margin: auto;
+    margin-top: 50px;
+
+    img {
+      width: 50%;
+      height: 50%;
+      display: flex;
       margin: auto;
-      margin-top: 50px;
+    }
 
+    .pricing {
+      display: grid;
+      grid-column: 2;
 
-      img {
-        width: 50%;
-        height: 50%;
-        display: flex;
-        margin: auto;
-      }
-
-      .pricing {
-        display: grid;
-        grid-column: 2;
-
-        h3 {
+      h3 {
         margin: auto;
         font-weight: 700;
         font-family: "Archivo", sans-serif !important;
         font-size: 35px;
-        color: #BEAD8E;
+        color: #bead8e;
 
         small {
-        font-family: "Archivo", sans-serif !important;
-        font-size: 15px;
+          font-family: "Archivo", sans-serif !important;
+          font-size: 15px;
+        }
       }
-
-      }
-
-      }
-  
+    }
   }
-
 
   .pre-footer__container {
     // border: 1px solid red;
