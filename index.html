@@ -19,6 +19,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./styles/main.css" />
   <title>Hotel Miranda</title>
 </head>
@@ -34,17 +35,24 @@
       </div>
 
       <div class="navbar__categories">
-        <a href="about.html" style="text-decoration: none; color: black;"><li>About us</li>
-        <a href="rooms.html" style="text-decoration: none; color: black;"><li>Rooms</li></a>
-        <a href="offers.html" style="text-decoration: none; color: black;"><li>Offers</li></a>
-        <a href="contact.html" style="text-decoration: none; color: black;"><li>Contact</li></a>
+        <a href="about.html" style="text-decoration: none; color: black;">
+          <li>About us</li>
+          <a href="rooms.html" style="text-decoration: none; color: black;">
+            <li>Rooms</li>
+          </a>
+          <a href="offers.html" style="text-decoration: none; color: black;">
+            <li>Offers</li>
+          </a>
+          <a href="contact.html" style="text-decoration: none; color: black;">
+            <li>Contact</li>
+          </a>
       </div>
       <div class="navbar__container-icons-right">
         <img src="./assets/nav/person.png" alt="personal" class="navbar__person" />
         <img src="./assets/nav/lupa.png" alt="lupa" class="navbar__search" />
       </div>
     </div>
-</nav>
+  </nav>
 </div>
 
 <body>
@@ -122,28 +130,31 @@
     <h4>ROOMS</h4>
     <h1>Hand Picked Rooms</h1>
 
-    <div class="slider">
-      <!-- <div class="rooms__navbar">
-        <img src="./assets/rooms/navbar_rooms/bed.png" />
-        <img src="./assets/rooms/navbar_rooms/wifi.png" />
-        <img src="./assets/rooms/navbar_rooms/car.png" />
-        <img src="./assets/rooms/navbar_rooms/snow.png" />
-        <img src="./assets/rooms/navbar_rooms/gym.png" />
-        <img src="./assets/rooms/navbar_rooms/smoke.png" />
-        <img src="./assets/rooms/navbar_rooms/cocktel.png" />
-      </div> -->
-      <img src="./assets/rooms/room3.jpg" />
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide" style="background-image: url('./assets/rooms/room2.jpg')"></div>
+        <div class="swiper-slide" style="background-image: url('./assets/rooms/room4.jpg')"></div>
+        <div class="swiper-slide" style="background-image: url('./assets/rooms/room5.jpg')"></div>
+      </div>
+      <div class="swiper-pagination"></div>
+
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
 
     </div>
-    <div class="slider__container--bottom">
-      <h3>Minimal Duplex Room</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.
-      </p>
-      <div class="pricing">
-        <h3>$345<small>/Night</small></h3>
-      </div>
+
+
+  </div>
+  <!-- <div class="slider__container--bottom">
+    <h3>Minimal Duplex Room</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+    </p>
+    <div class="pricing">
+      <h3>$345<small>/Night</small></h3>
     </div>
   </div>
+  </div> -->
 
 
   <div class="video__container">
@@ -320,7 +331,7 @@
 
 
   <div class="footer__services">
-  <h4>Services.</h4> <br/>
+    <h4>Services.</h4> <br />
 
     <ul>
       <li>+ Restaurant & Bar</li>
@@ -342,7 +353,7 @@
 
 
   <div class="footer__contact">
-  <h4 class="contact">Contact Us.</h4><br/>
+    <h4 class="contact">Contact Us.</h4><br />
 
     <div class="contact__icon">
       <img src="./assets/footer/mobile.png" alt="mobile" />
@@ -374,5 +385,8 @@
   <h4>Copyright By@Example - 2020</h4>
   <h4>Terms of use | Privacy Environmental Policy</h4>
 </div>
-
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script type="text/javascript" src="./javascript/slider.js"></script>
 </html>
+
+

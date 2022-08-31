@@ -269,6 +269,34 @@ button {
   line-height: 1.5;
 }
 
+.swiper {
+  width: 700px;
+  height: 400px;
+  --swiper-navigation-size: 15px;
+  margin-bottom: 100px;
+  z-index: 1;
+}
+.swiper .swiper-pagination-bullet-active {
+  background: #BDAC8D;
+}
+.swiper .swiper-button-prev,
+.swiper .swiper-button-next {
+  color: #111111;
+  background-color: white;
+  padding: 25px;
+  font-size: 12px;
+}
+.swiper .swiper-button-prev:hover,
+.swiper .swiper-button-next:hover {
+  background-color: #BDAC8D;
+  color: white;
+}
+.swiper .swiper-slide {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 .video__container {
   background-color: #222222;
   display: flex;
@@ -944,6 +972,7 @@ footer .footer__contact .contact__icon p small {
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 10;
   }
   .navbar__header h6 {
     display: flex;
@@ -962,7 +991,6 @@ footer .footer__contact .contact__icon p small {
     display: inline-block;
     width: 75%;
     height: 80px;
-    z-index: 2;
     background-color: white !important;
     margin: auto;
     margin-top: 40px;

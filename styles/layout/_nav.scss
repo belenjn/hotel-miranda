@@ -106,6 +106,7 @@ $primary-background: #222222;
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 10;
   
 
     h6 {
@@ -130,7 +131,6 @@ $primary-background: #222222;
       display: inline-block;
       width: 75%;
       height: 80px;
-      z-index: 2;
       // border: 1px solid red;
       background-color: white !important;
       margin: auto;

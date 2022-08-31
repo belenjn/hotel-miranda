@@ -325,9 +325,38 @@ button {
     line-height: 1.5;
   }
 
-
 }
 
+.swiper {
+  width: 700px;
+  height: 400px;
+  --swiper-navigation-size: 15px;
+  margin-bottom: 100px;
+  z-index: 1;
+
+ .swiper-pagination-bullet-active {
+  background: #BDAC8D;
+ }
+
+ .swiper-button-prev,
+ .swiper-button-next {
+  color: #111111;
+  background-color: white;
+  padding: 25px;
+  font-size: 12px;
+ }
+
+ .swiper-button-prev:hover,
+ .swiper-button-next:hover {
+  background-color: #BDAC8D;
+  color: white;
+ }
+ .swiper-slide {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+ }
+}
 
 
 .video__container {
