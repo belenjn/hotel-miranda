@@ -805,9 +805,9 @@ footer .footer__contact .contact__icon p small {
     grid-column: 2;
     background-color: #bead8e;
   }
-  .video__container .image__container img {
+  .video__container .image__container video {
     margin: auto;
-    width: 65%;
+    width: 95%;
   }
   .little-slider__container {
     display: flex;
