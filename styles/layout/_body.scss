@@ -434,58 +434,37 @@ button {
   }
 }
 
-.menu__container {
+.menu__container--images {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 90%;
+  border: 1px solid red;
+  
   h4 {
-    margin-left: $principal-margin-left;
     font-family: "Archivo", sans-serif !important;
     letter-spacing: 2.8px;
     font-weight: 300;
     color: $secondary-font-color;
-    margin-bottom: $principal-margin-left;
+    margin-bottom: 20px;
   }
 
   h1 {
     font-family: "Old Standard TT", serif !important;
     font-size: $principal-title-size;
+    margin-bottom: 50px;
     font-weight: 100;
-    margin-left: $principal-margin-left;
   }
 
-  .menu__list {
-    // border: 1px solid yellow;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    margin-left: $principal-margin-left;
-    margin-bottom: 10px;
-    margin-right: $principal-margin-left;
-    margin-top: $principal-margin-left;
+  .food {
+    display: flex;
+    flex-direction: row;
 
-    .menu__list--photo {
-      display: grid;
-      grid-column: 1;
-
-      // border: 1px solid green;
-      img {
-        width: 120px;
-        height: 120px;
-        margin: auto;
-      }
-    }
-
-    .menu__list--text {
-      display: grid;
-      grid-column: 2;
-
-      h4 {
-        font-family: "Old Standard TT", serif !important;
-        color: #111111;
-        font-size: 18px;
-        font-weight: 300;
-      }
-
-      p {
-        font-size: 12px;
-      }
+    img {
+      display: flex;
+      margin: auto;
+      width: 400px;
+      height: 300px;
     }
   }
 }

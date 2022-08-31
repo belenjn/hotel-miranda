@@ -370,49 +370,35 @@ button {
   height: 300px;
 }
 
-.menu__container h4 {
-  margin-left: 20px;
+.menu__container--images {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 90%;
+  border: 1px solid red;
+}
+.menu__container--images h4 {
   font-family: "Archivo", sans-serif !important;
   letter-spacing: 2.8px;
   font-weight: 300;
   color: #777777;
   margin-bottom: 20px;
 }
-.menu__container h1 {
+.menu__container--images h1 {
   font-family: "Old Standard TT", serif !important;
   font-size: 56px;
+  margin-bottom: 50px;
   font-weight: 100;
-  margin-left: 20px;
 }
-.menu__container .menu__list {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  margin-left: 20px;
-  margin-bottom: 10px;
-  margin-right: 20px;
-  margin-top: 20px;
+.menu__container--images .food {
+  display: flex;
+  flex-direction: row;
 }
-.menu__container .menu__list .menu__list--photo {
-  display: grid;
-  grid-column: 1;
-}
-.menu__container .menu__list .menu__list--photo img {
-  width: 120px;
-  height: 120px;
+.menu__container--images .food img {
+  display: flex;
   margin: auto;
-}
-.menu__container .menu__list .menu__list--text {
-  display: grid;
-  grid-column: 2;
-}
-.menu__container .menu__list .menu__list--text h4 {
-  font-family: "Old Standard TT", serif !important;
-  color: #111111;
-  font-size: 18px;
-  font-weight: 300;
-}
-.menu__container .menu__list .menu__list--text p {
-  font-size: 12px;
+  width: 400px;
+  height: 300px;
 }
 
 .pre-footer__container {
