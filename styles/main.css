@@ -1328,6 +1328,149 @@ body .slider__pagination img {
     color: #777777;
   }
 }
+.map {
+  display: flex;
+  margin: auto;
+  height: 300px;
+  width: 350px;
+  margin-top: 50px;
+  z-index: -1;
+}
+
+.custom-map-control-button {
+  background: rgb(255, 255, 255) none repeat scroll 0% 0% padding-box;
+  display: table-cell;
+  border: 0px none;
+  margin: 10px;
+  padding: 0px 17px;
+  cursor: pointer;
+  overflow: hidden;
+  text-align: center;
+  height: 40px;
+  color: rgb(86, 86, 86);
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 16px;
+  border-bottom-right-radius: 2px;
+  border-top-right-radius: 2px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px;
+}
+
+#locations {
+  height: 50%;
+  width: 50%;
+  padding: 0px;
+  border-width: 0px;
+  margin: 0px;
+  left: 0px;
+  top: 0px;
+}
+#locations li {
+  border-bottom: 1px solid rgba(190, 173, 142, 0.3803921569);
+  text-align: left;
+  list-style: none;
+  letter-spacing: 0.5px;
+  margin: auto;
+  font-family: "Archivo", sans-serif;
+  font-weight: 500;
+  padding: 10px;
+  width: 50%;
+}
+#locations h6 {
+  color: #777777 !important;
+  text-align: right;
+  list-style: none;
+  margin: auto;
+  font-size: 16px;
+  font-family: "Archivo", sans-serif;
+  font-weight: 500;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.buttons .input__container {
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 35%;
+}
+.buttons .input__container #input__text {
+  border: 1px solid rgba(128, 128, 128, 0.382);
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 16px;
+  font-family: "Archivo", sans-serif;
+  height: 35px;
+  width: 270px;
+}
+.buttons .input__container #button__input {
+  background-color: #bead8e;
+  border: none;
+  color: white;
+  padding: 10px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 120px;
+}
+.buttons .input__container #button__input:hover {
+  scale: 1.05;
+  transition: 0.2s ease;
+}
+
+.select__container {
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+  margin: auto;
+}
+.select__container #button__location {
+  background-color: #bead8e;
+  border: none;
+  color: white;
+  padding: 10px;
+  margin: auto;
+  margin-right: 20px;
+}
+.select__container #button__location:hover {
+  scale: 1.05;
+  transition: 0.2s ease;
+}
+.select__container .selector {
+  width: 30%;
+  color: white;
+  background-color: #bead8e;
+  border: none;
+  border-radius: 8px;
+  font-family: "Archivo", sans-serif;
+  font-size: 14px;
+  padding: 10px;
+  margin: auto;
+  letter-spacing: 2px;
+  width: 130px;
+}
+.select__container .selector:hover {
+  cursor: pointer;
+}
+.select__container .selector option {
+  color: white;
+  border: none;
+  display: flex;
+  font-family: "Archivo", sans-serif;
+  font-size: 12px;
+  align-items: center;
+  justify-content: center;
+}
+.select__container .selector option:hover {
+  cursor: pointer;
+}
+
 @media only screen and (min-width: 1000px) {
   .map {
     display: flex;
