@@ -213,7 +213,7 @@ selectCommunity.addEventListener("change", (e) => {
 
   let indexCommunity = selectCommunity.selectedIndex;
 
-  console.log(e.target.value)
+  console.log(e.target.value);
 
   mark = new google.maps.Polygon({
     paths: spainCommunities[indexCommunity],
@@ -12641,3 +12641,5 @@ const spainCommunities = [
     ],
   ],
 ];
+
+
