@@ -9,6 +9,33 @@ $primary-background: #222222;
 }
 
 .navbar {
+
+  .navbar__categories--mobile { 
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding: 10px;
+    line-height: 30px;
+    width: 100%;
+
+    li {
+      list-style: none;
+      font-family: "Roboto", sans-serif !important;
+    }
+
+    .close {
+      cursor: pointer;
+      width: 18px;
+      margin-bottom: 20px;
+      margin-top: 20px;
+    }
+  }
+
+  .navbar__categories--mobile-hidden {
+    display: none;
+    
+  }
+
   display: flex;
   justify-content: right;
   position: fixed;
@@ -17,14 +44,12 @@ $primary-background: #222222;
   background-color: white;
   z-index: 10;
 
-
   .navbar__container {
     display: flex;
     justify-content: space-between;
     margin-top: 15px;
     width: 100%;
     height: 50%;
-    
   }
 
   .navbar__categories {
@@ -53,8 +78,6 @@ $primary-background: #222222;
   .navbar__logo {
     width: 130px;
     height: 50px;
-
- 
   }
 
   .navbar__hamburger {
@@ -64,7 +87,6 @@ $primary-background: #222222;
     background-image: url(../../assets/nav/hamburger-icon.png);
     cursor: pointer;
     border: none;
-  
   }
 
   .navbar__person,
@@ -72,28 +94,6 @@ $primary-background: #222222;
     margin-left: 20px;
     margin: auto;
   }
-
-  // .close__hamburger {
-  //   display: none;
-  //   width: 14px;
-  //   height: 14px;
-  //   margin-left: $principal-margin-left;
-  //   background-image: url(../../assets/nav/close-nav.png);
-  //   border: none;
-  //   cursor: pointer;
-  // }
-
-  // #menu {
-  //   display: none;
-  //   list-style: none;
-  //   a {
-  //     color: inherit;
-  //     text-decoration: none;
-  //     display: block;
-  //     max-width: 200px;
-
-  //   }
-  // }
 }
 
 //Desk Responsive
@@ -106,24 +106,27 @@ $primary-background: #222222;
     top: 0;
     width: 100%;
     z-index: 10;
-  
 
     h6 {
       display: flex;
       height: 15px;
       color: white;
       font-family: "Roboto", sans-serif !important;
-
     }
+
+    .navbar__categories--mobile {
+      display: none;
+    }
+
+    
   }
- 
+
   .navbar__header {
     background-color: $primary-background;
     display: flex;
     justify-content: center;
     width: 100%;
     height: 100px;
-
 
     .navbar {
       display: inline-block;
@@ -132,7 +135,6 @@ $primary-background: #222222;
       background-color: white !important;
       margin: auto;
       margin-top: 40px;
-
 
       .navbar__categories {
         display: inline-flex;
@@ -161,7 +163,6 @@ $primary-background: #222222;
         height: 100%;
         margin-left: -80px;
         margin-top: -30px;
-        
       }
 
       .navbar__container-icons-right {
@@ -169,16 +170,14 @@ $primary-background: #222222;
         width: 20%;
         margin-right: 90px;
       }
-        .navbar__logo {
-          width: 180px;
-          height: 80px;
-          margin-top: 20px;
-          width: 170px;
-          height: 70px;
-          margin-left: 20px;
-        
+      .navbar__logo {
+        width: 180px;
+        height: 80px;
+        margin-top: 20px;
+        width: 170px;
+        height: 70px;
+        margin-left: 20px;
       }
-
 
       .navbar__person,
       .navbar__search {

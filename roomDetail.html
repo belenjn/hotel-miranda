@@ -24,13 +24,13 @@
 
     <title>Room</title>
 </head>
-
 <div class="navbar__header">
 
     <nav class="navbar">
         <div class="navbar__container">
             <div class="navbar__container-icon">
-                <input src="./assets/nav/hamburger-icon.png" alt="boton hamburguesa" class="navbar__hamburger" />
+                <img src="./assets/nav/hamburger-icon.png" alt="boton hamburguesa" class="navbar__hamburger"
+                    id="hamburger" />
             </div>
             <div class="navbar__container-logo">
                 <img src="./assets/nav/logo-nav.png" alt="logo del hotel" class="navbar__logo" />
@@ -49,14 +49,30 @@
                         <li>Contact</li>
                     </a>
             </div>
+
             <div class="navbar__container-icons-right">
                 <img src="./assets/nav/person.png" alt="personal" class="navbar__person" />
                 <img src="./assets/nav/lupa.png" alt="lupa" class="navbar__search" />
             </div>
         </div>
+
+        <div class="navbar__categories--mobile-hidden">
+            <img src="./assets/nav/close-nav.png" class="close" />
+            <a href="about.html" style="text-decoration: none; color: black;">
+                <li>About us</li>
+                <a href="rooms.html" style="text-decoration: none; color: black;">
+                    <li>Rooms</li>
+                </a>
+                <a href="offers.html" style="text-decoration: none; color: black;">
+                    <li>Offers</li>
+                </a>
+                <a href="contact.html" style="text-decoration: none; color: black;">
+                    <li>Contact</li>
+                </a>
+        </div>
+
     </nav>
 </div>
-
 
 <header>
     <div class="header__cover">
@@ -106,7 +122,8 @@
     <div class="room__amenities">
         <h2>Amenities</h2>
         <hr>
-        <p class="cancellation"> Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius
+        <p class="cancellation"> Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra
+            nulla ut metus varius
             laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies
             nisi. Nam eget dui. Etiam rhoncus.</p>
 
@@ -115,7 +132,8 @@
     <div class="room__amenities">
         <h2>Cancellation</h2>
         <hr>
-        <p class="cancellation"> Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius
+        <p class="cancellation"> Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra
+            nulla ut metus varius
             laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.</p>
 
     </div>
@@ -191,5 +209,6 @@
     <h4>Copyright By@Example - 2020</h4>
     <h4>Terms of use | Privacy Environmental Policy</h4>
 </div>
+<script type="text/javascript" src="./javascript/navbar.js"></script>
 
 </html>

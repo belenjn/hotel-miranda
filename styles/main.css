@@ -862,6 +862,27 @@ footer .footer__contact .contact__icon p small {
   background-color: white;
   z-index: 10;
 }
+.navbar .navbar__categories--mobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  padding: 10px;
+  line-height: 30px;
+  width: 100%;
+}
+.navbar .navbar__categories--mobile li {
+  list-style: none;
+  font-family: "Roboto", sans-serif !important;
+}
+.navbar .navbar__categories--mobile .close {
+  cursor: pointer;
+  width: 18px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.navbar .navbar__categories--mobile-hidden {
+  display: none;
+}
 .navbar .navbar__container {
   display: flex;
   justify-content: space-between;
@@ -920,6 +941,9 @@ footer .footer__contact .contact__icon p small {
     height: 15px;
     color: white;
     font-family: "Roboto", sans-serif !important;
+  }
+  .navbar__header .navbar__categories--mobile {
+    display: none;
   }
   .navbar__header {
     background-color: #222222;

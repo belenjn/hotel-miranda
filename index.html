@@ -28,7 +28,7 @@
   <nav class="navbar">
     <div class="navbar__container">
       <div class="navbar__container-icon">
-        <input src="./assets/nav/hamburger-icon.png" alt="boton hamburguesa" class="navbar__hamburger" />
+        <img src="./assets/nav/hamburger-icon.png" alt="boton hamburguesa" class="navbar__hamburger" id="hamburger" />
       </div>
       <div class="navbar__container-logo">
         <img src="./assets/nav/logo-nav.png" alt="logo del hotel" class="navbar__logo" />
@@ -47,11 +47,28 @@
             <li>Contact</li>
           </a>
       </div>
+
       <div class="navbar__container-icons-right">
         <img src="./assets/nav/person.png" alt="personal" class="navbar__person" />
         <img src="./assets/nav/lupa.png" alt="lupa" class="navbar__search" />
       </div>
     </div>
+
+    <div class="navbar__categories--mobile-hidden">
+      <img src="./assets/nav/close-nav.png" class="close" />
+      <a href="about.html" style="text-decoration: none; color: black;">
+        <li>About us</li>
+        <a href="rooms.html" style="text-decoration: none; color: black;">
+          <li>Rooms</li>
+        </a>
+        <a href="offers.html" style="text-decoration: none; color: black;">
+          <li>Offers</li>
+        </a>
+        <a href="contact.html" style="text-decoration: none; color: black;">
+          <li>Contact</li>
+        </a>
+    </div>
+
   </nav>
 </div>
 
@@ -203,14 +220,14 @@
     <h4>MENU</h4>
     <h1>Our Foods Menu</h1>
     <div class="food">
-      <img src="./assets/food/food1.jpg"/>
-      <img src="./assets/food/food2.webp"/>
-      <img src="./assets/food/food3.jpg"/>
+      <img src="./assets/food/food1.jpg" />
+      <img src="./assets/food/food2.webp" />
+      <img src="./assets/food/food3.jpg" />
     </div>
-  </div> 
+  </div>
 
 
-  
+
   <div class="pre-footer__container">
 
     <div class="pre-footer__container--images">
@@ -249,11 +266,11 @@
 
 
     </div>
-  </div> 
+  </div>
 
 </body>
 
- <footer>
+<footer>
   <div class="footer__socials">
 
     <img src="./assets/footer/Logo.png" />
@@ -321,8 +338,9 @@
 <div class="footer__policy">
   <h4>Copyright By@Example - 2020</h4>
   <h4>Terms of use | Privacy Environmental Policy</h4>
-</div> 
+</div>
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 <script type="text/javascript" src="./javascript/slider.js"></script>
+<script type="text/javascript" src="./javascript/navbar.js"></script>
 
 </html>
