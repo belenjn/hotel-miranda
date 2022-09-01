@@ -1173,6 +1173,15 @@ body .counter__container .facts__container--images {
   width: 95%;
   margin: auto;
 }
+body .little-slider__container {
+  display: flex;
+  flex-direction: column;
+}
+body .little-slider__container img {
+  margin: auto;
+  margin-top: 20px;
+  width: 300px;
+}
 
 @media only screen and (min-width: 1000px) {
   header .header__cover {
@@ -1251,6 +1260,13 @@ body .counter__container .facts__container--images {
   body .counter__container .facts__container--images {
     display: flex;
     justify-content: space-between;
+  }
+  body .little-slider__container {
+    display: flex;
+    flex-direction: row;
+  }
+  body .little-slider__container img {
+    width: 600px;
   }
 }
 body #first__room {
