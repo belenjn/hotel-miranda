@@ -375,7 +375,6 @@ button {
   flex-direction: column;
   margin: auto;
   width: 90%;
-  border: 1px solid red;
 }
 .menu__container--images h4 {
   font-family: "Archivo", sans-serif !important;
@@ -392,13 +391,14 @@ button {
 }
 .menu__container--images .food {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 .menu__container--images .food img {
   display: flex;
   margin: auto;
-  width: 400px;
-  height: 300px;
+  margin-bottom: 20px;
+  width: 300px;
+  height: 200px;
 }
 
 .pre-footer__container {
@@ -658,6 +658,35 @@ footer .footer__contact .contact__icon p small {
   .main__container .main__container--photos .room-image {
     width: 300px;
     height: 250px;
+  }
+  .menu__container--images {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 90%;
+  }
+  .menu__container--images h4 {
+    font-family: "Archivo", sans-serif !important;
+    letter-spacing: 2.8px;
+    font-weight: 300;
+    color: #777777;
+    margin-bottom: 20px;
+  }
+  .menu__container--images h1 {
+    font-family: "Old Standard TT", serif !important;
+    font-size: 56px;
+    margin-bottom: 50px;
+    font-weight: 100;
+  }
+  .menu__container--images .food {
+    display: flex;
+    flex-direction: row;
+  }
+  .menu__container--images .food img {
+    display: flex;
+    margin: auto;
+    width: 400px;
+    height: 300px;
   }
   .main__rooms {
     display: flex;

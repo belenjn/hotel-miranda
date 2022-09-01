@@ -439,7 +439,6 @@ button {
   flex-direction: column;
   margin: auto;
   width: 90%;
-  border: 1px solid red;
   
   h4 {
     font-family: "Archivo", sans-serif !important;
@@ -458,13 +457,14 @@ button {
 
   .food {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 
     img {
       display: flex;
       margin: auto;
-      width: 400px;
-      height: 300px;
+      margin-bottom: 20px;
+      width: 300px;
+      height: 200px;
     }
   }
 }
@@ -674,12 +674,10 @@ footer {
   }
 
   .form__container {
-    //   border: 1px solid yellow;
     height: 100px;
 
     form {
       margin-left: 20%;
-      // border: 1px solid red;
       height: 130px;
       width: 100%;
       margin-top: 40px;
@@ -688,7 +686,6 @@ footer {
         border: none;
         display: flex;
         width: 90%;
-        //   border: 1px solid blue;
 
         p {
           margin-left: 60px;
@@ -752,13 +749,11 @@ footer {
     width: 90%;
     margin: auto;
     margin-top: 100px;
-    // border: 1px solid blue;
 
     .main__container--text {
       display: grid;
       background-color: $terciary-background;
       grid-column: 2;
-      // border: 1px solid green;
       margin: auto;
 
       h4 {
@@ -785,6 +780,39 @@ footer {
     }
   }
 
+  .menu__container--images {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 90%;
+    
+    h4 {
+      font-family: "Archivo", sans-serif !important;
+      letter-spacing: 2.8px;
+      font-weight: 300;
+      color: $secondary-font-color;
+      margin-bottom: 20px;
+    }
+  
+    h1 {
+      font-family: "Old Standard TT", serif !important;
+      font-size: $principal-title-size;
+      margin-bottom: 50px;
+      font-weight: 100;
+    }
+  
+    .food {
+      display: flex;
+      flex-direction: row;
+  
+      img {
+        display: flex;
+        margin: auto;
+        width: 400px;
+        height: 300px;
+      }
+    }
+  }
   .main__rooms {
     display: flex;
     flex-direction: column;
@@ -854,7 +882,6 @@ footer {
   }
 
   .little-slider__container {
-    // border: 1px solid red;
     display: flex;
     padding: 15px;
     flex-direction: column;
@@ -902,14 +929,12 @@ footer {
   }
 
   .pre-footer__container {
-    // border: 1px solid red;
     display: flex;
     flex-direction: row;
     margin: auto;
     margin-top: 70px;
 
     .pre-footer__container--images {
-      // border: 1px solid green;
       color: white;
       font-weight: 500;
       margin: auto;
