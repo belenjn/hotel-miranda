@@ -872,7 +872,10 @@ footer .footer__contact .contact__icon p small {
 }
 .navbar .navbar__categories--mobile li {
   list-style: none;
-  font-family: "Roboto", sans-serif !important;
+  font-family: "Archivo", sans-serif !important;
+  font-size: 12px;
+  margin-right: 50px;
+  font-weight: 600;
 }
 .navbar .navbar__categories--mobile .close {
   cursor: pointer;

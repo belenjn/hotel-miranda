@@ -9,8 +9,7 @@ $primary-background: #222222;
 }
 
 .navbar {
-
-  .navbar__categories--mobile { 
+  .navbar__categories--mobile {
     display: flex;
     flex-direction: column;
     justify-content: left;
@@ -20,7 +19,10 @@ $primary-background: #222222;
 
     li {
       list-style: none;
-      font-family: "Roboto", sans-serif !important;
+      font-family: "Archivo", sans-serif !important;
+      font-size: 12px;
+      margin-right: 50px;
+      font-weight: 600;
     }
 
     .close {
@@ -33,7 +35,6 @@ $primary-background: #222222;
 
   .navbar__categories--mobile-hidden {
     display: none;
-    
   }
 
   display: flex;
@@ -117,8 +118,6 @@ $primary-background: #222222;
     .navbar__categories--mobile {
       display: none;
     }
-
-    
   }
 
   .navbar__header {
