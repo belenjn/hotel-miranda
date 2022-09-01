@@ -1148,10 +1148,7 @@ body .about__container--facilities h1 {
   font-size: 45px;
 }
 body .about__container--facilities .facilities__container--images {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
+  display: none;
 }
 body .counter__container h4 {
   color: #777777;
@@ -1182,6 +1179,25 @@ body .little-slider__container img {
   margin-top: 20px;
   width: 300px;
 }
+body .swiper__core--facilities {
+  display: flex;
+  width: 300px;
+  height: 400px;
+  --swiper-navigation-size: 15px;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+body .swiper__core--facilities .swiper-pagination-bullet {
+  background-color: #bead8e;
+}
+body .swiper__core--facilities .swiper-slide {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: auto;
+  height: 90%;
+}
 
 @media only screen and (min-width: 1000px) {
   header .header__cover {
@@ -1198,6 +1214,9 @@ body .little-slider__container img {
   }
   header .header__cover .header__cover--choices {
     margin-left: 70%;
+  }
+  body .swiper__core--facilities {
+    display: none;
   }
   body .body__container--video {
     display: flex;

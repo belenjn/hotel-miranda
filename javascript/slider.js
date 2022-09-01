@@ -37,3 +37,22 @@ const swiper2 = new Swiper(".swiper__facilities", {
     enabled: true,
   }
 });
+
+
+const swiper3 = new Swiper(".swiper__core--facilities", {
+  direction: "horizontal",
+  slidesPerView: 1,
+  centeredSlides: true,
+  spaceBetween: 30,
+  autoplay: {
+    delay: 2000,
+  },
+
+  pagination: {
+    el: ".swiper-pagination",
+    dynamicBullets: true,
+    dynamicMainBullets: 4,
+    clickable: true,
+    enabled: true,
+  }
+});
