@@ -1074,18 +1074,19 @@ header .header__cover .header__cover--choices .about {
   color: #bead8e;
 }
 
-body .body__container--video {
-  margin-top: 50px;
-}
-body .body__container--video img {
-  margin-left: 3%;
-}
 body .body__container--video h1 {
-  font-family: "Old Standard TT", serif;
-  font-size: 32px;
-  font-weight: 400;
-  text-align: center;
+  display: flex;
+  margin: auto;
   margin-top: 20px;
+  font-weight: 200;
+  padding: 10px;
+  width: 90%;
+}
+body .body__container--video video {
+  display: flex;
+  margin: auto;
+  margin-top: 100px;
+  width: 90%;
 }
 body .four__sections {
   display: flex;
@@ -1190,20 +1191,23 @@ body .counter__container .facts__container--images {
     margin-left: 70%;
   }
   body .body__container--video {
-    margin-top: 350px;
-  }
-  body .body__container--video img {
     display: flex;
-    justify-content: center;
-    width: 1170px;
-    height: 650px;
+    flex-direction: column;
+    margin-top: 350px;
+    margin: auto;
   }
   body .body__container--video h1 {
-    font-family: "Old Standard TT", serif;
-    font-size: 72px;
-    font-weight: 400;
-    text-align: center;
+    font-size: 50px;
+    font-weight: 200;
+    padding: 20px;
+    margin: auto;
     margin-top: 20px;
+    width: 60%;
+  }
+  body .body__container--video video {
+    margin: auto;
+    margin-top: 100px;
+    width: 60%;
   }
   body .four__sections {
     display: flex;

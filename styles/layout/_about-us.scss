@@ -68,18 +68,21 @@ header {
 
 body {
   .body__container--video {
-    margin-top: 50px;
-
-    img {
-      margin-left: 3%;
-    }
 
     h1 {
-      font-family: $primary-font;
-      font-size: 32px;
-      font-weight: 400;
-      text-align: center;
+      display: flex;
+      margin: auto;
       margin-top: 20px;
+      font-weight: 200;
+      padding: 10px;
+      width: 90%;
+    }
+    
+    video {
+      display: flex;
+      margin: auto;
+      margin-top: 100px;
+      width: 90%;
     }
   }
 
@@ -211,21 +214,24 @@ body {
 
   body {
     .body__container--video {
+      display: flex;
+      flex-direction: column;
       margin-top: 350px;
-
-      img {
-        display: flex;
-        justify-content: center;
-        width: 1170px;
-        height: 650px;
-      }
+      margin: auto;
 
       h1 {
-        font-family: $primary-font;
-        font-size: 72px;
-        font-weight: 400;
-        text-align: center;
+        font-size: 50px;
+        font-weight: 200;
+        padding: 20px;
+        margin: auto;
         margin-top: 20px;
+        width: 60%;
+      }
+
+      video {
+        margin: auto;
+        margin-top: 100px;
+        width: 60%;
       }
     }
 
