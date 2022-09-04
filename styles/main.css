@@ -760,15 +760,23 @@ footer .footer__contact .contact__icon p small {
     display: none;
   }
   .rooms {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     width: 100%;
     margin: auto;
     margin-top: 50px;
   }
-  .rooms img {
-    width: 50%;
-    height: 50%;
-    display: flex;
+  .rooms div {
+    display: grid;
     margin: auto;
+    width: 100%;
+  }
+  .rooms div div {
+    display: grid;
+    margin: auto;
+    width: 100%;
+    list-style: none;
   }
   .rooms .pricing {
     display: grid;

@@ -436,7 +436,7 @@ button {
   flex-direction: column;
   margin: auto;
   width: 90%;
-  
+
   h4 {
     font-family: "Archivo", sans-serif !important;
     letter-spacing: 2.8px;
@@ -782,7 +782,7 @@ footer {
     flex-direction: column;
     margin: auto;
     width: 90%;
-    
+
     h4 {
       font-family: "Archivo", sans-serif !important;
       letter-spacing: 2.8px;
@@ -790,18 +790,18 @@ footer {
       color: $secondary-font-color;
       margin-bottom: 20px;
     }
-  
+
     h1 {
       font-family: "Old Standard TT", serif !important;
       font-size: $principal-title-size;
       margin-bottom: 50px;
       font-weight: 100;
     }
-  
+
     .food {
       display: flex;
       flex-direction: row;
-  
+
       img {
         display: flex;
         margin: auto;
@@ -895,15 +895,24 @@ footer {
   }
 
   .rooms {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     width: 100%;
     margin: auto;
     margin-top: 50px;
 
-    img {
-      width: 50%;
-      height: 50%;
-      display: flex;
+    div {
+      display: grid;
       margin: auto;
+      width: 100%;
+    }
+
+    div div {
+      display: grid;
+      margin: auto;
+      width: 100%;
+      list-style: none;
     }
 
     .pricing {
