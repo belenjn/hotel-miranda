@@ -4,44 +4,52 @@ const roomsDiv = document.querySelector(".rooms");
 const description = document.querySelector(".description");
 const rate = document.querySelector(".rate");
 
-fetch(`${API_URL}/rooms`)
-  .then((response) => response.json())
-  .then((rooms) => {
-    rooms.map((room) => {
+export const apiRequest = async () => {
+  try {
+    const response = await fetch(`${API_URL}/rooms`);
 
-      let divSingleRoom = document.createElement("div");
+    if (response.ok) {
+      const jsonResponse = await response.json();
+      jsonResponse.map((room) => {
+        let divSingleRoom = document.createElement("div");
 
-      let title = document.createElement("h1");
+        let title = document.createElement("h1");
 
-      let description = document.createElement("p");
+        let description = document.createElement("p");
 
-      let rate = document.createElement("h5");
+        let rate = document.createElement("h5");
 
-      let image = document.createElement("img");
+        let image = document.createElement("img");
 
-      let button = document.createElement("button");
+        let button = document.createElement("button");
 
-      title.appendChild(document.createTextNode(`${room.bed_type}`));
+        title.appendChild(document.createTextNode(`${room.bed_type}`));
 
-      description.appendChild(document.createTextNode(`${room.description}`));
+        description.appendChild(document.createTextNode(`${room.description}`));
 
-      rate.appendChild(document.createTextNode(`$${room.rate}/Night`));
+        rate.appendChild(document.createTextNode(`$${room.rate}/Night`));
 
-      button.appendChild(document.createTextNode(`Booking now`));
+        button.appendChild(document.createTextNode(`Booking now`));
 
-      image.src = `${room.image}`
-      
-      divSingleRoom.appendChild(image);
+        image.src = `${room.image}`;
 
-      divSingleRoom.appendChild(title);
+        divSingleRoom.appendChild(image);
 
-      divSingleRoom.appendChild(description);
+        divSingleRoom.appendChild(title);
 
-      divSingleRoom.appendChild(rate);
+        divSingleRoom.appendChild(description);
 
-      // divSingleRoom.appendChild(button);
+        divSingleRoom.appendChild(rate);
 
+        // divSingleRoom.appendChild(button);
 
-      roomsDiv.appendChild(divSingleRoom);
-    });
-  });
+        roomsDiv.appendChild(divSingleRoom);
+      });
+      return jsonResponse;
+    }
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+apiRequest();
