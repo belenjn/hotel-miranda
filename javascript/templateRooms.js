@@ -6,7 +6,13 @@ const rate = document.querySelector(".rate");
 
 export const apiRequest = async () => {
   try {
-    const response = await fetch(`${API_URL}/rooms`);
+    const response = await fetch(`${API_URL}/rooms`, {
+      headers: {
+        method: "GET",
+        "Content-Type": "application/json",
+        "Access-Control-Allow-Origin": "*"
+      }
+    });
 
     if (response.ok) {
       const jsonResponse = await response.json();
