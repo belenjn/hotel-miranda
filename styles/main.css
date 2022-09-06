@@ -433,38 +433,52 @@ button {
   color: #c2c2c2;
 }
 
-.rooms {
-  width: 100%;
-  margin: auto;
-  margin-top: 50px;
+.rooms div {
+  margin-top: 30px;
 }
-.rooms h3 {
-  text-align: center;
-  font-size: 40px;
-  margin-top: 20px;
+.rooms div h1 {
+  padding: 10px;
 }
-.rooms img {
-  width: 250px;
-  height: 150px;
+.rooms div p {
+  text-align: left;
+  color: #777777;
+  font-family: "Roboto", sans-serif;
+  line-height: 24px;
+  font-size: 15px;
+  padding: 10px;
+}
+.rooms div h5 {
+  color: #bead8e;
+  font-size: 20px;
+  font-family: "Archivo", sans-serif;
+  font-weight: 600;
+  padding: 10px;
+}
+.rooms div img {
   display: flex;
   margin: auto;
+  width: 360px;
+  height: 250px;
+}
+.rooms div button {
+  display: flex;
+  border: none;
+  background: none;
+  color: #bdbdbd;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-family: "Archivo", sans-serif;
+  font-size: 16px;
+  margin: auto;
+}
+.rooms div div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
   margin-top: 20px;
-}
-.rooms .pricing {
-  display: grid;
-  grid-column: 2;
-  text-align: center;
-}
-.rooms .pricing h3 {
-  text-align: center;
-  font-weight: 700;
-  font-family: "Archivo", sans-serif !important;
-  font-size: 35px;
-  color: #bead8e;
-}
-.rooms .pricing h3 small {
-  font-family: "Archivo", sans-serif !important;
-  font-size: 15px;
+  padding: 20px;
 }
 
 footer {
@@ -783,45 +797,60 @@ footer .footer__contact .contact__icon p small {
     color: #777777;
     font-family: "Roboto", sans-serif;
     line-height: 24px;
-    font-size: 15px;
+    font-size: 18px;
+    text-align: center;
     margin-top: 20px;
     margin-bottom: 30px;
+    height: 100px;
   }
   .rooms div h5 {
     color: #bead8e;
     font-size: 20px;
     font-family: "Archivo", sans-serif;
     font-weight: 600;
+    width: 50%;
   }
   .rooms div img {
     width: 360px;
     height: 250px;
   }
   .rooms div button {
-    border: none;
     background: none;
-    color: #BDBDBD;
+    color: #bdbdbd;
     display: flex;
     justify-content: center;
     text-align: center;
     align-self: center;
     font-family: "Archivo", sans-serif;
-    font-size: 16px;
+    font-size: 18px;
+    width: 50%;
   }
-  .rooms .pricing {
-    display: grid;
-    grid-column: 2;
+  .rooms div div {
+    bottom: 0;
   }
-  .rooms .pricing h3 {
-    margin: auto;
-    font-weight: 700;
-    font-family: "Archivo", sans-serif !important;
-    font-size: 35px;
-    color: #bead8e;
+  .rooms__pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
   }
-  .rooms .pricing h3 small {
-    font-family: "Archivo", sans-serif !important;
-    font-size: 15px;
+  .rooms__pagination span,
+.rooms__pagination a {
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Archivo", sans-serif;
+    margin-left: 40px;
+    height: 50px;
+    width: 50px;
+    text-decoration: none;
+  }
+  .rooms__pagination span:hover,
+.rooms__pagination a:hover {
+    background-color: #bead8e;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s ease;
   }
   .pre-footer__container {
     display: flex;

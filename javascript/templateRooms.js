@@ -24,7 +24,7 @@ const data = [
     facilities:
       "AC, Shower, Double Bed, Towel, Bathup, Coffee Set, LED TV, Wifi",
     description:
-      "id aliqua aute nisi magna esse non magna ad excepteur voluptate nisi nostrud elit sunt pariatur ex est in aliqua velit",
+      "laborum culpa ipsum aliquip in eu et cupidatat anim enim enim dolore deserunt eu labore adipisicing laboris pariatur cupidatat Lorem id ex pariatur dolor esse labore",
     date_room: "2021-05-29 13:03:10",
     rate: 229,
     status: "false",
@@ -702,6 +702,56 @@ const data = [
 
 const roomsDiv = document.querySelector(".rooms");
 
+// var currentPage = 1;
+// var objPerPage = 3;
+
+// function totNumPages() {
+//   return Math.ceil(data.length / objPerPage);
+// }
+
+// function prevPage() {
+//   if (currentPage > 1) {
+//     currentPage--;
+//     change(currentPage);
+//   }
+// }
+
+// function nextPage() {
+//   if (currentPage < totNumPages()) {
+//     currentPage++;
+//     change(currentPage);
+//   }
+// }
+// function change(page) {
+//   var buttonNext = document.getElementById("buttonNext");
+
+//   var buttonPrev = document.getElementById("buttonPrev");
+
+//   var listing_table = document.querySelector(".rooms");
+
+  
+//   if (page < 1) page = 1;
+//   if (page > totNumPages()) page = totNumPages();
+//   listing_table.innerHTML = "";
+//   for (var i = (page - 1) * objPerPage; i < page * objPerPage; i++) {
+//     listing_table.innerHTML += data[i].number + "<br>";
+//   }
+
+//   if (page == 1) {
+//     buttonPrev.style.visibility = "hidden";
+//   } else {
+//     buttonPrev.style.visibility = "visible";
+//   }
+//   if (page == totNumPages()) {
+//     buttonNext.style.visibility = "hidden";
+//   } else {
+//     buttonNext.style.visibility = "visible";
+//   }
+// }
+// window.onload = function () {
+//   change(1);
+// };
+
 export const apiRequest = () => {
   data.map((room) => {
     let divSingleRoom = document.createElement("div");
@@ -713,6 +763,8 @@ export const apiRequest = () => {
     let rate = document.createElement("h5");
 
     let image = document.createElement("img");
+
+    let divButton = document.createElement("div");
 
     let button = document.createElement("button");
 
@@ -732,9 +784,13 @@ export const apiRequest = () => {
 
     divSingleRoom.appendChild(description);
 
-    divSingleRoom.appendChild(rate);
+    divButton.appendChild(rate);
 
-    // divSingleRoom.appendChild(button);
+    divSingleRoom.appendChild(divButton);
+
+    divButton.appendChild(button);
+
+    divSingleRoom.appendChild(divButton);
 
     roomsDiv.appendChild(divSingleRoom);
   });
