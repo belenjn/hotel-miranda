@@ -19,15 +19,14 @@ closeButton.addEventListener("click", function () {
 
 const takeATourButton = document.querySelector("#tour__button");
 
-let scroll = document.documentElement.scrollTop;
-
-let height =
-  document.documentElement.scrollHeight - document.documentElement.clientHeight;
-
-let progress = (scroll / height) * 100;
-
 takeATourButton.addEventListener("click", function () {
 
   window.scrollTo("2400", "1300");
 
 });
+
+const learnButton = document.querySelector("#learn__button");
+
+learnButton.addEventListener("click", function() {
+  window.scrollTo("3000", "2500")
+})
