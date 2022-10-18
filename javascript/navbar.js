@@ -35,5 +35,5 @@ learnButton.addEventListener("click", function() {
 const person = document.querySelector("#person");
 
 person.addEventListener("click", function() {
-  window.location.href = "https://belenjn.github.io/hotel-miranda/#contact"
+  window.location.href = "#contact.hml"
 })
