@@ -11,8 +11,23 @@ hamburger.addEventListener("click", function () {
 });
 
 closeButton.addEventListener("click", function () {
-    navMobile.classList.remove("navbar__categories--mobile");
-    navMobile.classList.add("navbar__categories--mobile-hidden");
-    container.classList.add("navbar__container");
-    container.classList.remove("navbar__categories--mobile-hidden");
-})
+  navMobile.classList.remove("navbar__categories--mobile");
+  navMobile.classList.add("navbar__categories--mobile-hidden");
+  container.classList.add("navbar__container");
+  container.classList.remove("navbar__categories--mobile-hidden");
+});
+
+const takeATourButton = document.querySelector("#tour__button");
+
+let scroll = document.documentElement.scrollTop;
+
+let height =
+  document.documentElement.scrollHeight - document.documentElement.clientHeight;
+
+let progress = (scroll / height) * 100;
+
+takeATourButton.addEventListener("click", function () {
+
+  window.scrollTo("2400", "1300");
+
+});
