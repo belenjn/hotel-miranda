@@ -774,7 +774,7 @@ export const apiRequest = () => {
 
     rate.appendChild(document.createTextNode(`$${room.rate}/Night`));
 
-    button.appendChild(document.createTextNode(`Booking now`));
+    button.appendChild(document.createTextNode(`Book now`));
 
     image.src = `${room.image}`;
 
