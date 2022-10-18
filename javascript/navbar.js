@@ -30,3 +30,4 @@ const learnButton = document.querySelector("#learn__button");
 learnButton.addEventListener("click", function() {
   window.scrollTo("3000", "2500")
 })
+
