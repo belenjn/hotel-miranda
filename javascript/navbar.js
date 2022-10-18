@@ -35,5 +35,5 @@ learnButton.addEventListener("click", function() {
 const person = document.querySelector("#person");
 
 person.addEventListener("click", function() {
-  window.location.href = "#contact.hml"
+  window.location.href = "#contact.html"
 })
