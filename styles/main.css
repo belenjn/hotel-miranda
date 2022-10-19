@@ -979,9 +979,17 @@ footer .footer__contact .contact__icon p small {
   display: flex;
   width: 25%;
 }
-.navbar .navbar__container-icons-right input {
+.navbar .navbar__container-icons-right .search__hidden {
+  display: none;
+}
+.navbar .navbar__container-icons-right .search__visible {
+  border: 1px solid rgba(0, 0, 0, 0.206);
+  border-radius: 5px;
   height: 35px;
+  font-family: "Archivo", sans-serif !important;
   align-self: center;
+  padding: 9px;
+  margin-left: 5px;
 }
 .navbar .navbar__logo {
   width: 130px;
@@ -999,6 +1007,10 @@ footer .footer__contact .contact__icon p small {
 .navbar .navbar__search {
   margin-left: 20px;
   margin: auto;
+}
+.navbar .navbar__person:hover,
+.navbar .navbar__search:hover {
+  cursor: pointer;
 }
 
 @media only screen and (min-width: 1000px) {

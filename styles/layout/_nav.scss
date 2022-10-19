@@ -76,9 +76,18 @@ $primary-background: #222222;
     display: flex;
     width: 25%;
 
-    input {
+    .search__hidden {
+      display: none;
+    }
+
+    .search__visible {
+      border: 1px solid rgba(0, 0, 0, 0.206);
+      border-radius: 5px;
       height: 35px;
+      font-family: "Archivo", sans-serif !important;
       align-self: center;
+      padding: 9px;
+      margin-left: 5px;
     }
   }
   .navbar__logo {
@@ -99,6 +108,10 @@ $primary-background: #222222;
   .navbar__search {
     margin-left: 20px;
     margin: auto;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 }
 
