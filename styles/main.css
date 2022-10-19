@@ -979,6 +979,10 @@ footer .footer__contact .contact__icon p small {
   display: flex;
   width: 25%;
 }
+.navbar .navbar__container-icons-right input {
+  height: 35px;
+  align-self: center;
+}
 .navbar .navbar__logo {
   width: 130px;
   height: 50px;

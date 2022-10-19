@@ -75,6 +75,11 @@ $primary-background: #222222;
   .navbar__container-icons-right {
     display: flex;
     width: 25%;
+
+    input {
+      height: 35px;
+      align-self: center;
+    }
   }
   .navbar__logo {
     width: 130px;
