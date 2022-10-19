@@ -17,3 +17,14 @@ closeButton.addEventListener("click", function () {
   container.classList.remove("navbar__categories--mobile-hidden");
 });
 
+
+
+const searchButtonNavbar = document.querySelector(".navbar__search");
+const inputNavbar = document.querySelector(".search__hidden");
+
+searchButtonNavbar.addEventListener("click", function () {
+  inputNavbar.classList.remove("search__hidden");
+  searchButtonNavbar.classList.remove("navbar__search");
+  inputNavbar.classList.add("search__visible");
+  searchButtonNavbar.classList.add("search__hidden");
+});
