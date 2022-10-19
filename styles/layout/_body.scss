@@ -12,7 +12,7 @@ body {
   overflow-x: hidden;
 }
 
-.top__button { 
+.top__button {
   align-items: center;
   background-color: #bdac8d;
   border: none;
@@ -607,11 +607,19 @@ footer {
       margin-right: $principal-margin-left;
     }
 
-    .socials {
-      margin-top: 40px;
-      margin-left: $principal-margin-left;
-      margin-right: $principal-margin-left;
-    }
+      .socials {
+        width: 40px;
+        height: 40px;
+        margin-right: 20px;
+        margin-left: 20px;
+
+        &:hover {
+          cursor: pointer;
+          transform: scale(1.2);
+          transition: 0.3s ease-in;
+        }
+      }
+    
   }
 
   h4 {
