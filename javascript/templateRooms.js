@@ -776,6 +776,10 @@ export const apiRequest = () => {
 
     button.appendChild(document.createTextNode(`Book now`));
 
+    button.addEventListener("click", function() {
+      window.location.href = "roomDetail.html"
+    })
+
     image.src = `${room.image}`;
 
     divSingleRoom.appendChild(image);
