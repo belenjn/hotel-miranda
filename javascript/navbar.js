@@ -31,9 +31,3 @@ learnButton.addEventListener("click", function() {
   window.scrollTo("3000", "2500")
 })
 
-
-const person = document.querySelector("#person");
-
-person.addEventListener("click", function() {
-  window.location.href = "contact.html"
-})
