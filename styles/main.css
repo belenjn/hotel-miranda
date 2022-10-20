@@ -861,22 +861,21 @@ footer .footer__contact .contact__icon p small {
     justify-content: center;
     margin-top: 50px;
   }
-  .rooms__pagination span,
-.rooms__pagination a {
-    color: black;
+  .rooms__pagination a {
+    background-color: #bead8e;
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: "Archivo", sans-serif;
     margin-left: 40px;
+    padding: 5px;
     height: 50px;
-    width: 50px;
+    width: 120px;
     text-decoration: none;
   }
-  .rooms__pagination span:hover,
-.rooms__pagination a:hover {
-    background-color: #bead8e;
-    color: white;
+  .rooms__pagination a:hover {
+    background-color: rgba(190, 173, 142, 0.5607843137);
     cursor: pointer;
     transition: 0.2s ease;
   }

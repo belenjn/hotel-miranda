@@ -1010,23 +1010,22 @@ footer {
     justify-content: center;
     margin-top: 50px;
 
-    span,
     a {
-      color: black;
+      background-color: #bead8e;
+      color: white;
       display: flex;
       justify-content: center;
       align-items: center;
       font-family: "Archivo", sans-serif;
       margin-left: 40px;
+      padding: 5px;
       height: 50px;
-      width: 50px;
+      width: 120px;
       text-decoration: none;
     }
 
-    span:hover,
     a:hover {
-      background-color: #bead8e;
-      color: white;
+      background-color: #bead8e8f;
       cursor: pointer;
       transition: 0.2s ease;
     }

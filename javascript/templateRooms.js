@@ -700,60 +700,39 @@ export const data = [
   },
 ];
 
-const roomsDiv = document.querySelector(".rooms");
+const btn_next = document.getElementById("btn_next");
+const btn_prev = document.getElementById("btn_prev");
 
-// var currentPage = 1;
-// var objPerPage = 3;
+var current_page = 1;
+var obj_per_page = 9;
+function totNumPages() {
+  return Math.ceil(data.length / obj_per_page);
+}
 
-// function totNumPages() {
-//   return Math.ceil(data.length / objPerPage);
-// }
+function prevPage() {
+  if (current_page > 1) {
+    current_page--;
+    change(current_page);
+  }
+}
+function nextPage() {
+  if (current_page < totNumPages()) {
+    current_page++;
+    change(current_page);
+  }
+}
 
-// function prevPage() {
-//   if (currentPage > 1) {
-//     currentPage--;
-//     change(currentPage);
-//   }
-// }
+function change(page) {
+  btn_prev.addEventListener("click", prevPage);
+  btn_next.addEventListener("click", nextPage);
+ 
+  var listing_table = document.getElementById("TableList");
+  if (page < 1) page = 1;
+  if (page > totNumPages()) page = totNumPages();
+  listing_table.innerHTML = "";
+  const roomsDiv = document.querySelector(".rooms");
 
-// function nextPage() {
-//   if (currentPage < totNumPages()) {
-//     currentPage++;
-//     change(currentPage);
-//   }
-// }
-// function change(page) {
-//   var buttonNext = document.getElementById("buttonNext");
-
-//   var buttonPrev = document.getElementById("buttonPrev");
-
-//   var listing_table = document.querySelector(".rooms");
-
-  
-//   if (page < 1) page = 1;
-//   if (page > totNumPages()) page = totNumPages();
-//   listing_table.innerHTML = "";
-//   for (var i = (page - 1) * objPerPage; i < page * objPerPage; i++) {
-//     listing_table.innerHTML += data[i].number + "<br>";
-//   }
-
-//   if (page == 1) {
-//     buttonPrev.style.visibility = "hidden";
-//   } else {
-//     buttonPrev.style.visibility = "visible";
-//   }
-//   if (page == totNumPages()) {
-//     buttonNext.style.visibility = "hidden";
-//   } else {
-//     buttonNext.style.visibility = "visible";
-//   }
-// }
-// window.onload = function () {
-//   change(1);
-// };
-
-export const apiRequest = () => {
-  data.map((room) => {
+  for (var i = (page - 1) * obj_per_page; i < page * obj_per_page; i++) {
     let divSingleRoom = document.createElement("div");
 
     let title = document.createElement("h1");
@@ -768,19 +747,19 @@ export const apiRequest = () => {
 
     let button = document.createElement("button");
 
-    title.appendChild(document.createTextNode(`${room.bed_type}`));
+    title.appendChild(document.createTextNode(`${data[i].bed_type}`));
 
-    description.appendChild(document.createTextNode(`${room.description}`));
+    description.appendChild(document.createTextNode(`${data[i].description}`));
 
-    rate.appendChild(document.createTextNode(`$${room.rate}/Night`));
+    rate.appendChild(document.createTextNode(`$${data[i].rate}/Night`));
 
     button.appendChild(document.createTextNode(`Book now`));
 
-    button.addEventListener("click", function() {
-      window.location.href = "roomDetail.html"
-    })
+    button.addEventListener("click", function () {
+      window.location.href = "roomDetail.html";
+    });
 
-    image.src = `${room.image}`;
+    image.src = `${data[i].image}`;
 
     divSingleRoom.appendChild(image);
 
@@ -797,7 +776,19 @@ export const apiRequest = () => {
     divSingleRoom.appendChild(divButton);
 
     roomsDiv.appendChild(divSingleRoom);
-  });
-};
+  }
 
-apiRequest();
+  if (page == 1) {
+    btn_prev.style.visibility = "hidden";
+  } else {
+    btn_prev.style.visibility = "visible";
+  }
+  if (page == totNumPages()) {
+    btn_next.style.visibility = "hidden";
+  } else {
+    btn_next.style.visibility = "visible";
+  }
+}
+window.onload = function () {
+  change(1);
+};
