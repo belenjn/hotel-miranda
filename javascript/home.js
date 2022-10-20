@@ -727,11 +727,6 @@ buttonVideo.addEventListener("click", function () {
   window.location.href = "rooms.html";
 });
 
-const topButton = document.querySelector(".top__button");
-
-topButton.addEventListener("click", function () {
-  window.scrollTo("0", "0");
-});
 
 const inputs = document.getElementsByClassName("form__input");
 
@@ -748,20 +743,6 @@ for (let index = 0; index < data.length; index++) {
   datesOfRooms.push(dateRoom);
 }
 
-// input1.addEventListener("change", function (e) {
-//   const dateParse = Date.parse(e.target.value.toString());
-
-//   for (let index = 0; index < datesOfRooms.length; index++) {
-//     const element = datesOfRooms[index];
-
-//     if (element === dateParse) {
-//       return (window.location.href = "rooms.html");
-//     } else {
-//       window.location.reload();
-//       input1.value = "";
-//     }
-//   }
-// });
 
 let eventTargetValue1;
 let eventTargetValue2;
