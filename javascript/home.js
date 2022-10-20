@@ -767,7 +767,7 @@ buttonAvailability.addEventListener("click", function (e) {
       (input1.value = ""),
       (input2.value = ""))
     : alert(
-        "If you want to navigate to the available rooms, click in Accept",
+        "If you want to navigate to the available rooms, click in: Accept",
         setTimeout(() => {
           window.location.href = "rooms.html";
         }, 3000)
