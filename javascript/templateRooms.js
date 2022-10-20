@@ -1,4 +1,4 @@
-const data = [
+export const data = [
   {
     id: 1,
     room_name: "Leland Prairie",
