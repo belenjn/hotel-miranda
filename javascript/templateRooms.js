@@ -753,7 +753,7 @@ function change(page) {
 
     rate.appendChild(document.createTextNode(`$${data[i].rate}/Night`));
 
-    button.appendChild(document.createTextNode(`Book now`));
+    button.appendChild(document.createTextNode(`Book now`))
 
     button.addEventListener("click", function () {
       window.location.href = "roomDetail.html";

@@ -17,8 +17,6 @@ closeButton.addEventListener("click", function () {
   container.classList.remove("navbar__categories--mobile-hidden");
 });
 
-
-
 const searchButtonNavbar = document.querySelector(".navbar__search");
 const inputNavbar = document.querySelector(".search__hidden");
 
@@ -27,4 +25,28 @@ searchButtonNavbar.addEventListener("click", function () {
   searchButtonNavbar.classList.remove("navbar__search");
   inputNavbar.classList.add("search__visible");
   searchButtonNavbar.classList.add("search__hidden");
+});
+
+inputNavbar.addEventListener("change", function (e) {
+  const valueInput = e.target.value;
+
+  if (valueInput.includes("room")) {
+    window.location.href = "rooms.html";
+    inputNavbar.value = "";
+  } else if (valueInput.includes("services")) {
+    window.scrollTo("2400", "6000");
+    inputNavbar.value = "";
+  } else if (valueInput.includes("video")) {
+    window.location.href = "about.html";
+    inputNavbar.value = "";
+  } else if (valueInput.includes("offers")) {
+    window.location.href = "offers.html";
+    inputNavbar.value = "";
+  } else if (valueInput.includes("contact")) {
+    window.location.href = "contact.html";
+    inputNavbar.value = "";
+  } else {
+    window.scrollTo("2400", "2700");
+    inputNavbar.value = "";
+  }
 });

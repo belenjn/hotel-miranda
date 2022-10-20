@@ -711,9 +711,6 @@ learnButton.addEventListener("click", function () {
   window.scrollTo("3000", "2500");
 });
 
-inputNavbar.addEventListener("change", function (e) {
-  e.target.value ? (window.location.href = "rooms.html") : "";
-});
 
 const button = document.querySelector("#button");
 
