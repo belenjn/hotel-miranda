@@ -12,6 +12,10 @@ body {
   overflow-x: hidden;
 }
 
+.swiper-pagination, .swiper-pagination-clickable, .swiper-pagination-bullets, .swiper-pagination-horizontal, .swiper-pagination-bullets-dynamic {
+  display: none;
+}
+
 .top__button {
   align-items: center;
   background-color: #bdac8d;

@@ -3,6 +3,10 @@ body {
   overflow-x: hidden;
 }
 
+.swiper-pagination, .swiper-pagination-clickable, .swiper-pagination-bullets, .swiper-pagination-horizontal, .swiper-pagination-bullets-dynamic {
+  display: none;
+}
+
 .top__button {
   align-items: center;
   background-color: #bdac8d;
@@ -1005,17 +1009,17 @@ footer .footer__contact .contact__icon p small {
   display: flex;
   width: 25%;
 }
+.navbar .navbar__container-icons-right .navbar__search {
+  display: none;
+}
+.navbar .navbar__container-icons-right .navbar__search img {
+  display: none;
+}
 .navbar .navbar__container-icons-right .search__hidden {
   display: none;
 }
 .navbar .navbar__container-icons-right .search__visible {
-  border: 1px solid rgba(0, 0, 0, 0.206);
-  border-radius: 5px;
-  height: 35px;
-  font-family: "Archivo", sans-serif !important;
-  align-self: center;
-  padding: 9px;
-  margin-left: 5px;
+  display: hidden;
 }
 .navbar .navbar__logo {
   width: 130px;
@@ -1029,13 +1033,11 @@ footer .footer__contact .contact__icon p small {
   cursor: pointer;
   border: none;
 }
-.navbar .navbar__person,
-.navbar .navbar__search {
+.navbar .navbar__person {
   margin-left: 20px;
   margin: auto;
 }
-.navbar .navbar__person:hover,
-.navbar .navbar__search:hover {
+.navbar .navbar__person:hover {
   cursor: pointer;
 }
 
@@ -1102,6 +1104,15 @@ footer .footer__contact .contact__icon p small {
     width: 20%;
     margin-right: 90px;
   }
+  .navbar__header .navbar .navbar__container-icons-right .search__visible {
+    border: 1px solid rgba(0, 0, 0, 0.206);
+    border-radius: 5px;
+    height: 35px;
+    font-family: "Archivo", sans-serif !important;
+    align-self: center;
+    padding: 9px;
+    margin-left: 5px;
+  }
   .navbar__header .navbar .navbar__logo {
     width: 180px;
     height: 80px;
@@ -1110,11 +1121,12 @@ footer .footer__contact .contact__icon p small {
     height: 70px;
     margin-left: 20px;
   }
-  .navbar__header .navbar .navbar__person,
-.navbar__header .navbar .navbar__search {
+  .navbar__header .navbar .navbar__search {
+    display: flex;
     border: 1px solid rgba(171, 167, 167, 0.459);
     padding: 10px;
-    width: 35px;
+    width: 40px;
+    height: 40px;
   }
   .navbar__header .navbar .navbar__hamburger {
     display: none;
