@@ -1875,6 +1875,7 @@ body .slider__pagination img {
   text-align: right;
   margin-left: 20px;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 @media only screen and (min-width: 1000px) {
@@ -1977,6 +1978,7 @@ body .slider__pagination img {
     text-align: right;
     margin-left: 20px;
     margin-top: 20px;
+    margin-bottom: 20px;
   }
 }
 
