@@ -102,7 +102,7 @@ export const apiRequest = () => {
 
     let divTitleAndPrice = document.createElement("div");
 
-    let button = document.createElement("button");
+    let buttonBookNow = document.createElement("button");
 
     title.appendChild(document.createTextNode(`${room.bed_type}`));
 
