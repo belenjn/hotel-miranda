@@ -206,6 +206,10 @@ $primary-background: #222222;
         width: 170px;
         height: 70px;
         margin-left: 20px;
+
+        &:hover {
+          cursor: pointer;
+        }
       }
 
       .navbar__search {

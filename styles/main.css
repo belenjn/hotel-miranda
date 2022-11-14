@@ -1121,6 +1121,9 @@ footer .footer__contact .contact__icon p small {
     height: 70px;
     margin-left: 20px;
   }
+  .navbar__header .navbar .navbar__logo:hover {
+    cursor: pointer;
+  }
   .navbar__header .navbar .navbar__search {
     display: flex;
     border: 1px solid rgba(171, 167, 167, 0.459);
