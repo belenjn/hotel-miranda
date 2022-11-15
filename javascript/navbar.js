@@ -43,6 +43,9 @@ inputNavbar.addEventListener("change", function (e) {
   } else if (valueInput.includes("contact")) {
     window.location.href = "contact.html";
     inputNavbar.value = "";
+  } else if (valueInput.includes("luxury")) {
+    window.location.href = "rooms.html"
+    inputNavbar.value = "";
   } else {
     window.scrollTo("2400", "2700");
     inputNavbar.value = "";
