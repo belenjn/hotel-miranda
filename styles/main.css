@@ -1101,6 +1101,7 @@ footer .footer__contact .contact__icon p small {
   }
   .navbar__header .navbar .navbar__container-icons-right {
     display: flex;
+    flex-direction: row-reverse;
     width: 20%;
     margin-right: 90px;
   }
@@ -1125,11 +1126,13 @@ footer .footer__contact .contact__icon p small {
     cursor: pointer;
   }
   .navbar__header .navbar .navbar__search {
+    align-self: center;
     display: flex;
     border: 1px solid rgba(171, 167, 167, 0.459);
+    border-radius: 4px;
     padding: 10px;
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
   }
   .navbar__header .navbar .navbar__hamburger {
     display: none;

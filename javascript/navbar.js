@@ -22,9 +22,7 @@ const inputNavbar = document.querySelector(".search__hidden");
 
 searchButtonNavbar.addEventListener("click", function () {
   inputNavbar.classList.remove("search__hidden");
-  searchButtonNavbar.classList.remove("navbar__search");
   inputNavbar.classList.add("search__visible");
-  searchButtonNavbar.classList.add("search__hidden");
 });
 
 inputNavbar.addEventListener("change", function (e) {
