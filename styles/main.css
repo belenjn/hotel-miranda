@@ -1875,8 +1875,8 @@ body .slider__pagination img {
   display: flex;
   margin: auto;
   margin-top: 20px;
-  width: 90%;
-  height: 350px;
+  width: 700px;
+  height: 400px;
   z-index: 1;
 }
 .rooms__offers div button {
@@ -1897,7 +1897,7 @@ body .slider__pagination img {
   flex-direction: column-reverse;
   margin: auto;
   margin-top: -100px;
-  width: 90%;
+  width: 700px;
   z-index: 2;
 }
 .rooms__offers div div h1 {
@@ -1957,110 +1957,6 @@ body .slider__pagination img {
   margin-left: 20px;
   margin-top: 20px;
   margin-bottom: 20px;
-}
-
-@media only screen and (min-width: 1000px) {
-  .rooms__offers {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    margin-top: 50px;
-    width: 100%;
-    height: 100%;
-  }
-  .rooms__offers div {
-    align-self: center;
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    text-align: left;
-  }
-  .rooms__offers div img {
-    display: flex;
-    margin: auto;
-    margin-top: 20px;
-    width: 100%;
-    height: 350px;
-    z-index: 1;
-  }
-  .rooms__offers div button {
-    background: none;
-    color: #bdbdbd;
-    display: flex;
-    justify-content: center;
-    text-align: left;
-    align-self: center;
-    font-family: "Archivo", sans-serif;
-    font-size: 18px;
-    width: 50%;
-  }
-  .rooms__offers div div {
-    background-color: white;
-    border-top: 5px solid #bead8e;
-    display: flex;
-    flex-direction: column-reverse;
-    margin: auto;
-    margin-top: -100px;
-    width: 550px;
-    z-index: 2;
-  }
-  .rooms__offers div div h1 {
-    font-size: 30px;
-    font-weight: 200;
-    margin-top: 20px;
-  }
-  .rooms__offers div div p {
-    color: #777777;
-    font-family: "Roboto", sans-serif;
-    text-align: left;
-    font-size: 15px;
-    margin-top: 20px;
-    margin-bottom: 30px;
-    height: 100px;
-  }
-  .rooms__offers div div h5 {
-    color: #bead8e;
-    font-size: 20px;
-    font-family: "Archivo", sans-serif;
-    font-weight: 600;
-    width: 50%;
-  }
-  .rooms__offers div div .titleAndPrice__container {
-    background-color: white;
-    border-bottom: 1px solid rgba(190, 173, 142, 0.6745098039);
-    border-top: none;
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-  }
-  .rooms__offers div div .titleAndPrice__container h1 {
-    font-size: 40px;
-    font-weight: 200;
-    margin-top: 20px;
-    align-self: flex-start;
-  }
-  .rooms__offers div div .titleAndPrice__container h5 {
-    color: #bead8e;
-    font-size: 15px;
-    font-family: "Archivo", sans-serif;
-    font-weight: 600;
-    align-self: flex-end;
-    text-align: right;
-    text-decoration: line-through;
-    margin-left: 20px;
-  }
-  .rooms__offers div div .titleAndPrice__container .redPrice {
-    color: red;
-    font-size: 20px;
-    font-family: "Archivo", sans-serif;
-    font-weight: 600;
-    align-self: flex-end;
-    text-decoration: none;
-    text-align: right;
-    margin-left: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
 }
 
 /*# sourceMappingURL=main.css.map */
