@@ -3,6 +3,10 @@ body {
   overflow-x: hidden;
 }
 
+.swal-button--confirm {
+  margin-right: 100px;
+}
+
 .swiper-pagination, .swiper-pagination-clickable, .swiper-pagination-bullets, .swiper-pagination-horizontal, .swiper-pagination-bullets-dynamic {
   display: none;
 }

@@ -711,7 +711,6 @@ learnButton.addEventListener("click", function () {
   window.scrollTo("3000", "2500");
 });
 
-
 const button = document.querySelector("#button");
 
 button.addEventListener("click", function () {
@@ -723,7 +722,6 @@ const buttonVideo = document.querySelector("#button__video");
 buttonVideo.addEventListener("click", function () {
   window.location.href = "rooms.html";
 });
-
 
 const inputs = document.getElementsByClassName("form__input");
 
@@ -740,7 +738,6 @@ for (let index = 0; index < data.length; index++) {
   datesOfRooms.push(dateRoom);
 }
 
-
 let eventTargetValue1;
 let eventTargetValue2;
 
@@ -755,21 +752,14 @@ input2.addEventListener("change", function (e) {
 buttonAvailability.addEventListener("click", function (e) {
   e.preventDefault();
 
-  const value1 = datesOfRooms.find((date) =>
-    date === eventTargetValue1 ? date : ""
-  );
-  const value2 = datesOfRooms.find((date) =>
-    date === eventTargetValue2 ? date : ""
-  );
+  if (eventTargetValue1 === undefined && eventTargetValue2 === undefined)
+  swal("Please, provide a date", "", "error")
 
-  value1 && value2
-    ? (alert("No rooms available, try other dates"),
-      (input1.value = ""),
-      (input2.value = ""))
-    : alert(
-        "If you want to navigate to the available rooms, click in: Accept",
-        setTimeout(() => {
-          window.location.href = "rooms.html";
-        }, 3000)
-      );
+  if (eventTargetValue1 != undefined && eventTargetValue2 != undefined) {
+    swal("To see the available rooms on that date, click OK", "", "success").then(
+      (result) => {
+        if (result) window.location.href = "rooms.html";
+      }
+    );
+  }
 });

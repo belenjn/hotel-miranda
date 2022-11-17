@@ -73,171 +73,171 @@ const autonomousCommunities = [
   "Melilla",
 ];
 
-let map, infoWindow;
-let currentPosition = [];
-let address;
+// let map, infoWindow;
+// let currentPosition = [];
+// let address;
 
-function initMap() {
-  map = new google.maps.Map(document.getElementById("map"), {
-    center: { lat: 40.4165, lng: -3.70256 },
-    zoom: 4.55,
-  });
+// function initMap() {
+//   map = new google.maps.Map(document.getElementById("map"), {
+//     center: { lat: 40.4165, lng: -3.70256 },
+//     zoom: 4.55,
+//   });
 
-  for (let hotel of hotels) {
-    const marker = new google.maps.Marker({
-      position: hotel,
-      icon: "javascript/hotel.png",
-      map: map,
-    });
-  }
+//   for (let hotel of hotels) {
+//     const marker = new google.maps.Marker({
+//       position: hotel,
+//       icon: "javascript/hotel.png",
+//       map: map,
+//     });
+//   }
 
-  infoWindow = new google.maps.InfoWindow();
+//   infoWindow = new google.maps.InfoWindow();
 
-  const locationButton = document.createElement("button");
+//   const locationButton = document.createElement("button");
 
-  /* Function to pan the current location */
-  locationButton.textContent = "Pan to Current Location";
-  locationButton.classList.add("custom-map-control-button");
-  map.controls[google.maps.ControlPosition.TOP_RIGHT].push(locationButton);
-  locationButton.addEventListener("click", () => {
-    if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition(
-        (position) => {
-          const pos = {
-            lat: position.coords.latitude,
-            lng: position.coords.longitude,
-          };
-          currentPosition.push(pos);
-          infoWindow.setPosition(pos);
-          infoWindow.setContent("Location founded");
-          infoWindow.open(map);
-          map.setCenter(pos);
-        },
-        () => {
-          handleLocationError(true, infoWindow, map.getCenter());
-        }
-      );
-    } else {
-      handleLocationError(false, infoWindow, map.getCenter());
-    }
-  });
+//   /* Function to pan the current location */
+//   locationButton.textContent = "Pan to Current Location";
+//   locationButton.classList.add("custom-map-control-button");
+//   map.controls[google.maps.ControlPosition.TOP_RIGHT].push(locationButton);
+//   locationButton.addEventListener("click", () => {
+//     if (navigator.geolocation) {
+//       navigator.geolocation.getCurrentPosition(
+//         (position) => {
+//           const pos = {
+//             lat: position.coords.latitude,
+//             lng: position.coords.longitude,
+//           };
+//           currentPosition.push(pos);
+//           infoWindow.setPosition(pos);
+//           infoWindow.setContent("Location founded");
+//           infoWindow.open(map);
+//           map.setCenter(pos);
+//         },
+//         () => {
+//           handleLocationError(true, infoWindow, map.getCenter());
+//         }
+//       );
+//     } else {
+//       handleLocationError(false, infoWindow, map.getCenter());
+//     }
+//   });
 
-  const buttonLocation = document.getElementById("button__location");
+//   const buttonLocation = document.getElementById("button__location");
 
-  /* Function to get the distance current location - hotels */
+//   /* Function to get the distance current location - hotels */
 
-  buttonLocation.addEventListener("click", () => {
-    const destinations = hotels.map((hotel) => ({
-      lat: hotel.lat,
-      lng: hotel.lng,
-    }));
+//   buttonLocation.addEventListener("click", () => {
+//     const destinations = hotels.map((hotel) => ({
+//       lat: hotel.lat,
+//       lng: hotel.lng,
+//     }));
 
-    if (currentPosition.length) {
-      const origin = new google.maps.LatLng(
-        currentPosition[0].lat,
-        currentPosition[0].lng
-      );
-      calculateDistance(origin, destinations);
-    } else if (address) {
-      calculateDistance(address, destinations);
-    }
-  });
+//     if (currentPosition.length) {
+//       const origin = new google.maps.LatLng(
+//         currentPosition[0].lat,
+//         currentPosition[0].lng
+//       );
+//       calculateDistance(origin, destinations);
+//     } else if (address) {
+//       calculateDistance(address, destinations);
+//     }
+//   });
 
-  var geocoder = new google.maps.Geocoder();
-  const input = document.getElementById("input__text").value;
-  const buttonInput = document.getElementById("button__input");
+//   var geocoder = new google.maps.Geocoder();
+//   const input = document.getElementById("input__text").value;
+//   const buttonInput = document.getElementById("button__input");
 
-  buttonInput.addEventListener("click", () => {
-    address = input;
-    geocoder.geocode({ address: address }, function (results, status) {
-      const pos = results[0].geometry.location;
-      infoWindow.setPosition(pos);
-      infoWindow.setContent("Location founded");
-      infoWindow.open(map);
-      map.setCenter(pos);
-    });
-  });
+//   buttonInput.addEventListener("click", () => {
+//     address = input;
+//     geocoder.geocode({ address: address }, function (results, status) {
+//       const pos = results[0].geometry.location;
+//       infoWindow.setPosition(pos);
+//       infoWindow.setContent("Location founded");
+//       infoWindow.open(map);
+//       map.setCenter(pos);
+//     });
+//   });
 
-  /* Function print the sorted hotels by distance */
+//   /* Function print the sorted hotels by distance */
 
-  function calculateDistance(origin, destinations) {
-    let service = new google.maps.DistanceMatrixService();
+//   function calculateDistance(origin, destinations) {
+//     let service = new google.maps.DistanceMatrixService();
 
-    service
-      .getDistanceMatrix({
-        origins: [origin],
-        destinations: destinations,
-        travelMode: "DRIVING",
-      })
-      .then((response) => {
-        const hotels = response.destinationAddresses.map((hotel) => ({
-          name: hotel,
-        }));
-        const distances = response.rows[0].elements.map((dist) => ({
-          distance: dist.distance,
-        }));
+//     service
+//       .getDistanceMatrix({
+//         origins: [origin],
+//         destinations: destinations,
+//         travelMode: "DRIVING",
+//       })
+//       .then((response) => {
+//         const hotels = response.destinationAddresses.map((hotel) => ({
+//           name: hotel,
+//         }));
+//         const distances = response.rows[0].elements.map((dist) => ({
+//           distance: dist.distance,
+//         }));
 
-        const sortedHotels = [];
-        for (let i = 0; i < hotels.length; i++) {
-          sortedHotels.push({ ...hotels[i], ...distances[i] });
-        }
-        sortedHotels.sort((a, b) => {
-          return a.distance.value - b.distance.value;
-        });
+//         const sortedHotels = [];
+//         for (let i = 0; i < hotels.length; i++) {
+//           sortedHotels.push({ ...hotels[i], ...distances[i] });
+//         }
+//         sortedHotels.sort((a, b) => {
+//           return a.distance.value - b.distance.value;
+//         });
 
-        for (let hotel of sortedHotels) {
-          const direction = document.createElement("li");
-          const distance = document.createElement("h6");
-          direction.innerText = `${hotel.name} `;
-          distance.innerText = `${hotel.distance.text}`;
-          document
-            .getElementById("locations")
-            .appendChild(direction)
-            .appendChild(distance);
-        }
-      });
-  }
-}
+//         for (let hotel of sortedHotels) {
+//           const direction = document.createElement("li");
+//           const distance = document.createElement("h6");
+//           direction.innerText = `${hotel.name} `;
+//           distance.innerText = `${hotel.distance.text}`;
+//           document
+//             .getElementById("locations")
+//             .appendChild(direction)
+//             .appendChild(distance);
+//         }
+//       });
+//   }
+// }
 
-const selectCommunity = document.getElementById("selector__comunidades");
+// const selectCommunity = document.getElementById("selector__comunidades");
 
-autonomousCommunities.forEach((element) => {
-  let option = document.createElement("option");
-  option.value = element;
-  option.text = element;
-  selectCommunity.appendChild(option);
-});
+// autonomousCommunities.forEach((element) => {
+//   let option = document.createElement("option");
+//   option.value = element;
+//   option.text = element;
+//   selectCommunity.appendChild(option);
+// });
 
-selectCommunity.addEventListener("change", (e) => {
-  let mark;
+// selectCommunity.addEventListener("change", (e) => {
+//   let mark;
 
-  let indexCommunity = selectCommunity.selectedIndex;
+//   let indexCommunity = selectCommunity.selectedIndex;
 
-  console.log(e.target.value);
+//   console.log(e.target.value);
 
-  mark = new google.maps.Polygon({
-    paths: spainCommunities[indexCommunity],
-    strokeColor: "#135846",
-    strokeOpacity: 1,
-    strokeWeight: 2,
-    fillColor: "#5AD07A",
-    fillOpacity: 0.8,
-  });
+//   mark = new google.maps.Polygon({
+//     paths: spainCommunities[indexCommunity],
+//     strokeColor: "#135846",
+//     strokeOpacity: 1,
+//     strokeWeight: 2,
+//     fillColor: "#5AD07A",
+//     fillOpacity: 0.8,
+//   });
 
-  mark.setMap(map);
-});
+//   mark.setMap(map);
+// });
 
-function handleLocationError(browserHasGeolocation, infoWindow, pos) {
-  infoWindow.setPosition(pos);
-  infoWindow.setContent(
-    browserHasGeolocation
-      ? "Error: The Geolocation service failed."
-      : "Error: Your browser doesn't support geolocation."
-  );
-  infoWindow.open(map);
-}
+// function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+//   infoWindow.setPosition(pos);
+//   infoWindow.setContent(
+//     browserHasGeolocation
+//       ? "Error: The Geolocation service failed."
+//       : "Error: Your browser doesn't support geolocation."
+//   );
+//   infoWindow.open(map);
+// }
 
-window.initMap = initMap;
+// window.initMap = initMap;
 
 const spainCommunities = [
   [
