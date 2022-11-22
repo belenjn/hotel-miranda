@@ -725,7 +725,7 @@ function nextPage() {
 function change(page) {
   btn_prev.addEventListener("click", prevPage);
   btn_next.addEventListener("click", nextPage);
- 
+
   var listing_table = document.getElementById("TableList");
   if (page < 1) page = 1;
   if (page > totNumPages()) page = totNumPages();
@@ -753,7 +753,7 @@ function change(page) {
 
     rate.appendChild(document.createTextNode(`$${data[i].rate}/Night`));
 
-    button.appendChild(document.createTextNode(`Book now`))
+    button.appendChild(document.createTextNode(`Book now`));
 
     button.addEventListener("click", function () {
       window.location.href = "roomDetail.html";
